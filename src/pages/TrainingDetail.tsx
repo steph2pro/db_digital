@@ -6,7 +6,6 @@ import { motion } from "motion/react";
 import { Button } from '../components/ui/Button';
 import { ImageModal } from '../components/ui/ImageModal';
 import { useApp } from '../contexts/AppContext';
-import { Training } from '../types';
 
 export const TrainingDetail: React.FC = () => {
   const { trainingId } = useParams<{ trainingId: string }>();

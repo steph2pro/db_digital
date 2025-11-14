@@ -6,7 +6,7 @@ import { useTheme } from '../../contexts/ThemeContext';
 import { LanguageSwitcher } from '../LanguageSwitcher';
 
 export const Header: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const { isDark, toggleTheme } = useTheme();
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);

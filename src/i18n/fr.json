@@ -1,0 +1,320 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "web-projects": "Projets Web",
+    "mobile-projects": "Projets Mobile",
+    "backend-projects": "Projets Backend",
+    "fullstack-projects": "Projets fullstack",
+    "blog": "Blog",
+    "about": "À Propos",
+    "contact": "Contact",
+    "trainings": "Formations"
+  },
+  "about": {
+    "tools":"outils",
+    "title": "À Propos de Moi",
+    "subtitle": "Développeur passionné créant des solutions digitales innovantes",
+    "whoAmI": "Qui suis-je ?",
+    "introduction1": "Je suis un développeur full stack passionné par la création d'applications web et mobiles modernes et performantes.",
+    "introduction2": "Avec plus de 5 ans d'expérience, j'ai travaillé sur divers projets allant des sites vitrine aux applications SaaS complexes.",
+    "introduction3": "Je suis constamment à l'affût des nouvelles technologies et des meilleures pratiques pour offrir des solutions de qualité.",
+    "skills": "Compétences Techniques",
+    "experience": "Parcours Professionnel",
+    "education": "Formation",
+    "projectsCompleted": "Projets réalisés",
+    "yearsExperience": "Années d'expérience",
+    "technologies": "Technologies",
+    "happyClients": "Clients satisfaits",
+    "cta": {
+      "title": "Travaillons ensemble",
+      "description": "Vous avez un projet en tête ? Discutons de la façon dont je peux vous aider à le concrétiser.",
+      "contact": "Me Contacter",
+      "downloadCV": "Télécharger mon CV"
+    }
+  },
+  "home": {
+    "greeting": "Salut,",
+    "im": "Je Suis",
+    "name": "Stéphane",
+    "role": "Développeur Full Stack Web et Mobile",
+    "contact": "Contact",
+    "viewWork": "Voir mes travaux",
+    "description": "Développeur Full Stack passionné par la création d'applications web et mobiles modernes, performantes et accessibles.",
+    "stats": {
+      "projects": "Projets réalisés",
+      "experience": "Années d'expérience",
+      "technologies": "Technologies maîtrisées",
+      "clients": "Clients satisfaits"
+    },
+    "services": {
+      "title": "Mes Services",
+      "subtitle": "Des solutions complètes pour vos projets digitaux",
+      "web": {
+        "title": "Développement Web",
+        "description": "Applications web modernes et responsive avec les dernières technologies"
+      },
+      "mobile": {
+        "title": "Applications Mobile",
+        "description": "Apps cross-platform performantes pour iOS et Android"
+      },
+      "backend": {
+        "title": "Backend & API",
+        "description": "Architectures robustes et sécurisées pour vos données"
+      },
+      "training": {
+        "title": "Formation et Enseignement",
+        "description": "Formation des apprenants en développement web et mobile, et dispensation de cours dans des universités."
+      }
+    },
+    "featuredProjects": {
+      "title": "Projets en Vedette",
+      "subtitle": "Découvrez une sélection de mes réalisations les plus significatives",
+      "viewAll": "Voir tous les projets"
+    },
+    "skills": {
+      "title": "Compétences Techniques",
+      "subtitle": "Technologies et outils que j'utilise au quotidien",
+      "viewAll": "Voir toutes les compétences"
+    },
+    "cta": {
+      "title": "Prêt à démarrer votre projet ?",
+      "description": "Travaillons ensemble pour concrétiser vos idées en solutions digitales exceptionnelles",
+      "getInTouch": "Me Contacter",
+      "downloadCV": "Télécharger mon CV"
+    },
+    "downloadCV": "Télécharger CV"
+  },
+  "footer": {
+    "description": "Je suis développeur Full Stack, passionné par la création d'applications web et mobiles avec des designs modernes et épurés.",
+    "quickLinks": "Liens rapides",
+    "projects": "Projets",
+    "contact": "Contact",
+    "rights": "Tous droits réservés.",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions générales"
+  },
+  "project": {
+    
+    "filters": {
+      "all": "Tous"
+    },
+    "sort": {
+      "newest": "Plus récents",
+      "oldest": "Plus anciens",
+      "name": "Par nom"
+    },
+    "noFilteredProjects": "Aucun projet {{status}} trouvé",
+    "showAllProjects": "Voir tous les projets",
+   "private": "Privé",
+    "privateProject": "Projet propriétaire",
+    "visibility": "Visibilité",
+    "status": {
+      "completed": "Terminé",
+      "in-progress": "En cours",
+      "planned": "Planifié"
+    },
+    "category": {
+      "web": "Web",
+      "mobile": "Mobile",
+      "backend": "Backend",
+      "fullstack": "Full Stack"
+    },
+    "technologies": "Technologies utilisées",
+    "features": "Fonctionnalités",
+    "challenges": "Défis rencontrés",
+    "solutions": "Solutions apportées",
+    "testimonials": "Témoignages",
+    "liveDemo": "Voir le projet",
+    "viewDetails": "Voir les détails",
+    "startDate": "Date de début",
+    "endDate": "Date de fin",
+    "client": "Client",
+    "teamSize": "Équipe",
+    "people": "personnes",
+    "relatedProjects": "Projets similaires",
+    "notFound": "Projet non trouvé",
+    "featured": "En vedette",
+    "projectInfo": "Informations du projet"
+  },
+  "projects": {
+    "web": {
+      "title": "Projets Web",
+      "description": "Découvrez mes réalisations en développement web frontend et fullstack"
+    },
+    "mobile": {
+      "title": "Projets Mobile",
+      "description": "Applications mobiles cross-platform et natives"
+    },
+    "backend": {
+      "title": "Projets Backend",
+      "description": "APIs, microservices et architectures serveur",
+      "technologies": "Technologies Backend Maîtrisées"
+    },
+
+    "fullstack": {
+      "title": "Projets Fullstack",
+      "description": "Applications complètes intégrant frontend et backend avec des architectures modernes et scalables",
+      "whatIsFullstack": "Qu'est-ce que le Développement Fullstack ?",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "stats": {
+        "laravel": "Projets Laravel",
+        "nodejs": "Projets Node.js",
+        "adonisjs": "Projets AdonisJS"
+      }
+    },
+    "filters": {
+      "all": "Tous",
+      "featured": "En vedette",
+      "search": "Rechercher un projet..."
+    },
+    "sort": {
+      "newest": "Plus récent",
+      "oldest": "Plus ancien",
+      "name": "Par nom"
+    },
+    "stats": {
+      "total": "Total",
+      "completed": "Terminés"
+    },
+    "noProjects": "Aucun projet trouvé",
+    "category": "categorie",
+    "status": "status"
+    
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Articles sur le développement web, les bonnes pratiques et les nouvelles technologies",
+    "featured": "À la une",
+    "minRead": "min de lecture",
+    "readMore": "Lire la suite",
+    "searchPlaceholder": "Rechercher un article...",
+    "categories": {
+      "all": "Tous"
+    },
+    "noPosts": "Aucun article trouvé",
+    "postNotFound": "Article non trouvé",
+    "backToBlog": "Retour au blog",
+    "backToTop": "Retour en haut",
+    "share": "Partager",
+    "authorBio": "Développeur full stack passionné par les technologies web modernes. J'aime partager mes connaissances et découvertes à travers ce blog.",
+    "relatedPosts": "Articles similaires",
+    "newsletter": {
+      "title": "Restez informé",
+      "description": "Abonnez-vous à ma newsletter pour recevoir les derniers articles et actualités.",
+      "placeholder": "Votre email",
+      "subscribe": "S'abonner"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Discutons de votre projet et voyons comment je peux vous aider",
+    "letsTalk": "Parlons de votre projet",
+    "followMe": "Suivez-moi",
+    "availability": {
+      "title": "Disponible pour de nouveaux projets",
+      "description": "Je suis actuellement disponible pour des missions freelance"
+    },
+    "form": {
+      "name": "Nom complet",
+      "email": "Adresse email",
+      "subject": "Sujet",
+      "message": "Message",
+      "send": "Envoyer le message",
+      "sending": "Envoi en cours..."
+    },
+    "successMessage": "Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.",
+    "errorMessage": "Une erreur est survenue. Veuillez réessayer ou me contacter directement par email."
+  },
+  "404": {
+    "title": "Page non trouvée",
+    "description": "Désolé, la page que vous recherchez n'existe pas ou a été déplacée.",
+    "backHome": "Retour à l'accueil",
+    "goBack": "Retour en arrière",
+    "quickLinks": "Liens rapides"
+  },
+  "common": {
+    "lang": "fr",
+    "backToProjects": "Retour aux projets",
+    "loading": "Chargement..."
+  },
+ 
+  "training": {
+    "title": "Formations Dispensées",
+    "subtitle": "Formations professionnelles en développement et technologies",
+    "hero": {
+      "title": "Formations Expertes",
+      "subtitle": " Je transmets mon expertise à travers des formations pratiques et adaptées",
+      "trainings": "formations",
+      "expertTrainer": "Formateur Expert",
+      "practicalApproach": "Approche Pratique"
+    },
+    "filters": {
+      "all": "Toutes",
+      "allLevels": "Tous niveaux",
+      "allFormats": "Tous formats",
+      "category": "Catégorie",
+      "level": "Niveau",
+      "format": "Format"
+    },
+    "category": {
+      "web": "Développement Web",
+      "mobile": "Mobile",
+      "backend": "Backend",
+      "cloud": "Cloud",
+      "agile": "Agile",
+      "devops": "DevOps"
+    },
+    "level": {
+      "beginner": "Débutant",
+      "intermediate": "Intermédiaire",
+      "advanced": "Avancé"
+    },
+    "format": {
+      "online": "En ligne",
+      "in-person": "Présentiel",
+      "hybrid": "Hybride"
+    },
+    "featured": "Populaire",
+    "keyObjectives": "Objectifs principaux",
+    "nextSession": "Prochaine session",
+    "contact": "Me contacter",
+    "details": "Détails",
+    "noTrainings": "Aucune formation trouvée",
+    "noTrainingsDescription": "Aucune formation ne correspond à vos critères de filtrage",
+    "cta": {
+      "title": "Intéressé par une formation ?",
+      "description": "Contactez-moi pour discuter de vos besoins en formation ou demander le programme détaillé",
+      "contact": "Contactez-moi",
+      "brochure": "Télécharger la brochure"
+    },
+    "notFound": "Formation non trouvée",
+    "detail": {
+      "format": "Format",
+      "duration": "Durée",
+      "level": "Niveau",
+      "price": "Prix",
+      "students": "étudiants",
+      "rating": "évaluation",
+      "contact": "Me contacter",
+      "brochure": "Brochure PDF",
+      "objectives": "Objectifs d'apprentissage",
+      "program": "Programme de formation",
+      "module": "Module",
+      "technologies": "Technologies utilisées",
+      "summary": "Résumé de la formation",
+      "category": "Catégorie",
+      "trainer": "Formateur",
+      "seniorTrainer": "Formateur Senior",
+      "experience": "6+ ans d'expérience",
+      "practicalApproach": "Approche pratique",
+      "industryExpert": "Expert du secteur",
+      "testimonials": "Témoignages"
+    }
+  }
+
+  
+
+
+}

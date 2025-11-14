@@ -1,0 +1,69 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+    line-height: 1.5;
+    font-weight: 400;
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    background-color: theme('colors.tertiary');
+    color: theme('colors.secondary');
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-family: theme('fontFamily.title');
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: theme('colors.primary.dark');
+  }
+
+  h2 {
+    font-family: theme('fontFamily.title');
+    font-size: 2rem;
+    font-weight: 600;
+    color: theme('colors.secondary');
+  }
+
+  h3 {
+    font-family: theme('fontFamily.title');
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: theme('colors.secondary');
+  }
+
+  a {
+    font-weight: 500;
+    color: theme('colors.primary.DEFAULT');
+    text-decoration: none;
+    transition: color 0.25s;
+  }
+
+  a:hover {
+    color: theme('colors.primary.dark');
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-tertiary px-6 py-3 rounded-custom font-medium transition-all duration-250 shadow-custom hover:bg-primary-dark focus:outline-none focus:ring-4 focus:ring-primary-light;
+  }
+
+  .section-padding {
+    @apply py-20 px-5 md:py-32 md:px-8;
+  }
+
+  .section-light {
+    @apply bg-tertiary;
+  }
+
+  .section-primary-light {
+    @apply bg-primary-light;
+  }
+}

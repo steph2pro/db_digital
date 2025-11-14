@@ -1,0 +1,320 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "web-projects": "Web Projects",
+    "mobile-projects": "Mobile Projects",
+    "backend-projects": "Backend Projects",
+    "fullstack-projects": "Fullstack Projects",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "trainings": "Trainings"
+  },
+  
+  "about": {
+    "tools":"tools",
+    "title": "About Me",
+    "subtitle": "Passionate developer creating innovative digital solutions",
+    "whoAmI": "Who am I?",
+    "introduction1": "I am a passionate full stack developer dedicated to creating modern and performant web and mobile applications.",
+    "introduction2": "With over 5 years of experience, I have worked on various projects ranging from showcase websites to complex SaaS applications.",
+    "introduction3": "I am constantly keeping up with new technologies and best practices to deliver quality solutions.",
+    "skills": "Technical Skills",
+    "experience": "Professional Journey",
+    "education": "Education",
+    "projectsCompleted": "Projects completed",
+    "yearsExperience": "Years of experience",
+    "technologies": "Technologies",
+    "happyClients": "Happy clients",
+    "cta": {
+      "title": "Let's work together",
+      "description": "Have a project in mind? Let's discuss how I can help you bring it to life.",
+      "contact": "Contact Me",
+      "downloadCV": "Download my CV"
+    }
+  },
+  "home": {
+    "greeting": "Hi,",
+    "im": "I'm",
+    "name": "Stéphane",
+    "role": "Full Stack Web and Mobile Developer",
+    "contact": "Contact",
+    "description": "Passionate Full Stack Developer dedicated to creating modern, performant, and accessible web and mobile applications.",
+    "stats": {
+      "projects": "Projects completed",
+      "experience": "Years of experience",
+      "technologies": "Technologies mastered",
+      "clients": "Happy clients"
+    },
+    "services": {
+      "title": "My Services",
+      "subtitle": "Complete solutions for your digital projects",
+      "web": {
+        "title": "Web Development",
+        "description": "Modern and responsive web applications with the latest technologies"
+      },
+      "mobile": {
+        "title": "Mobile Applications",
+        "description": "Performant cross-platform apps for iOS and Android"
+      },
+      "backend": {
+        "title": "Backend & API",
+        "description": "Robust and secure architectures for your data"
+      },
+      "training": {
+        "title": "Training and Teaching",
+        "description": "Training learners in web and mobile development, and delivering courses in universities."
+      }
+
+    },
+    "featuredProjects": {
+      "title": "Featured Projects",
+      "subtitle": "Discover a selection of my most significant achievements",
+      "viewAll": "View all projects"
+    },
+    "skills": {
+      "title": "Technical Skills",
+      "subtitle": "Technologies and tools I use daily",
+      "viewAll": "View all skills"
+    },
+    "cta": {
+      "title": "Ready to start your project?",
+      "description": "Let's work together to turn your ideas into exceptional digital solutions",
+      "getInTouch": "Get In Touch",
+      "downloadCV": "Download my CV"
+    },
+    "viewWork": "View My Work",
+    "downloadCV": "Download CV"
+  },
+   "footer": {
+    "description": "I am a Full Stack Developer passionate about building web and mobile applications with clean, modern designs.",
+    "quickLinks": "Quick Links",
+    "projects": "Projects",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  },
+  "project": {
+    "filters": {
+      "all": "All"
+    },
+    "sort": {
+      "newest": "Newest",
+      "oldest": "Oldest",
+      "name": "By name"
+    },
+
+    "private": "Private",
+    "privateProject": "Proprietary project",
+    "visibility": "Visibility",
+    "noFilteredProjects": "No {{status}} projects found",
+    "showAllProjects": "Show all projects",
+    "status": {
+      "completed": "Completed",
+      "in-progress": "In Progress",
+      "planned": "Planned"
+    },
+    "category": {
+      "web": "Web",
+      "mobile": "Mobile",
+      "backend": "Backend",
+      "fullstack": "Full Stack"
+    },
+    "technologies": "Technologies Used",
+    "features": "Features",
+    "challenges": "Challenges Faced",
+    "solutions": "Solutions Provided",
+    "testimonials": "Testimonials",
+    "liveDemo": "View Project",
+    "viewDetails": "View Details",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "client": "Client",
+    "teamSize": "Team",
+    "people": "people",
+    "relatedProjects": "Related Projects",
+    "notFound": "Project not found",
+    "featured": "Featured",
+    "projectInfo": "Project Information"
+  },
+  "projects": {
+    "web": {
+      "title": "Web Projects",
+      "description": "Discover my achievements in frontend and fullstack web development"
+    },
+    "mobile": {
+      "title": "Mobile Projects",
+      "description": "Cross-platform and native mobile applications"
+    },
+    "backend": {
+      "title": "Backend Projects",
+      "description": "APIs, microservices and server architectures",
+      "technologies": "Mastered Backend Technologies"
+    },
+
+    "fullstack": {
+      "title": "Fullstack Projects",
+      "description": "Complete applications integrating frontend and backend with modern and scalable architectures",
+      "whatIsFullstack": "What is Fullstack Development?",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "stats": {
+        "laravel": "Laravel Projects",
+        "nodejs": "Node.js Projects",
+        "adonisjs": "AdonisJS Projects"
+      }
+    },
+    "filters": {
+      "all": "All",
+      "featured": "Featured",
+      "search": "Search projects..."
+    },
+    "sort": {
+      "newest": "Newest",
+      "oldest": "Oldest",
+      "name": "By Name"
+    },
+    "stats": {
+      "total": "Total",
+      "completed": "Completed"
+    },
+    "noProjects": "No projects found",
+    "status": "status",
+    "category": "category"
+
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Articles about web development, best practices and new technologies",
+    "featured": "Featured",
+    "minRead": "min read",
+    "readMore": "Read More",
+    "searchPlaceholder": "Search articles...",
+    "categories": {
+      "all": "All"
+    },
+    "noPosts": "No articles found",
+    "postNotFound": "Article not found",
+    "backToBlog": "Back to blog",
+    "backToTop": "Back to top",
+    "share": "Share",
+    "authorBio": "Full stack developer passionate about modern web technologies. I enjoy sharing my knowledge and discoveries through this blog.",
+    "relatedPosts": "Related Articles",
+    "newsletter": {
+      "title": "Stay Updated",
+      "description": "Subscribe to my newsletter to receive the latest articles and news.",
+      "placeholder": "Your email",
+      "subscribe": "Subscribe"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Let's discuss your project and see how I can help you",
+    "letsTalk": "Let's Talk About Your Project",
+    "followMe": "Follow Me",
+    "availability": {
+      "title": "Available for new projects",
+      "description": "I'm currently available for freelance missions"
+    },
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending..."
+    },
+    "successMessage": "Message sent successfully! I'll get back to you as soon as possible.",
+    "errorMessage": "An error occurred. Please try again or contact me directly by email."
+  },
+  "404": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for doesn't exist or has been moved.",
+    "backHome": "Back to Home",
+    "goBack": "Go Back",
+    "quickLinks": "Quick Links"
+  },
+  "common": {
+    "lang": "en",
+    "backToProjects": "Back to Projects",
+    "loading": "Loading..."
+  },
+  
+  "training": {
+    "title": "Training Courses",
+    "subtitle": "Professional training in development and technologies",
+    "hero": {
+      "title": "Expert Training",
+      "subtitle": "I share my expertise through practical and tailored training sessions",
+      "trainings": "trainings",
+      "expertTrainer": "Expert Trainer",
+      "practicalApproach": "Practical Approach"
+    },
+    "filters": {
+      "all": "All",
+      "allLevels": "All Levels",
+      "allFormats": "All Formats",
+      "category": "Category",
+      "level": "Level",
+      "format": "Format"
+    },
+    "category": {
+      "web": "Web Development",
+      "mobile": "Mobile",
+      "backend": "Backend",
+      "cloud": "Cloud",
+      "agile": "Agile",
+      "devops": "DevOps"
+    },
+    "level": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "format": {
+      "online": "Online",
+      "in-person": "In-person",
+      "hybrid": "Hybrid"
+    },
+    "featured": "Popular",
+    "keyObjectives": "Key Objectives",
+    "nextSession": "Next session",
+    "contact": "Contact Me",
+    "details": "Details",
+    "noTrainings": "No trainings found",
+    "noTrainingsDescription": "No trainings match your filtering criteria",
+    "cta": {
+      "title": "Interested in training?",
+      "description": "Contact me to discuss your training needs or request the detailed program",
+      "contact": "Contact Me",
+      "brochure": "Download Brochure"
+    },
+     "notFound": "Training not found",
+    "detail": {
+      "format": "Format",
+      "duration": "Duration",
+      "level": "Level",
+      "price": "Price",
+      "students": "students",
+      "rating": "rating",
+      "contact": "Contact Me",
+      "brochure": "PDF Brochure",
+      "objectives": "Learning Objectives",
+      "program": "Training Program",
+      "module": "Module",
+      "technologies": "Technologies Used",
+      "summary": "Training Summary",
+      "category": "Category",
+      "trainer": "Trainer",
+      "seniorTrainer": "Senior Trainer",
+      "experience": "6+ years experience",
+      "practicalApproach": "Practical approach",
+      "industryExpert": "Industry expert",
+      "testimonials": "Testimonials"
+    }
+  
+  }
+
+}

@@ -18,6 +18,8 @@ import { Contact } from './pages/Contact';
 import { FullstackProjects } from './pages/FullstackProjets';
 import { Trainings } from './pages/Trainings';
 import { TrainingDetail } from './pages/TrainingDetail';
+import WhatsAppFAB from './components/layout/WhatsAppFAB';
+import ScrollToTop from './components/layout/ScrollToTop';
 
 function App() {
   return (
@@ -57,6 +59,8 @@ function App() {
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>
+
+      <WhatsAppFAB />
             <Footer />
           </div>
         </Router>

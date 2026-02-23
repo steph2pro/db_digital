@@ -37,7 +37,7 @@ export const Header: React.FC = () => {
               />
             </div>
             <span className="text-xl sm:text-2xl font-bold text-primary-dark font-title">
-              Stéphane
+              DB Digital
             </span>
           </Link>
 
@@ -58,7 +58,7 @@ export const Header: React.FC = () => {
                     >
                       <i className={`${item.icon} text-lg`}></i>
                       <span className="font-medium">
-                        {t(`nav.${item.id}` as any)}
+                        {t(`navigation.${item.id}` as any)}
                       </span>
                       <i className="bx bx-chevron-down text-sm"></i>
                     </button>
@@ -76,7 +76,7 @@ export const Header: React.FC = () => {
                           } first:rounded-t-lg last:rounded-b-lg`}
                         >
                           <i className={`${subItem.icon} text-lg`}></i>
-                          <span>{t(`nav.${subItem.id}` as any)}</span>
+                          <span>{t(`navigation.${subItem.id}` as any)}</span>
                         </Link>
                       ))}
                     </div>
@@ -92,7 +92,7 @@ export const Header: React.FC = () => {
                   >
                     <i className={`${item.icon} text-lg`}></i>
                     <span className="font-medium">
-                      {t(`nav.${item.id}` as any)}
+                      {t(`navigation.${item.id}` as any)}
                     </span>
                   </Link>
                 )}
@@ -161,7 +161,7 @@ export const Header: React.FC = () => {
                         <div className="flex items-center space-x-2">
                           <i className={`${item.icon} text-lg`}></i>
                           <span className="font-medium">
-                            {t(`nav.${item.id}` as any)}
+                            {t(`navigation.${item.id}` as any)}
                           </span>
                         </div>
                         <i
@@ -186,7 +186,7 @@ export const Header: React.FC = () => {
                               }`}
                             >
                               <i className={`${subItem.icon}`}></i>
-                              <span>{t(`nav.${subItem.id}` as any)}</span>
+                              <span>{t(`navigation.${subItem.id}` as any)}</span>
                             </Link>
                           ))}
                         </div>
@@ -204,7 +204,7 @@ export const Header: React.FC = () => {
                     >
                       <i className={`${item.icon} text-lg`}></i>
                       <span className="font-medium">
-                        {t(`nav.${item.id}` as any)}
+                        {t(`navigation.${item.id}` as any)}
                       </span>
                     </Link>
                   )}

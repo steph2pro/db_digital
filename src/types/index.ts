@@ -84,10 +84,7 @@ export interface Skill {
 export interface NavigationItem {
   id: string;
   path: string;
-  label: {
-    fr: string;
-    en: string;
-  };
+  label: string;
   icon: string;
   type: 'internal' | 'external';
   submenu?: NavigationItem[];

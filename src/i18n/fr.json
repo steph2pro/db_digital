@@ -1,3 +1,4 @@
+
 {
   "nav": {
     "home": "Accueil",
@@ -5,316 +6,586 @@
     "web-projects": "Projets Web",
     "mobile-projects": "Projets Mobile",
     "backend-projects": "Projets Backend",
-    "fullstack-projects": "Projets fullstack",
+    "fullstack-projects": "Projets Fullstack",
     "blog": "Blog",
     "about": "À Propos",
     "contact": "Contact",
     "trainings": "Formations"
   },
-  "about": {
-    "tools":"outils",
-    "title": "À Propos de Moi",
-    "subtitle": "Développeur passionné créant des solutions digitales innovantes",
-    "whoAmI": "Qui suis-je ?",
-    "introduction1": "Je suis un développeur full stack passionné par la création d'applications web et mobiles modernes et performantes.",
-    "introduction2": "Avec plus de 5 ans d'expérience, j'ai travaillé sur divers projets allant des sites vitrine aux applications SaaS complexes.",
-    "introduction3": "Je suis constamment à l'affût des nouvelles technologies et des meilleures pratiques pour offrir des solutions de qualité.",
-    "skills": "Compétences Techniques",
-    "experience": "Parcours Professionnel",
-    "education": "Formation",
-    "projectsCompleted": "Projets réalisés",
-    "yearsExperience": "Années d'expérience",
-    "technologies": "Technologies",
-    "happyClients": "Clients satisfaits",
-    "cta": {
-      "title": "Travaillons ensemble",
-      "description": "Vous avez un projet en tête ? Discutons de la façon dont je peux vous aider à le concrétiser.",
-      "contact": "Me Contacter",
-      "downloadCV": "Télécharger mon CV"
-    }
-  },
+  
   "home": {
-    "greeting": "Salut,",
-    "im": "Je Suis",
-    "name": "Stéphane",
-    "role": "Développeur Full Stack Web et Mobile",
-    "contact": "Contact",
-    "viewWork": "Voir mes travaux",
-    "description": "Développeur Full Stack passionné par la création d'applications web et mobiles modernes, performantes et accessibles.",
-    "stats": {
-      "projects": "Projets réalisés",
-      "experience": "Années d'expérience",
-      "technologies": "Technologies maîtrisées",
-      "clients": "Clients satisfaits"
-    },
-    "services": {
-      "title": "Mes Services",
-      "subtitle": "Des solutions complètes pour vos projets digitaux",
-      "web": {
-        "title": "Développement Web",
-        "description": "Applications web modernes et responsive avec les dernières technologies"
+    "hero": {
+      "cta": {
+        "primary": "Démarrer un projet",
+        "secondary": "Voir nos réalisations"
       },
-      "mobile": {
-        "title": "Applications Mobile",
-        "description": "Apps cross-platform performantes pour iOS et Android"
+      "scroll": "Défiler pour découvrir",
+      "slider": {
+        "innovation": {
+          "eyebrow": "Innovation Digitale",
+          "title": {
+            "part1": "L'innovation",
+            "highlight": "au service",
+            "part2": "de votre business"
+          },
+          "description": "Des solutions digitales innovantes qui transforment vos idées en opportunités de croissance."
+        },
+        "performance": {
+          "eyebrow": "Performance Optimale",
+          "title": {
+            "part1": "La performance",
+            "highlight": "à chaque",
+            "part2": "étape"
+          },
+          "description": "Des applications rapides et optimisées qui offrent une expérience utilisateur exceptionnelle."
+        },
+        "expertise": {
+          "eyebrow": "Expertise Technique",
+          "title": {
+            "part1": "Notre expertise",
+            "highlight": "votre succès",
+            "part2": ""
+          },
+          "description": "Une équipe d'experts passionnés qui maîtrise les dernières technologies du marché."
+        }
       },
-      "backend": {
-        "title": "Backend & API",
-        "description": "Architectures robustes et sécurisées pour vos données"
+      "social": {
+        "followers": "abonnés",
+        "follow": {
+          "linkedin": "Suivez-nous sur LinkedIn",
+          "twitter": "Suivez-nous sur Twitter",
+          "github": "Suivez-nous sur GitHub",
+          "instagram": "Suivez-nous sur Instagram",
+          "youtube": "Abonnez-vous sur YouTube",
+          "tiktok": "Suivez-nous sur TikTok"
+        },
+        "followUs": "Suivez-nous",
+        "join": "Rejoignez +13.8k abonnés"
       },
-      "training": {
-        "title": "Formation et Enseignement",
-        "description": "Formation des apprenants en développement web et mobile, et dispensation de cours dans des universités."
+      "messages": {
+        "innovation": "Innovation",
+        "quality": "Qualité",
+        "support": "Support 24/7",
+        "deadline": "Délais tenus",
+        "satisfaction": "Satisfaction client"
       }
     },
-    "featuredProjects": {
-      "title": "Projets en Vedette",
-      "subtitle": "Découvrez une sélection de mes réalisations les plus significatives",
-      "viewAll": "Voir tous les projets"
-    },
-    "skills": {
-      "title": "Compétences Techniques",
-      "subtitle": "Technologies et outils que j'utilise au quotidien",
-      "viewAll": "Voir toutes les compétences"
-    },
-    "cta": {
-      "title": "Prêt à démarrer votre projet ?",
-      "description": "Travaillons ensemble pour concrétiser vos idées en solutions digitales exceptionnelles",
-      "getInTouch": "Me Contacter",
-      "downloadCV": "Télécharger mon CV"
-    },
-    "downloadCV": "Télécharger CV"
-  },
-  "footer": {
-    "description": "Je suis développeur Full Stack, passionné par la création d'applications web et mobiles avec des designs modernes et épurés.",
-    "quickLinks": "Liens rapides",
-    "projects": "Projets",
-    "contact": "Contact",
-    "rights": "Tous droits réservés.",
-    "privacy": "Politique de confidentialité",
-    "terms": "Conditions générales"
-  },
-  "project": {
     
-    "filters": {
-      "all": "Tous"
+    "ticker": {
+      "items": [
+        "Développement Web",
+        "Applications Mobile",
+        "Design UI/UX",
+        "Backend & APIs",
+        "SEO & Performance",
+        "Formation & Conseil",
+        "Cloud & DevOps",
+        "E-commerce"
+      ]
     },
-    "sort": {
-      "newest": "Plus récents",
-      "oldest": "Plus anciens",
-      "name": "Par nom"
+   
+  "services": {
+    "eyebrow": "Nos Expertises",
+    "title": "Des solutions qui font la différence",
+    "subtitle": "De l'idée au lancement, nous maîtrisons chaque étape pour vous livrer un produit qui génère de la valeur réelle.",
+    "web": {
+      "title": "Développement Web",
+      "desc": "Sites vitrine, e-commerce, SaaS — des applications performantes, accessibles et optimisées pour convertir vos visiteurs en clients."
     },
-    "noFilteredProjects": "Aucun projet {{status}} trouvé",
-    "showAllProjects": "Voir tous les projets",
-   "private": "Privé",
-    "privateProject": "Projet propriétaire",
-    "visibility": "Visibilité",
+    "mobile": {
+      "title": "Applications Mobiles",
+      "desc": "Apps cross-platform fluides et élégantes. Développées avec Flutter pour une expérience native sur iOS et Android, publication incluse."
+    },
+    "backend": {
+      "title": "Backend & APIs",
+      "desc": "Architecture robuste, APIs RESTful & GraphQL, systèmes scalables. Des solutions backend conçues pour durer et grandir avec votre business."
+    },
+    "design": {
+      "title": "Design UI/UX",
+      "desc": "Interfaces belles et intuitives conçues pour convertir. Maquettes interactives validées avant la moindre ligne de code."
+    },
+    "seo": {
+      "title": "SEO & Performance",
+      "desc": "Optimisation pour les moteurs de recherche, audits Lighthouse, stratégie de contenu. Soyez visible là où vos clients vous cherchent."
+    },
+    "training": {
+      "title": "Formation & Conseil",
+      "desc": "Ateliers techniques, audit de code et conseil en architecture. Montez en compétences avec notre équipe expérimentée."
+    },
+    "features": {
+      "performance": "Performance",
+      "seo": "SEO",
+      "responsive": "Responsive",
+      "pwa": "PWA",
+      "cross-platform": "Cross-platform",
+      "ui native": "UI native",
+      "store ready": "Store ready",
+      "offline": "Offline",
+      "scalable": "Scalable",
+      "sécurisé": "Sécurisé",
+      "microservices": "Microservices",
+      "cloud": "Cloud",
+      "wireframes": "Wireframes",
+      "prototypes": "Prototypes",
+      "design system": "Design System",
+      "ux research": "UX Research",
+      "seo technique": "SEO technique",
+      "analytics": "Analytics",
+      "strategy": "Strategy",
+      "workshops": "Workshops",
+      "audit": "Audit",
+      "mentoring": "Mentoring",
+      "best practices": "Best practices"
+    },
+    "stats": {
+      "projects": "projets",
+      "satisfaction": "satisfaction",
+      "uptime": "uptime",
+      "learners": "apprenants",
+      "improvement": "amélioration"
+    }
+  },
+    
+    "stats": {
+      "eyebrow": "En chiffres",
+      "title": "Des résultats qui parlent d'eux-mêmes",
+      "subtitle": "Chaque chiffre représente la confiance de nos clients et notre engagement à dépasser leurs attentes.",
+      "items": [
+        "Projets livrés",
+        "Clients satisfaits",
+        "Années d'expérience",
+        "Taux de satisfaction"
+      ],
+      "award": "Meilleure agence digitale",
+      "awardLocation": "Cameroun Tech Awards 2024",
+      "reviews": "avis",
+      "testimonial": "DB Digital Agency a transformé notre vision en produit exceptionnel, livré avant le délai prévu.",
+      "testimonialAuthor": "CEO, StartupCM",
+      "clients": "clients nous font déjà confiance"
+    },
+    
+    "vision": {
+      "eyebrow": "Notre Vision",
+      "title": "Bâtir l'Afrique digitale de demain",
+      "desc": "Nous croyons que chaque entreprise africaine mérite des outils numériques de classe mondiale. Notre mission : démocratiser l'excellence technologique.",
+      "values": [
+        {
+          "title": "Rapidité d'exécution",
+          "desc": "Sprints agiles, deadlines respectées. Nous livrons vite sans sacrifier la qualité."
+        },
+        {
+          "title": "Excellence technique",
+          "desc": "Code propre, architecture solide, technologies modernes — nous ne faisons pas de compromis."
+        },
+        {
+          "title": "Partenariat durable",
+          "desc": "Nous ne sommes pas un prestataire, nous sommes votre partenaire tech de confiance."
+        },
+        {
+          "title": "ROI mesurable",
+          "desc": "Chaque décision technique est prise en regard de son impact sur vos revenus."
+        }
+      ]
+    },
+    
+    "partners": {
+      "eyebrow": "Technologies & Partenaires",
+      "title": "Ils nous font confiance"
+    },
+    
+    "why": {
+      "eyebrow": "Pourquoi nous choisir",
+      "title": "Ce qui nous rend uniques",
+      "features": [
+        {
+          "title": "Code propriétaire & sécurisé",
+          "desc": "Votre code vous appartient à 100%. Aucune dépendance cachée, documentation complète incluse."
+        },
+        {
+          "title": "Délais garantis",
+          "desc": "Méthodologie agile avec jalons clairs. Nous tenons nos engagements, toujours."
+        },
+        {
+          "title": "Support 3 mois post-livraison",
+          "desc": "Trois mois de support technique gratuit inclus après chaque livraison."
+        },
+        {
+          "title": "Rapport qualité/prix imbattable",
+          "desc": "Qualité internationale aux tarifs du marché local. Le meilleur des deux mondes."
+        },
+        {
+          "title": "Expertise locale, vision globale",
+          "desc": "Nous comprenons les réalités africaines et les standards internationaux."
+        }
+      ],
+      "performance": {
+        "title": "Nos taux de performance",
+        "items": [
+          "Satisfaction client",
+          "Livrés dans les délais",
+          "Clients récurrents",
+          "Performance Lighthouse"
+        ]
+      }
+    },
+    
+    "process": {
+      "eyebrow": "Notre Processus",
+      "title": "5 étapes vers votre succès digital",
+      "steps": [
+        {
+          "title": "Découverte",
+          "desc": "Call gratuit 30 min pour comprendre vos besoins, objectifs et contraintes."
+        },
+        {
+          "title": "Stratégie",
+          "desc": "Proposition technique détaillée, roadmap et budget en 48h."
+        },
+        {
+          "title": "Design",
+          "desc": "Maquettes Figma interactives validées avant la moindre ligne de code."
+        },
+        {
+          "title": "Développement",
+          "desc": "Sprints agiles de 2 semaines avec démos régulières et ajustements."
+        },
+        {
+          "title": "Lancement",
+          "desc": "Déploiement, formation équipe et support 3 mois inclus."
+        }
+      ]
+    },
+    
+    "cta": {
+      "badge": "Réponse garantie sous 24h",
+      "title": {
+        "part1": "Prêt à transformer",
+        "part2": "votre vision en réalité ?"
+      },
+      "desc": "Rejoignez 30+ entreprises qui ont choisi DB Digital Agency. Discutons de votre projet.",
+      "email": "Nous contacter",
+      "whatsapp": "WhatsApp"
+    }
+  },
+
+  "footer": {
+    "brand": {
+      "title": "DB DIGITAL AGENCY",
+      "slogan": "Agence digitale de classe mondiale, des résultats exceptionnels"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Abonnez-vous à notre newsletter pour rester informé des dernières tendances, astuces et actualités sur les solutions digitales. Ne manquez pas nos offres exclusives et ressources gratuites pour optimiser votre présence en ligne.",
+      "placeholder": "Email",
+      "subscribe": "S'abonner",
+      "success": "Inscription réussie à la newsletter !"
+    },
+    "globalPresence": {
+      "title": "Présence Mondiale",
+      "africa": "Afrique",
+      "europe": "Europe",
+      "asia": "Asie",
+      "america": "Amérique",
+      "oceania": "Océanie"
+    },
+    "services": {
+      "title": "Nos Services",
+      "web": "Développement Web",
+      "hosting": "Hébergement Web",
+      "product": "Gestion de Produit",
+      "marketing": "Marketing",
+      "design": "Design Graphique",
+      "legal": "Juridique"
+    },
+    "locations": {
+      "title": "Nos Adresses",
+      "yaounde": {
+        "name": "Yaoundé",
+        "address": "Nkoabang – Entrée Carrière",
+        "phone1": "640 46 51 82",
+        "phone2": "652 79 91 81"
+      },
+      "douala": {
+        "name": "Douala",
+        "address": "Cité des palmiers",
+        "phone1": "657 128 712",
+        "phone2": "673 071 017"
+      },
+      "bafoussam": {
+        "name": "Bafoussam",
+        "address": "Kamkop face à la station tradex bâtiment de la pharmacie djoupé",
+        "phone1": "640 101 974",
+        "phone2": "681 748 229"
+      }
+    },
+    "legal": {
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation",
+      "contact": "Contact"
+    },
+    "hours": {
+      "label": "Horaires d'ouverture",
+      "value": "Lundi - Dimanche: 8h00 - 20h00"
+    },
+    "project": {
+      "start": "Démarrer un projet"
+    },
+    "copyright": {
+      "rights": "Tous droits réservés",
+      "design": "Conçu par MDS support"
+    },
+    "backToTop": "Retour en haut"
+  }
+,
+  
+  "projects": {
+    "featured": "Projet à la une",
     "status": {
       "completed": "Terminé",
       "in-progress": "En cours",
       "planned": "Planifié"
     },
-    "category": {
+    "private": "Privé",
+    "viewDetails": "Voir les détails",
+    "viewAll": "Voir tous les projets",
+    "filter": {
+      "all": "Tous",
       "web": "Web",
       "mobile": "Mobile",
       "backend": "Backend",
-      "fullstack": "Full Stack"
-    },
-    "technologies": "Technologies utilisées",
-    "features": "Fonctionnalités",
-    "challenges": "Défis rencontrés",
-    "solutions": "Solutions apportées",
-    "testimonials": "Témoignages",
-    "liveDemo": "Voir le projet",
-    "viewDetails": "Voir les détails",
-    "startDate": "Date de début",
-    "endDate": "Date de fin",
-    "client": "Client",
-    "teamSize": "Équipe",
-    "people": "personnes",
-    "relatedProjects": "Projets similaires",
-    "notFound": "Projet non trouvé",
-    "featured": "En vedette",
-    "projectInfo": "Informations du projet"
+      "fullstack": "Fullstack"
+    }
   },
-  "projects": {
-    "web": {
-      "title": "Projets Web",
-      "description": "Découvrez mes réalisations en développement web frontend et fullstack"
-    },
-    "mobile": {
-      "title": "Projets Mobile",
-      "description": "Applications mobiles cross-platform et natives"
-    },
-    "backend": {
-      "title": "Projets Backend",
-      "description": "APIs, microservices et architectures serveur",
-      "technologies": "Technologies Backend Maîtrisées"
-    },
-
-    "fullstack": {
-      "title": "Projets Fullstack",
-      "description": "Applications complètes intégrant frontend et backend avec des architectures modernes et scalables",
-      "whatIsFullstack": "Qu'est-ce que le Développement Fullstack ?",
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "stats": {
-        "laravel": "Projets Laravel",
-        "nodejs": "Projets Node.js",
-        "adonisjs": "Projets AdonisJS"
+  
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "retry": "Réessayer",
+    "learnMore": "En savoir plus",
+    "close": "Fermer",
+    "menu": "Menu",
+    "theme": {
+      "light": "Mode clair",
+      "dark": "Mode sombre",
+      "toggle": "Changer de thème"
+    }
+  },
+  
+  "testimonials": {
+    "eyebrow": "Ils nous font confiance",
+    "title": "Ce que disent nos clients",
+    "subtitle": "Découvrez l'expérience de ceux qui ont choisi de collaborer avec nous et ont transformé leurs idées en succès.",
+    "avatarStyle": {
+      "real": "Photos réelles",
+      "initials": "Initiales",
+      "illustration": "Illustrations",
+      "art": "Portraits artistiques",
+      "switch": "Style d'avatar",
+      "info": {
+        "real": "Photos générées aléatoirement",
+        "initials": "Avatars avec initiales",
+        "illustration": "Illustrations stylisées",
+        "art": "Portraits artistiques Unsplash"
       }
     },
-    "filters": {
-      "all": "Tous",
-      "featured": "En vedette",
-      "search": "Rechercher un projet..."
+    "rating": {
+      "aria": "Note : {{rating}} étoiles sur 5"
     },
-    "sort": {
-      "newest": "Plus récent",
-      "oldest": "Plus ancien",
-      "name": "Par nom"
+    "badge": {
+      "satisfied": "100% SATISFAIT"
+    },
+    "navigation": {
+      "previous": "Témoignage précédent",
+      "next": "Témoignage suivant",
+      "goTo": "Voir le témoignage {{index}}"
+    },
+    "items": [
+      {
+        "id": 1,
+        "name": "Sophie Martin",
+        "position": "Directrice Marketing, TechCorp",
+        "content": "Une équipe exceptionnelle qui a su comprendre nos besoins et livrer une solution parfaitement adaptée. Leur expertise technique et leur réactivité ont fait toute la différence.",
+        "project": "Site e-commerce",
+        "date": "2024"
+      },
+      {
+        "id": 2,
+        "name": "Mr Patrick Erick MOUAFFO",
+        "position": "Fondateur, StartUp Innov",
+        "content": "Grâce à eux, notre application mobile a été développée en un temps record sans aucun compromis sur la qualité. Une collaboration agile et transparente.",
+        "project": "App Mobile",
+        "date": "2024"
+      },
+      {
+        "id": 3,
+        "name": "Marie Laurent",
+        "position": "CTO, FinTech Solutions",
+        "content": "Une architecture backend robuste et scalable. Notre API tient parfaitement la charge depuis le lancement. Un vrai professionnalisme.",
+        "project": "API Backend",
+        "date": "2023"
+      },
+      {
+        "id": 4,
+        "name": "Pierre Moreau",
+        "position": "CEO, Design Studio",
+        "content": "Le design thinking appliqué au développement : une approche qui a permis de créer une interface utilisateur vraiment intuitive et engageante.",
+        "project": "Refonte UI/UX",
+        "date": "2024"
+      },
+      {
+        "id": 5,
+        "name": "Claire Bernard",
+        "position": "Responsable SEO, e-Commerce Plus",
+        "content": "Notre trafic organique a augmenté de 200% en 6 mois. Leur stratégie de contenu et leur optimisation technique ont dépassé nos attentes.",
+        "project": "Stratégie SEO",
+        "date": "2023"
+      },
+      {
+        "id": 6,
+        "name": "Alexandre Petit",
+        "position": "Lead Developer, Agency Web",
+        "content": "La formation sur mesure a transformé notre façon de coder. Notre équipe est plus efficace et nos applications plus performantes.",
+        "project": "Formation React",
+        "date": "2024"
+      }
+    ]
+  },
+  "team": {
+    "eyebrow": "L'Équipe",
+    "title": "Les talents derrière la réussite",
+    "subtitle": "Une équipe passionnée, des experts dans leur domaine, unis par la même vision : transformer vos idées en solutions exceptionnelles.",
+    "avatarStyle": {
+      "real": "Photos réelles",
+      "illustration": "Illustrations",
+      "switch": "Style d'avatar"
+    },
+    "members": {
+      "ceo": {
+        "name": "Mr Patrick Erick MOUAFFO",
+        "role": "CEO & Fondateur",
+        "bio": "20 ans d'expérience dans le développement et la direction technique. Ancien CTO de licorne tech, il fonde cette agence pour réinventer la relation client.",
+        "expertise": ["Stratégie", "Vision", "Innovation"],
+        "stats": {
+          "projets": "Projets",
+          "clients": "Clients",
+          "satisfaction": "Satisfaction"
+        }
+      },
+      "cto": {
+        "name": "Sarah Chen",
+        "role": "CTO",
+        "bio": "Experte en architecture scalable et cloud. Elle a dirigé le développement de plus de 50 applications à fort trafic.",
+        "expertise": ["Architecture", "Cloud", "DevOps"],
+        "stats": {
+          "projets": "Projets",
+          "uptime": "Disponibilité",
+          "pays": "Pays"
+        }
+      },
+      "lead-dev": {
+        "name": "Marc Dubois",
+        "role": "Lead Developer",
+        "bio": "Passionné par le code propre et les bonnes pratiques. Il forme et encadre l'équipe technique pour garantir la qualité.",
+        "expertise": ["React", "Node.js", "TypeScript"],
+        "stats": {
+          "projets": "Projets",
+          "années": "Années",
+          "librairies": "Librairies"
+        }
+      },
+      "lead-designer": {
+        "name": "Emma Laurent",
+        "role": "Lead Designer UI/UX",
+        "bio": "Designer primée, elle crée des interfaces qui allient esthétique et performance. Sa philosophie : le design doit servir l'utilisateur.",
+        "expertise": ["UI Design", "UX Research", "Design System"],
+        "stats": {
+          "projets": "Projets",
+          "prix": "Prix",
+          "users": "Utilisateurs"
+        }
+      },
+      "lead-mobile": {
+        "name": "Alex Rivera",
+        "role": "Lead Mobile Developer",
+        "bio": "Spécialiste du développement mobile cross-platform. Il a publié plus de 30 applications sur les stores.",
+        "expertise": ["Flutter", "iOS", "Android", "Firebase"],
+        "stats": {
+          "apps": "Apps",
+          "downloads": "Téléchargements",
+          "stores": "Stores"
+        }
+      },
+      "lead-seo": {
+        "name": "Julie Moreau",
+        "role": "Lead SEO & Content",
+        "bio": "Experte en référencement naturel et stratégie de contenu. Elle a aidé plus de 50 entreprises à multiplier leur trafic par 3.",
+        "expertise": ["SEO", "Stratégie", "Analytics", "Contenu"],
+        "stats": {
+          "trafic": "Trafic",
+          "clients": "Clients",
+          "mots": "Mots"
+        }
+      }
     },
     "stats": {
-      "total": "Total",
-      "completed": "Terminés"
+      "expertise": "Expertise",
+      "passion": "Passion",
+      "cohesion": "Cohésion",
+      "excellence": "Excellence",
+      "years": "{{count}} ans",
+      "experts": "{{count}} experts",
+      "awards": "{{count}}+ prix"
     },
-    "noProjects": "Aucun projet trouvé",
-    "category": "categorie",
-    "status": "status"
-    
-  },
-  "blog": {
-    "title": "Blog",
-    "description": "Articles sur le développement web, les bonnes pratiques et les nouvelles technologies",
-    "featured": "À la une",
-    "minRead": "min de lecture",
-    "readMore": "Lire la suite",
-    "searchPlaceholder": "Rechercher un article...",
-    "categories": {
-      "all": "Tous"
+    "social": {
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "github": "GitHub",
+      "behance": "Behance"
     },
-    "noPosts": "Aucun article trouvé",
-    "postNotFound": "Article non trouvé",
-    "backToBlog": "Retour au blog",
-    "backToTop": "Retour en haut",
-    "share": "Partager",
-    "authorBio": "Développeur full stack passionné par les technologies web modernes. J'aime partager mes connaissances et découvertes à travers ce blog.",
-    "relatedPosts": "Articles similaires",
-    "newsletter": {
-      "title": "Restez informé",
-      "description": "Abonnez-vous à ma newsletter pour recevoir les derniers articles et actualités.",
-      "placeholder": "Votre email",
-      "subscribe": "S'abonner"
+    "badges": {
+      "ceo": "CEO",
+      "expertise": "Expertise",
+      "selected": "Sélectionné",
+      "more": "+{{count}}"
+    },
+    "values": {
+      "expertise": "Expertise",
+      "passion": "Passion",
+      "cohesion": "Cohésion",
+      "excellence": "Excellence"
     }
   },
-  "contact": {
-    "title": "Contact",
-    "description": "Discutons de votre projet et voyons comment je peux vous aider",
-    "letsTalk": "Parlons de votre projet",
-    "followMe": "Suivez-moi",
-    "availability": {
-      "title": "Disponible pour de nouveaux projets",
-      "description": "Je suis actuellement disponible pour des missions freelance"
-    },
-    "form": {
-      "name": "Nom complet",
-      "email": "Adresse email",
-      "subject": "Sujet",
-      "message": "Message",
-      "send": "Envoyer le message",
-      "sending": "Envoi en cours..."
-    },
-    "successMessage": "Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.",
-    "errorMessage": "Une erreur est survenue. Veuillez réessayer ou me contacter directement par email."
-  },
-  "404": {
-    "title": "Page non trouvée",
-    "description": "Désolé, la page que vous recherchez n'existe pas ou a été déplacée.",
-    "backHome": "Retour à l'accueil",
-    "goBack": "Retour en arrière",
-    "quickLinks": "Liens rapides"
-  },
-  "common": {
-    "lang": "fr",
-    "backToProjects": "Retour aux projets",
-    "loading": "Chargement..."
-  },
- 
-  "training": {
-    "title": "Formations Dispensées",
-    "subtitle": "Formations professionnelles en développement et technologies",
-    "hero": {
-      "title": "Formations Expertes",
-      "subtitle": " Je transmets mon expertise à travers des formations pratiques et adaptées",
-      "trainings": "formations",
-      "expertTrainer": "Formateur Expert",
-      "practicalApproach": "Approche Pratique"
-    },
-    "filters": {
-      "all": "Toutes",
-      "allLevels": "Tous niveaux",
-      "allFormats": "Tous formats",
-      "category": "Catégorie",
-      "level": "Niveau",
-      "format": "Format"
-    },
-    "category": {
-      "web": "Développement Web",
-      "mobile": "Mobile",
-      "backend": "Backend",
-      "cloud": "Cloud",
-      "agile": "Agile",
-      "devops": "DevOps"
-    },
-    "level": {
-      "beginner": "Débutant",
-      "intermediate": "Intermédiaire",
-      "advanced": "Avancé"
-    },
-    "format": {
-      "online": "En ligne",
-      "in-person": "Présentiel",
-      "hybrid": "Hybride"
-    },
-    "featured": "Populaire",
-    "keyObjectives": "Objectifs principaux",
-    "nextSession": "Prochaine session",
-    "contact": "Me contacter",
-    "details": "Détails",
-    "noTrainings": "Aucune formation trouvée",
-    "noTrainingsDescription": "Aucune formation ne correspond à vos critères de filtrage",
-    "cta": {
-      "title": "Intéressé par une formation ?",
-      "description": "Contactez-moi pour discuter de vos besoins en formation ou demander le programme détaillé",
-      "contact": "Contactez-moi",
-      "brochure": "Télécharger la brochure"
-    },
-    "notFound": "Formation non trouvée",
-    "detail": {
-      "format": "Format",
-      "duration": "Durée",
-      "level": "Niveau",
-      "price": "Prix",
-      "students": "étudiants",
-      "rating": "évaluation",
-      "contact": "Me contacter",
-      "brochure": "Brochure PDF",
-      "objectives": "Objectifs d'apprentissage",
-      "program": "Programme de formation",
-      "module": "Module",
-      "technologies": "Technologies utilisées",
-      "summary": "Résumé de la formation",
-      "category": "Catégorie",
-      "trainer": "Formateur",
-      "seniorTrainer": "Formateur Senior",
-      "experience": "6+ ans d'expérience",
-      "practicalApproach": "Approche pratique",
-      "industryExpert": "Expert du secteur",
-      "testimonials": "Témoignages"
-    }
+
+  "navigation": {
+    "home": "Accueil",
+    "services": "Services",
+    "projects": "Réalisations",
+    "expertise": "Expertise",
+    "blog": "Blog",
+    "company": "Entreprise",
+    "contact": "Contact",
+    "web-development": "Développement Web",
+    "mobile-development": "Applications Mobiles",
+    "ui-ux-design": "Design UI/UX",
+    "seo-performance": "SEO & Performance",
+    "consulting": "Conseil & Audit",
+    "featured-projects": "Projets Phares",
+    "web-projects": "Sites Web",
+    "ecommerce-projects": "E-commerce",
+    "mobile-projects": "Applications Mobile",
+    "case-studies": "Études de Cas",
+    "technologies": "Technologies",
+    "methodology": "Méthodologie",
+    "quality-commitment": "Engagement Qualité",
+    "tech-articles": "Articles Techniques",
+    "industry-news": "Actualités",
+    "tutorials": "Tutoriels",
+    "about": "À Propos",
+    "team": "Équipe",
+    "careers": "Carrières",
+    "partners": "Partenaires",
+    "get-quote": "Demander un Devis",
+    "support": "Support Client",
+    "location": "Nous Trouver"
   }
-
-  
-
-
 }

@@ -1,3 +1,4 @@
+
 {
   "nav": {
     "home": "Home",
@@ -12,309 +13,608 @@
     "trainings": "Trainings"
   },
   
+  "home": {
+    "hero": {
+      "cta": {
+        "primary": "Start a project",
+        "secondary": "View our work"
+      },
+      "scroll": "Scroll to discover",
+      "slider": {
+        "innovation": {
+          "eyebrow": "Digital Innovation",
+          "title": {
+            "part1": "Innovation",
+            "highlight": "at the service",
+            "part2": "of your business"
+          },
+          "description": "Innovative digital solutions that transform your ideas into growth opportunities."
+        },
+        "performance": {
+          "eyebrow": "Optimal Performance",
+          "title": {
+            "part1": "Performance",
+            "highlight": "at every",
+            "part2": "stage"
+          },
+          "description": "Fast and optimized applications that deliver an exceptional user experience."
+        },
+        "expertise": {
+          "eyebrow": "Technical Expertise",
+          "title": {
+            "part1": "Our expertise,",
+            "highlight": "your success",
+            "part2": ""
+          },
+          "description": "A team of passionate experts mastering the latest market technologies."
+        }
+      },
+      "social": {
+        "followers": "followers",
+        "follow": {
+          "linkedin": "Follow us on LinkedIn",
+          "twitter": "Follow us on Twitter",
+          "github": "Follow us on GitHub",
+          "instagram": "Follow us on Instagram",
+          "youtube": "Subscribe on YouTube",
+          "tiktok": "Follow us on TikTok"
+        },
+        "followUs": "Follow us",
+        "join": "Join +13.8k followers"
+      },
+      "messages": {
+        "innovation": "Innovation",
+        "quality": "Quality",
+        "support": "24/7 Support",
+        "deadline": "On-time delivery",
+        "satisfaction": "Client satisfaction"
+      }
+    },
+
+    
+    "ticker": {
+      "items": [
+        "Web Development",
+        "Mobile Apps",
+        "UI/UX Design",
+        "Backend & APIs",
+        "SEO & Performance",
+        "Training & Consulting",
+        "Cloud & DevOps",
+        "E-commerce"
+      ]
+    },
+    
+  "services": {
+    "eyebrow": "Our Expertise",
+    "title": "Solutions that make a difference",
+    "subtitle": "From idea to launch, we master every step to deliver a product that generates real value.",
+    "web": {
+      "title": "Web Development",
+      "desc": "Showcase sites, e-commerce, SaaS — high-performance, accessible, and optimized applications to convert your visitors into customers."
+    },
+    "mobile": {
+      "title": "Mobile Applications",
+      "desc": "Smooth and elegant cross-platform apps. Developed with Flutter for a native experience on iOS and Android, including publication."
+    },
+    "backend": {
+      "title": "Backend & APIs",
+      "desc": "Robust architecture, RESTful & GraphQL APIs, scalable systems. Backend solutions designed to last and grow with your business."
+    },
+    "design": {
+      "title": "UI/UX Design",
+      "desc": "Beautiful and intuitive interfaces designed to convert. Interactive prototypes validated before a single line of code."
+    },
+    "seo": {
+      "title": "SEO & Performance",
+      "desc": "Search engine optimization, Lighthouse audits, content strategy. Be visible where your customers are looking for you."
+    },
+    "training": {
+      "title": "Training & Consulting",
+      "desc": "Technical workshops, code audit, and architecture consulting. Level up your skills with our experienced team."
+    },
+    "features": {
+      "performance": "Performance",
+      "seo": "SEO",
+      "responsive": "Responsive",
+      "pwa": "PWA",
+      "cross-platform": "Cross-platform",
+      "ui native": "Native UI",
+      "store ready": "Store Ready",
+      "offline": "Offline",
+      "scalable": "Scalable",
+      "sécurisé": "Secure",
+      "microservices": "Microservices",
+      "cloud": "Cloud",
+      "wireframes": "Wireframes",
+      "prototypes": "Prototypes",
+      "design system": "Design System",
+      "ux research": "UX Research",
+      "seo technique": "Technical SEO",
+      "analytics": "Analytics",
+      "strategy": "Strategy",
+      "workshops": "Workshops",
+      "audit": "Audit",
+      "mentoring": "Mentoring",
+      "best practices": "Best Practices"
+    },
+    "stats": {
+      "projects": "projects",
+      "satisfaction": "satisfaction",
+      "uptime": "uptime",
+      "learners": "learners",
+      "improvement": "improvement"
+    }
+  }
+,
+    
+    "stats": {
+      "eyebrow": "By the numbers",
+      "title": "Results that speak for themselves",
+      "subtitle": "Each number represents our clients' trust and our commitment to exceeding their expectations.",
+      "items": [
+        "Projects delivered",
+        "Happy clients",
+        "Years of experience",
+        "Satisfaction rate"
+      ],
+      "award": "Best Digital Agency",
+      "awardLocation": "Cameroon Tech Awards 2024",
+      "reviews": "reviews",
+      "testimonial": "DB Digital Agency transformed our vision into an exceptional product, delivered ahead of schedule.",
+      "testimonialAuthor": "CEO, StartupCM",
+      "clients": "clients already trust us"
+    },
+    
+    "vision": {
+      "eyebrow": "Our Vision",
+      "title": "Building the digital Africa of tomorrow",
+      "desc": "We believe every African business deserves world-class digital tools. Our mission: to democratize technological excellence.",
+      "values": [
+        {
+          "title": "Speed of execution",
+          "desc": "Agile sprints, respected deadlines. We deliver fast without sacrificing quality."
+        },
+        {
+          "title": "Technical excellence",
+          "desc": "Clean code, solid architecture, modern technologies — we make no compromises."
+        },
+        {
+          "title": "Sustainable partnership",
+          "desc": "We are not a vendor, we are your trusted tech partner."
+        },
+        {
+          "title": "Measurable ROI",
+          "desc": "Every technical decision is made with regard to its impact on your revenue."
+        }
+      ]
+    },
+    
+    "partners": {
+      "eyebrow": "Technologies & Partners",
+      "title": "Trusted by industry leaders"
+    },
+    
+    "why": {
+      "eyebrow": "Why choose us",
+      "title": "What makes us unique",
+      "features": [
+        {
+          "title": "Own & secure code",
+          "desc": "Your code is 100% yours. No hidden dependencies, complete documentation included."
+        },
+        {
+          "title": "Guaranteed deadlines",
+          "desc": "Agile methodology with clear milestones. We keep our commitments, always."
+        },
+        {
+          "title": "3-month post-launch support",
+          "desc": "Three months of free technical support included after each delivery."
+        },
+        {
+          "title": "Unbeatable value",
+          "desc": "International quality at local market rates. The best of both worlds."
+        },
+        {
+          "title": "Local expertise, global vision",
+          "desc": "We understand African realities and international standards."
+        }
+      ],
+      "performance": {
+        "title": "Our performance rates",
+        "items": [
+          "Client satisfaction",
+          "On-time delivery",
+          "Recurring clients",
+          "Lighthouse performance"
+        ]
+      }
+    },
+    
+    "process": {
+      "eyebrow": "Our Process",
+      "title": "5 steps to your digital success",
+      "steps": [
+        {
+          "title": "Discovery",
+          "desc": "Free 30-min call to understand your needs, goals, and constraints."
+        },
+        {
+          "title": "Strategy",
+          "desc": "Detailed technical proposal, roadmap and budget within 48h."
+        },
+        {
+          "title": "Design",
+          "desc": "Interactive Figma mockups validated before any code is written."
+        },
+        {
+          "title": "Development",
+          "desc": "2-week agile sprints with regular demos and adjustments."
+        },
+        {
+          "title": "Launch",
+          "desc": "Deployment, team training, and 3-month support included."
+        }
+      ]
+    },
+    
+    "cta": {
+      "badge": "24h response guaranteed",
+      "title": {
+        "part1": "Ready to turn",
+        "part2": "your vision into reality?"
+      },
+      "desc": "Join 30+ companies that have chosen DB Digital Agency. Let's discuss your project.",
+      "email": "Contact us",
+      "whatsapp": "WhatsApp"
+    }
+  },
+  
   "about": {
-    "tools":"tools",
-    "title": "About Me",
-    "subtitle": "Passionate developer creating innovative digital solutions",
-    "whoAmI": "Who am I?",
-    "introduction1": "I am a passionate full stack developer dedicated to creating modern and performant web and mobile applications.",
-    "introduction2": "With over 5 years of experience, I have worked on various projects ranging from showcase websites to complex SaaS applications.",
-    "introduction3": "I am constantly keeping up with new technologies and best practices to deliver quality solutions.",
+    "tools": "tools",
+    "title": "About the Agency",
+    "subtitle": "A passionate team creating innovative digital solutions",
+    "whoAreWe": "Who are we?",
+    "introduction1": "We are a passionate digital agency dedicated to creating modern and performant web and mobile applications.",
+    "introduction2": "With over 5 years of experience, we have worked on various projects ranging from showcase websites to complex SaaS applications.",
+    "introduction3": "We are constantly keeping up with new technologies and best practices to deliver quality solutions.",
     "skills": "Technical Skills",
-    "experience": "Professional Journey",
-    "education": "Education",
+    "experience": "Our Journey",
+    "education": "Our Education",
     "projectsCompleted": "Projects completed",
     "yearsExperience": "Years of experience",
     "technologies": "Technologies",
     "happyClients": "Happy clients",
     "cta": {
       "title": "Let's work together",
-      "description": "Have a project in mind? Let's discuss how I can help you bring it to life.",
-      "contact": "Contact Me",
-      "downloadCV": "Download my CV"
+      "description": "Have a project in mind? Let's discuss how we can help you bring it to life.",
+      "contact": "Contact Us",
+      "downloadCV": "Download our brochure"
     }
   },
-  "home": {
-    "greeting": "Hi,",
-    "im": "I'm",
-    "name": "Stéphane",
-    "role": "Full Stack Web and Mobile Developer",
-    "contact": "Contact",
-    "description": "Passionate Full Stack Developer dedicated to creating modern, performant, and accessible web and mobile applications.",
-    "stats": {
-      "projects": "Projects completed",
-      "experience": "Years of experience",
-      "technologies": "Technologies mastered",
-      "clients": "Happy clients"
-    },
-    "services": {
-      "title": "My Services",
-      "subtitle": "Complete solutions for your digital projects",
-      "web": {
-        "title": "Web Development",
-        "description": "Modern and responsive web applications with the latest technologies"
-      },
-      "mobile": {
-        "title": "Mobile Applications",
-        "description": "Performant cross-platform apps for iOS and Android"
-      },
-      "backend": {
-        "title": "Backend & API",
-        "description": "Robust and secure architectures for your data"
-      },
-      "training": {
-        "title": "Training and Teaching",
-        "description": "Training learners in web and mobile development, and delivering courses in universities."
-      }
-
-    },
-    "featuredProjects": {
-      "title": "Featured Projects",
-      "subtitle": "Discover a selection of my most significant achievements",
-      "viewAll": "View all projects"
-    },
-    "skills": {
-      "title": "Technical Skills",
-      "subtitle": "Technologies and tools I use daily",
-      "viewAll": "View all skills"
-    },
-    "cta": {
-      "title": "Ready to start your project?",
-      "description": "Let's work together to turn your ideas into exceptional digital solutions",
-      "getInTouch": "Get In Touch",
-      "downloadCV": "Download my CV"
-    },
-    "viewWork": "View My Work",
-    "downloadCV": "Download CV"
-  },
-   "footer": {
-    "description": "I am a Full Stack Developer passionate about building web and mobile applications with clean, modern designs.",
-    "quickLinks": "Quick Links",
-    "projects": "Projects",
-    "contact": "Contact",
-    "rights": "All rights reserved.",
-    "privacy": "Privacy Policy",
-    "terms": "Terms & Conditions"
-  },
-  "project": {
-    "filters": {
-      "all": "All"
-    },
-    "sort": {
-      "newest": "Newest",
-      "oldest": "Oldest",
-      "name": "By name"
-    },
-
-    "private": "Private",
-    "privateProject": "Proprietary project",
-    "visibility": "Visibility",
-    "noFilteredProjects": "No {{status}} projects found",
-    "showAllProjects": "Show all projects",
+  
+  "projects": {
+    "featured": "Featured project",
     "status": {
       "completed": "Completed",
-      "in-progress": "In Progress",
+      "in-progress": "In progress",
       "planned": "Planned"
     },
-    "category": {
+    "private": "Private",
+    "viewDetails": "View details",
+    "viewAll": "View all projects",
+    "filter": {
+      "all": "All",
       "web": "Web",
       "mobile": "Mobile",
       "backend": "Backend",
-      "fullstack": "Full Stack"
-    },
-    "technologies": "Technologies Used",
-    "features": "Features",
-    "challenges": "Challenges Faced",
-    "solutions": "Solutions Provided",
-    "testimonials": "Testimonials",
-    "liveDemo": "View Project",
-    "viewDetails": "View Details",
-    "startDate": "Start Date",
-    "endDate": "End Date",
-    "client": "Client",
-    "teamSize": "Team",
-    "people": "people",
-    "relatedProjects": "Related Projects",
-    "notFound": "Project not found",
-    "featured": "Featured",
-    "projectInfo": "Project Information"
+      "fullstack": "Fullstack"
+    }
   },
-  "projects": {
-    "web": {
-      "title": "Web Projects",
-      "description": "Discover my achievements in frontend and fullstack web development"
+  
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "learnMore": "Learn more",
+    "close": "Close",
+    "menu": "Menu",
+    "theme": {
+      "light": "Light mode",
+      "dark": "Dark mode",
+      "toggle": "Toggle theme"
+    }
+  },
+  
+ 
+  "footer": {
+    "brand": {
+      "title": "DB DIGITAL AGENCY",
+      "slogan": "World-class digital agency delivering exceptional results"
     },
-    "mobile": {
-      "title": "Mobile Projects",
-      "description": "Cross-platform and native mobile applications"
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Subscribe to our newsletter to stay informed about the latest trends, tips, and news about digital solutions. Don't miss our exclusive offers and free resources to help you optimize your online presence.",
+      "placeholder": "Email",
+      "subscribe": "Subscribe",
+      "success": "Successfully subscribed to newsletter!"
     },
-    "backend": {
-      "title": "Backend Projects",
-      "description": "APIs, microservices and server architectures",
-      "technologies": "Mastered Backend Technologies"
+    "globalPresence": {
+      "title": "Global Presence",
+      "africa": "Africa",
+      "europe": "Europe",
+      "asia": "Asia",
+      "america": "America",
+      "oceania": "Oceania"
     },
-
-    "fullstack": {
-      "title": "Fullstack Projects",
-      "description": "Complete applications integrating frontend and backend with modern and scalable architectures",
-      "whatIsFullstack": "What is Fullstack Development?",
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "stats": {
-        "laravel": "Laravel Projects",
-        "nodejs": "Node.js Projects",
-        "adonisjs": "AdonisJS Projects"
+    "services": {
+      "title": "Our Services",
+      "web": "Web Development",
+      "hosting": "Web Hosting",
+      "product": "Product Management",
+      "marketing": "Marketing",
+      "design": "Graphic Design",
+      "legal": "Legal"
+    },
+    "locations": {
+      "title": "Our Locations",
+      "yaounde": {
+        "name": "Yaoundé",
+        "address": "Nkoabang – Entrée Carrière",
+        "phone1": "640 46 51 82",
+        "phone2": "652 79 91 81"
+      },
+      "douala": {
+        "name": "Douala",
+        "address": "Cité des palmiers",
+        "phone1": "657 128 712",
+        "phone2": "673 071 017"
+      },
+      "bafoussam": {
+        "name": "Bafoussam",
+        "address": "Kamkop face à la station tradex building of djoupé pharmacy",
+        "phone1": "640 101 974",
+        "phone2": "681 748 229"
       }
     },
-    "filters": {
-      "all": "All",
-      "featured": "Featured",
-      "search": "Search projects..."
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "contact": "Contact"
     },
-    "sort": {
-      "newest": "Newest",
-      "oldest": "Oldest",
-      "name": "By Name"
+    "hours": {
+      "label": "Opening Hours",
+      "value": "Monday - Sunday: 8:00 AM - 8:00 PM"
+    },
+    "project": {
+      "start": "Start project"
+    },
+    "copyright": {
+      "rights": "All Rights Reserved",
+      "design": "Designed by MDS support"
+    },
+    "backToTop": "Back to top"
+  },
+  
+  "testimonials": {
+    "eyebrow": "Trusted by our clients",
+    "title": "What our clients say",
+    "subtitle": "Discover the experience of those who chose to collaborate with us and transformed their ideas into success stories.",
+    "avatarStyle": {
+      "real": "Real photos",
+      "initials": "Initials",
+      "illustration": "Illustrations",
+      "art": "Artistic portraits",
+      "switch": "Avatar style",
+      "info": {
+        "real": "Randomly generated photos",
+        "initials": "Avatars with initials",
+        "illustration": "Stylized illustrations",
+        "art": "Unsplash artistic portraits"
+      }
+    },
+    "rating": {
+      "aria": "Rating: {{rating}} out of 5 stars"
+    },
+    "badge": {
+      "satisfied": "100% SATISFIED"
+    },
+    "navigation": {
+      "previous": "Previous testimonial",
+      "next": "Next testimonial",
+      "goTo": "View testimonial {{index}}"
+    },
+    "items": [
+      {
+        "id": 1,
+        "name": "Sophie Martin",
+        "position": "Marketing Director, TechCorp",
+        "content": "An exceptional team that understood our needs and delivered a perfectly adapted solution. Their technical expertise and responsiveness made all the difference.",
+        "project": "E-commerce website",
+        "date": "2024"
+      },
+      {
+        "id": 2,
+        "name": "Mr Patrick Erick MOUAFFO",
+        "position": "Founder, StartUp Innov",
+        "content": "Thanks to them, our mobile application was developed in record time without compromising on quality. An agile and transparent collaboration.",
+        "project": "Mobile App",
+        "date": "2024"
+      },
+      {
+        "id": 3,
+        "name": "Marie Laurent",
+        "position": "CTO, FinTech Solutions",
+        "content": "A robust and scalable backend architecture. Our API handles the load perfectly since launch. True professionalism.",
+        "project": "Backend API",
+        "date": "2023"
+      },
+      {
+        "id": 4,
+        "name": "Pierre Moreau",
+        "position": "CEO, Design Studio",
+        "content": "Design thinking applied to development: an approach that created a truly intuitive and engaging user interface.",
+        "project": "UI/UX Redesign",
+        "date": "2024"
+      },
+      {
+        "id": 5,
+        "name": "Claire Bernard",
+        "position": "SEO Manager, e-Commerce Plus",
+        "content": "Our organic traffic increased by 200% in 6 months. Their content strategy and technical optimization exceeded our expectations.",
+        "project": "SEO Strategy",
+        "date": "2023"
+      },
+      {
+        "id": 6,
+        "name": "Alexandre Petit",
+        "position": "Lead Developer, Agency Web",
+        "content": "The customized training transformed our coding practices. Our team is more efficient and our applications more performant.",
+        "project": "React Training",
+        "date": "2024"
+      }
+    ]
+  },
+  
+  "team": {
+    "eyebrow": "The Team",
+    "title": "The talents behind the success",
+    "subtitle": "A passionate team, experts in their field, united by the same vision: transforming your ideas into exceptional solutions.",
+    "avatarStyle": {
+      "real": "Real photos",
+      "illustration": "Illustrations",
+      "switch": "Avatar style"
+    },
+    "members": {
+      "ceo": {
+        "name": "Mr Patrick Erick MOUAFFO",
+        "role": "CEO & Founder",
+        "bio": "20 years of experience in development and technical leadership. Former CTO of a tech unicorn, he founded this agency to reinvent client relationships.",
+        "expertise": ["Strategy", "Vision", "Innovation"],
+        "stats": {
+          "projets": "Projects",
+          "clients": "Clients",
+          "satisfaction": "Satisfaction"
+        }
+      },
+      "cto": {
+        "name": "Sarah Chen",
+        "role": "CTO",
+        "bio": "Expert in scalable architecture and cloud. She has led the development of over 50 high-traffic applications.",
+        "expertise": ["Architecture", "Cloud", "DevOps"],
+        "stats": {
+          "projets": "Projects",
+          "uptime": "Uptime",
+          "pays": "Countries"
+        }
+      },
+      "lead-dev": {
+        "name": "Marc Dubois",
+        "role": "Lead Developer",
+        "bio": "Passionate about clean code and best practices. He trains and mentors the technical team to ensure quality.",
+        "expertise": ["React", "Node.js", "TypeScript"],
+        "stats": {
+          "projets": "Projects",
+          "années": "Years",
+          "librairies": "Libraries"
+        }
+      },
+      "lead-designer": {
+        "name": "Emma Laurent",
+        "role": "Lead UI/UX Designer",
+        "bio": "Award-winning designer, she creates interfaces that combine aesthetics and performance. Her philosophy: design must serve the user.",
+        "expertise": ["UI Design", "UX Research", "Design System"],
+        "stats": {
+          "projets": "Projects",
+          "prix": "Awards",
+          "users": "Users"
+        }
+      },
+      "lead-mobile": {
+        "name": "Alex Rivera",
+        "role": "Lead Mobile Developer",
+        "bio": "Cross-platform mobile development specialist. He has published over 30 applications on the stores.",
+        "expertise": ["Flutter", "iOS", "Android", "Firebase"],
+        "stats": {
+          "apps": "Apps",
+          "downloads": "Downloads",
+          "stores": "Stores"
+        }
+      },
+      "lead-seo": {
+        "name": "Julie Moreau",
+        "role": "Lead SEO & Content",
+        "bio": "Expert in natural referencing and content strategy. She has helped over 50 companies triple their traffic.",
+        "expertise": ["SEO", "Strategy", "Analytics", "Content"],
+        "stats": {
+          "trafic": "Traffic",
+          "clients": "Clients",
+          "mots": "Words"
+        }
+      }
     },
     "stats": {
-      "total": "Total",
-      "completed": "Completed"
+      "expertise": "Expertise",
+      "passion": "Passion",
+      "cohesion": "Cohesion",
+      "excellence": "Excellence",
+      "years": "{{count}} years",
+      "experts": "{{count}} experts",
+      "awards": "{{count}}+ awards"
     },
-    "noProjects": "No projects found",
-    "status": "status",
-    "category": "category"
+    "social": {
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "github": "GitHub",
+      "behance": "Behance"
+    },
+    "badges": {
+      "ceo": "CEO",
+      "expertise": "Expertise",
+      "selected": "Selected",
+      "more": "+{{count}}"
+    },
+    "values": {
+      "expertise": "Expertise",
+      "passion": "Passion",
+      "cohesion": "Cohesion",
+      "excellence": "Excellence"
+    }
+  },
 
-  },
-  "blog": {
-    "title": "Blog",
-    "description": "Articles about web development, best practices and new technologies",
-    "featured": "Featured",
-    "minRead": "min read",
-    "readMore": "Read More",
-    "searchPlaceholder": "Search articles...",
-    "categories": {
-      "all": "All"
-    },
-    "noPosts": "No articles found",
-    "postNotFound": "Article not found",
-    "backToBlog": "Back to blog",
-    "backToTop": "Back to top",
-    "share": "Share",
-    "authorBio": "Full stack developer passionate about modern web technologies. I enjoy sharing my knowledge and discoveries through this blog.",
-    "relatedPosts": "Related Articles",
-    "newsletter": {
-      "title": "Stay Updated",
-      "description": "Subscribe to my newsletter to receive the latest articles and news.",
-      "placeholder": "Your email",
-      "subscribe": "Subscribe"
-    }
-  },
-  "contact": {
-    "title": "Contact",
-    "description": "Let's discuss your project and see how I can help you",
-    "letsTalk": "Let's Talk About Your Project",
-    "followMe": "Follow Me",
-    "availability": {
-      "title": "Available for new projects",
-      "description": "I'm currently available for freelance missions"
-    },
-    "form": {
-      "name": "Full Name",
-      "email": "Email Address",
-      "subject": "Subject",
-      "message": "Message",
-      "send": "Send Message",
-      "sending": "Sending..."
-    },
-    "successMessage": "Message sent successfully! I'll get back to you as soon as possible.",
-    "errorMessage": "An error occurred. Please try again or contact me directly by email."
-  },
-  "404": {
-    "title": "Page Not Found",
-    "description": "Sorry, the page you are looking for doesn't exist or has been moved.",
-    "backHome": "Back to Home",
-    "goBack": "Go Back",
-    "quickLinks": "Quick Links"
-  },
-  "common": {
-    "lang": "en",
-    "backToProjects": "Back to Projects",
-    "loading": "Loading..."
-  },
-  
-  "training": {
-    "title": "Training Courses",
-    "subtitle": "Professional training in development and technologies",
-    "hero": {
-      "title": "Expert Training",
-      "subtitle": "I share my expertise through practical and tailored training sessions",
-      "trainings": "trainings",
-      "expertTrainer": "Expert Trainer",
-      "practicalApproach": "Practical Approach"
-    },
-    "filters": {
-      "all": "All",
-      "allLevels": "All Levels",
-      "allFormats": "All Formats",
-      "category": "Category",
-      "level": "Level",
-      "format": "Format"
-    },
-    "category": {
-      "web": "Web Development",
-      "mobile": "Mobile",
-      "backend": "Backend",
-      "cloud": "Cloud",
-      "agile": "Agile",
-      "devops": "DevOps"
-    },
-    "level": {
-      "beginner": "Beginner",
-      "intermediate": "Intermediate",
-      "advanced": "Advanced"
-    },
-    "format": {
-      "online": "Online",
-      "in-person": "In-person",
-      "hybrid": "Hybrid"
-    },
-    "featured": "Popular",
-    "keyObjectives": "Key Objectives",
-    "nextSession": "Next session",
-    "contact": "Contact Me",
-    "details": "Details",
-    "noTrainings": "No trainings found",
-    "noTrainingsDescription": "No trainings match your filtering criteria",
-    "cta": {
-      "title": "Interested in training?",
-      "description": "Contact me to discuss your training needs or request the detailed program",
-      "contact": "Contact Me",
-      "brochure": "Download Brochure"
-    },
-     "notFound": "Training not found",
-    "detail": {
-      "format": "Format",
-      "duration": "Duration",
-      "level": "Level",
-      "price": "Price",
-      "students": "students",
-      "rating": "rating",
-      "contact": "Contact Me",
-      "brochure": "PDF Brochure",
-      "objectives": "Learning Objectives",
-      "program": "Training Program",
-      "module": "Module",
-      "technologies": "Technologies Used",
-      "summary": "Training Summary",
-      "category": "Category",
-      "trainer": "Trainer",
-      "seniorTrainer": "Senior Trainer",
-      "experience": "6+ years experience",
-      "practicalApproach": "Practical approach",
-      "industryExpert": "Industry expert",
-      "testimonials": "Testimonials"
-    }
-  
+
+
+
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "expertise": "Expertise",
+    "blog": "Blog",
+    "company": "Company",
+    "contact": "Contact",
+    "web-development": "Web Development",
+    "mobile-development": "Mobile Apps",
+    "ui-ux-design": "UI/UX Design",
+    "seo-performance": "SEO & Performance",
+    "consulting": "Consulting & Audit",
+    "featured-projects": "Featured Projects",
+    "web-projects": "Websites",
+    "ecommerce-projects": "E-commerce",
+    "mobile-projects": "Mobile Apps",
+    "case-studies": "Case Studies",
+    "technologies": "Technologies",
+    "methodology": "Methodology",
+    "quality-commitment": "Quality Commitment",
+    "tech-articles": "Tech Articles",
+    "industry-news": "Industry News",
+    "tutorials": "Tutorials",
+    "about": "About Us",
+    "team": "Team",
+    "careers": "Careers",
+    "partners": "Partners",
+    "get-quote": "Get a Quote",
+    "support": "Client Support",
+    "location": "Find Us"
   }
-
 }

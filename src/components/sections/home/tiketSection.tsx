@@ -1,5 +1,5 @@
 // src/components/sections/home/TickerSection.tsx
-import React, { useEffect, useState, useRef } from 'react';
+import React, {  useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, useInView, Variants } from "motion/react";
 import { useTheme } from '../../../contexts/ThemeContext';

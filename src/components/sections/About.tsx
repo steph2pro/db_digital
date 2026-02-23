@@ -1,12 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Section } from '../Section';
+// import { Section } from '../Section';
 
 export const About: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <Section id="about" variant="primary-light">
+    <section >
       <h2 className="text-3xl md:text-4xl font-bold font-title text-center text-secondary dark:text-white mb-12">
         {t('about.title')}
       </h2>
@@ -29,6 +29,6 @@ export const About: React.FC = () => {
           </p>
         </div>
       </div>
-    </Section>
+    </section>
   );
 };

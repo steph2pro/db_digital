@@ -442,7 +442,7 @@ export const TeamSection: React.FC = () => {
                         <div className="w-full h-full rounded-2xl overflow-hidden bg-gray-200 dark:bg-gray-700">
                           <img
                             src={getAvatarUrl(selectedMember, TEAM_MEMBERS.indexOf(selectedMember))}
-                            alt={t(selectedMember.nameKey)}
+                            // alt={t(selectedMember.nameKey)}
                             className="w-full h-full object-cover"
                             onError={() => handleImageError(selectedMember.id)}
                           />
@@ -576,7 +576,7 @@ export const TeamSection: React.FC = () => {
                       transition={{ delay: 1 }}
                       className="flex gap-3 mt-6 justify-center md:justify-start"
                     >
-                      {Object.entries(selectedMember.social).map(([network, url], index) => (
+                      {Object.entries(selectedMember.social).map(([network, url]) => (
                         <motion.a
                           key={network}
                           href={url}
@@ -589,7 +589,7 @@ export const TeamSection: React.FC = () => {
                               ? 'bg-gray-700 hover:bg-gray-600'
                               : 'bg-gray-200 hover:bg-gray-300'
                           }`}
-                          aria-label={t(`team.social.${network}`)}
+                        //   aria-label={t(`team.social.${network}`)}
                         >
                           <i className={`bx bxl-${network} text-xl`} style={{ color: selectedMember.color }} />
                         </motion.a>
@@ -655,7 +655,7 @@ export const TeamSection: React.FC = () => {
                         <div className="w-full h-full rounded-lg overflow-hidden bg-gray-200 dark:bg-gray-700">
                           <img
                             src={getAvatarUrl(member, index + 1)}
-                            alt={t(member.nameKey)}
+                            // alt={t(member.nameKey)}
                             className="w-full h-full object-cover"
                             onError={() => handleImageError(member.id)}
                           />
@@ -669,7 +669,7 @@ export const TeamSection: React.FC = () => {
                           className="absolute -top-2 -right-2 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs"
                           initial={{ scale: 0 }}
                           animate={{ scale: 1 }}
-                          aria-label={t('team.badges.selected')}
+                        //   aria-label={t('team.badges.selected')}
                         >
                           ✓
                         </motion.div>

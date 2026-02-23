@@ -348,7 +348,7 @@ const HeroSection: React.FC = () => {
 
   // Variantes d'animation pour l'image d'arrière-plan - ajustées pour mobile
   const bgImageVariants : Variants= {
-    enter: (direction: number) => ({
+    enter: ( ) => ({
       scale: isMobile ? 1.1 : 1.2,
       opacity: 0
     }),
@@ -360,7 +360,7 @@ const HeroSection: React.FC = () => {
         ease: [0.43, 0.13, 0.23, 0.96]
       }
     },
-    exit: (direction: number) => ({
+    exit: () => ({
       scale: isMobile ? 1.1 : 1.2,
       opacity: 0,
       transition: {
@@ -528,7 +528,7 @@ const HeroSection: React.FC = () => {
                   marginRight: '-50vw',
                 }}
               >
-                {sliderContent.map((slide, index) => (
+                {sliderContent.map((slide) => (
                   <div
                     key={slide.id}
                     className="flex-shrink-0 w-screen snap-center px-6"

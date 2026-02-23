@@ -3,11 +3,10 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { AnimatePresence, motion, useAnimation, useInView, Variants } from 'motion/react';
-import { useTheme } from '../../contexts/ThemeContext';
+
 
 export const Footer: React.FC = () => {
   const { t } = useTranslation();
-  const { isDark } = useTheme();
   const [email, setEmail] = useState('');
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [hoveredLocation, setHoveredLocation] = useState<string | null>(null);
@@ -96,15 +95,15 @@ export const Footer: React.FC = () => {
     { continent: 'oceania', flag: '🌏', active: true },
   ];
 
-  const socialLinks = [
-    { icon: 'bx bxl-linkedin', name: 'LinkedIn', url: 'https://linkedin.com/company/db-digital-agency', color: 'hover:text-blue-600' },
-    { icon: 'bx bxl-github', name: 'GitHub', url: 'https://github.com/dbdigitalagency', color: 'hover:text-gray-700 dark:hover:text-white' },
-    { icon: 'bx bxl-twitter', name: 'Twitter', url: 'https://twitter.com/dbdigitalagency', color: 'hover:text-blue-400' },
-    { icon: 'bx bxl-facebook', name: 'Facebook', url: 'https://facebook.com/dbdigitalagency', color: 'hover:text-blue-600' },
-    { icon: 'bx bxl-instagram', name: 'Instagram', url: 'https://instagram.com/dbdigitalagency', color: 'hover:text-pink-600' },
-    { icon: 'bx bxl-youtube', name: 'YouTube', url: 'https://youtube.com/@dbdigitalagency', color: 'hover:text-red-600' },
-    { icon: 'bx bxl-tiktok', name: 'TikTok', url: 'https://tiktok.com/@dbdigitalagency', color: 'hover:text-black dark:hover:text-white' },
-  ];
+  // const socialLinks = [
+  //   { icon: 'bx bxl-linkedin', name: 'LinkedIn', url: 'https://linkedin.com/company/db-digital-agency', color: 'hover:text-blue-600' },
+  //   { icon: 'bx bxl-github', name: 'GitHub', url: 'https://github.com/dbdigitalagency', color: 'hover:text-gray-700 dark:hover:text-white' },
+  //   { icon: 'bx bxl-twitter', name: 'Twitter', url: 'https://twitter.com/dbdigitalagency', color: 'hover:text-blue-400' },
+  //   { icon: 'bx bxl-facebook', name: 'Facebook', url: 'https://facebook.com/dbdigitalagency', color: 'hover:text-blue-600' },
+  //   { icon: 'bx bxl-instagram', name: 'Instagram', url: 'https://instagram.com/dbdigitalagency', color: 'hover:text-pink-600' },
+  //   { icon: 'bx bxl-youtube', name: 'YouTube', url: 'https://youtube.com/@dbdigitalagency', color: 'hover:text-red-600' },
+  //   { icon: 'bx bxl-tiktok', name: 'TikTok', url: 'https://tiktok.com/@dbdigitalagency', color: 'hover:text-black dark:hover:text-white' },
+  // ];
 
   // Récupérer les villes d'Afrique
   const africanCities = locations.find(loc => loc.continent === 'africa')?.cities || [];
@@ -210,7 +209,7 @@ export const Footer: React.FC = () => {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder={t('footer.newsletter.placeholder')}
+                    // placeholder={t('footer.newsletter.placeholder')}
                     className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-green-500 transition-colors"
                     required
                   />
@@ -279,7 +278,7 @@ export const Footer: React.FC = () => {
               {t('footer.services.title')}
             </h3>
             <div className="grid grid-cols-2 gap-4">
-              {services.map((service, index) => (
+              {services.map((service) => (
                 <motion.div
                   key={service.id}
                   variants={itemVariants}
@@ -445,7 +444,7 @@ export const Footer: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1 }}
-        aria-label={t('footer.backToTop')}
+        // aria-label={t('footer.backToTop')}
       >
         <i className="bx bx-chevron-up text-xl group-hover:animate-bounce"></i>
         

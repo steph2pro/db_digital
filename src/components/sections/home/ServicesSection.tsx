@@ -254,7 +254,7 @@ export const ServicesSection: React.FC = () => {
               >
                 <img
                   src={serviceImages[index]}
-                  alt={t(`services.${service.id}.title`, service.title)}
+                //   alt={t(`services.${service.id}.title`, service.title)}
                   className="w-full h-full object-cover"
                 />
                 

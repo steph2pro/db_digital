@@ -13,8 +13,6 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useTranslation } from 'react-i18next';
-import { motion } from 'motion/react';
 
 import { useTheme } from '../contexts/ThemeContext';
 // import { HeroSection } from '../components/sections/home/HeroSection';
@@ -34,7 +32,6 @@ import { ServicesSection } from '../components/sections/home/ServicesSection';
 import { StatsSection } from '../components/sections/home/StatsSection';
 import { VisionSection } from '../components/sections/home/VisionSection';
 import { ProcessSection } from '../components/sections/home/ProcessSection';
-import { CTASection } from '../components/sections/CTASection';
 import TeamSection from '../components/sections/home/TeamSection';
 import TestimonialsSection from '../components/sections/home/TestimonialsSection';
 

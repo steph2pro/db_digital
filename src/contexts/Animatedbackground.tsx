@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import { useTheme } from './ThemeContext';
-// import { useTheme } from '../../contexts/ThemeContext';
 
 // ─── AnimatedLine types ───────────────────────────────────────────────────────
 interface LineConfig {
@@ -35,23 +34,47 @@ const ParticleCanvas: React.FC<{ className?: string }> = ({ className = '' }) =>
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
-    const ctx    = canvas.getContext('2d')!;
+    if (!canvas) return; // ✅ Vérification que canvas existe
+    
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return; // ✅ Vérification que le contexte 2D existe
+
     const color1 = isDark ? '0,230,118' : '0,150,100';
     const color2 = isDark ? '0,168,232' : '0,87,184';
 
     const resize = () => {
-      canvas.width  = canvas.parentElement!.offsetWidth;
-      canvas.height = canvas.parentElement!.offsetHeight;
+      if (!canvas.parentElement) return; // ✅ Vérification du parent
+      canvas.width  = canvas.parentElement.offsetWidth;
+      canvas.height = canvas.parentElement.offsetHeight;
     };
+    
     resize();
     window.addEventListener('resize', resize);
 
     class Particle {
-      x = 0; y = 0; size = 0; vx = 0; vy = 0;
-      life = 0; maxLife = 0; color = color1;
-      constructor() { this.reset(); }
+      x: number;
+      y: number;
+      size: number;
+      vx: number;
+      vy: number;
+      life: number;
+      maxLife: number;
+      color: string;
+
+      constructor() {
+        this.x = 0;
+        this.y = 0;
+        this.size = 0;
+        this.vx = 0;
+        this.vy = 0;
+        this.life = 0;
+        this.maxLife = 0;
+        this.color = color1;
+        this.reset();
+      }
+
       reset() {
+        if (!canvas) return; // ✅ Vérification que canvas existe toujours
         this.x       = Math.random() * canvas.width;
         this.y       = Math.random() * canvas.height;
         this.size    = Math.random() * 1.4 + 0.3;
@@ -61,12 +84,22 @@ const ParticleCanvas: React.FC<{ className?: string }> = ({ className = '' }) =>
         this.maxLife = 0.4 + Math.random() * 0.6;
         this.color   = Math.random() > 0.5 ? color1 : color2;
       }
+
       update() {
-        this.x += this.vx; this.y += this.vy; this.life += 0.0015;
-        if (this.life > this.maxLife || this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height)
+        if (!canvas) return; // ✅ Vérification que canvas existe toujours
+        this.x += this.vx;
+        this.y += this.vy;
+        this.life += 0.0015;
+        
+        if (this.life > this.maxLife || 
+            this.x < 0 || this.x > canvas.width || 
+            this.y < 0 || this.y > canvas.height) {
           this.reset();
+        }
       }
+
       draw() {
+        if (!ctx) return; // ✅ Vérification que le contexte existe toujours
         const alpha = Math.sin((this.life / this.maxLife) * Math.PI) * (isDark ? 0.55 : 0.4);
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
@@ -78,14 +111,22 @@ const ParticleCanvas: React.FC<{ className?: string }> = ({ className = '' }) =>
     const pts = Array.from({ length: 80 }, () => new Particle());
 
     const draw = () => {
+      if (!ctx || !canvas) return; // ✅ Vérification avant chaque frame
+      
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      pts.forEach(p => { p.update(); p.draw(); });
+      
+      pts.forEach(p => { 
+        p.update(); 
+        p.draw(); 
+      });
+      
       // connections
       for (let i = 0; i < pts.length; i++) {
         for (let j = i + 1; j < pts.length; j++) {
           const dx   = pts[i].x - pts[j].x;
           const dy   = pts[i].y - pts[j].y;
           const dist = Math.sqrt(dx * dx + dy * dy);
+          
           if (dist < 110) {
             ctx.beginPath();
             ctx.moveTo(pts[i].x, pts[i].y);
@@ -96,13 +137,17 @@ const ParticleCanvas: React.FC<{ className?: string }> = ({ className = '' }) =>
           }
         }
       }
+      
       animRef.current = requestAnimationFrame(draw);
     };
+
     draw();
 
     return () => {
       window.removeEventListener('resize', resize);
-      cancelAnimationFrame(animRef.current);
+      if (animRef.current) {
+        cancelAnimationFrame(animRef.current);
+      }
     };
   }, [isDark]);
 

@@ -14,88 +14,7 @@ export const navigation: NavigationItem[] = [
     label: 'services', // clé de traduction
     icon: 'bx bx-briefcase',
     type: 'internal',
-    // submenu: [
-    //   {
-    //     id: 'web-development',
-    //     path: '/services/web-development',
-    //     label: 'web-development', // clé de traduction
-    //     icon: 'bx bx-code-alt',
-    //     type: 'internal',
-    //   },
-    //   {
-    //     id: 'mobile-development',
-    //     path: '/services/mobile-development',
-    //     label: 'mobile-development', // clé de traduction
-    //     icon: 'bx bx-mobile-alt',
-    //     type: 'internal',
-    //   },
-    //   {
-    //     id: 'ui-ux-design',
-    //     path: '/services/ui-ux-design',
-    //     label: 'ui-ux-design', // clé de traduction
-    //     icon: 'bx bx-palette',
-    //     type: 'internal',
-    //   },
-    //   {
-    //     id: 'seo-performance',
-    //     path: '/services/seo-performance',
-    //     label: 'seo-performance', // clé de traduction
-    //     icon: 'bx bx-line-chart',
-    //     type: 'internal',
-    //   },
-    //   {
-    //     id: 'consulting',
-    //     path: '/services/consulting',
-    //     label: 'consulting', // clé de traduction
-    //     icon: 'bx bx-chalkboard',
-    //     type: 'internal',
-    //   }
-    // ]
   },
-  // {
-  //   id: 'projects',
-  //   path: '/projects',
-  //   label: 'projects', // clé de traduction
-  //   icon: 'bx bx-folder',
-  //   type: 'internal',
-  //   submenu: [
-  //     {
-  //       id: 'featured-projects',
-  //       path: '/projects/featured',
-  //       label: 'featured-projects', // clé de traduction
-  //       icon: 'bx bx-star',
-  //       type: 'internal'
-  //     },
-  //     {
-  //       id: 'web-projects',
-  //       path: '/projects/web',
-  //       label: 'web-projects', // clé de traduction
-  //       icon: 'bx bx-globe',
-  //       type: 'internal'
-  //     },
-  //     {
-  //       id: 'ecommerce-projects',
-  //       path: '/projects/ecommerce',
-  //       label: 'ecommerce-projects', // clé de traduction
-  //       icon: 'bx bx-cart',
-  //       type: 'internal'
-  //     },
-  //     {
-  //       id: 'mobile-projects',
-  //       path: '/projects/mobile',
-  //       label: 'mobile-projects', // clé de traduction
-  //       icon: 'bx bx-mobile',
-  //       type: 'internal'
-  //     },
-  //     {
-  //       id: 'case-studies',
-  //       path: '/case-studies',
-  //       label: 'case-studies', // clé de traduction
-  //       icon: 'bx bx-file',
-  //       type: 'internal'
-  //     }
-  //   ]
-  // },
   {
     id: 'expertise',
     path: '/expertise',
@@ -135,21 +54,21 @@ export const navigation: NavigationItem[] = [
     submenu: [
       {
         id: 'tech-articles',
-        path: '/blog/tech',
+        path: '/blog',
         label: 'tech-articles', // clé de traduction
         icon: 'bx bx-code',
         type: 'internal'
       },
       {
         id: 'industry-news',
-        path: '/blog/news',
+        path: '/blog',
         label: 'industry-news', // clé de traduction
         icon: 'bx bx-trending-up',
         type: 'internal'
       },
       {
         id: 'tutorials',
-        path: '/blog/tutorials',
+        path: '/blog',
         label: 'tutorials', // clé de traduction
         icon: 'bx bx-video',
         type: 'internal'
@@ -175,13 +94,6 @@ export const navigation: NavigationItem[] = [
         path: '/team',
         label: 'team', // clé de traduction
         icon: 'bx bx-group',
-        type: 'internal'
-      },
-      {
-        id: 'careers',
-        path: '/careers',
-        label: 'careers', // clé de traduction
-        icon: 'bx bx-briefcase-alt-2',
         type: 'internal'
       },
       {

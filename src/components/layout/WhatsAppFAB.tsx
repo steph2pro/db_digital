@@ -154,7 +154,7 @@ export const WhatsAppFAB: React.FC = () => {
   // Calcul de la position Y en fonction du scroll
   const getYPosition = () => {
     // Position de base : 120px du bas (au-dessus du bouton de retour en haut)
-    const basePosition = 100;
+    const basePosition = 80;
     // Si on est en bas de la page, on remonte légèrement
     if (window.innerHeight + scrollPosition >= document.documentElement.scrollHeight - 100) {
       return basePosition + 50;

@@ -1,5 +1,5 @@
 // src/components/sections/home/TickerSection.tsx
-import React, {  useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, useInView, Variants } from "motion/react";
 import { useTheme } from '../../../contexts/ThemeContext';
@@ -135,8 +135,8 @@ const TickerSection: React.FC = () => {
         </div>
 
         {/* Contenu principal */}
-        <div className="relative py-10">
-          {/* Badge "EN DIRECT" animé */}
+        <div className="relative py-6 md:py-10">
+          {/* Badge "EN DIRECT" animé - caché sur mobile */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -160,7 +160,7 @@ const TickerSection: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Badge interactif à droite */}
+          {/* Badge interactif à droite - caché sur mobile */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -193,14 +193,14 @@ const TickerSection: React.FC = () => {
 
           {/* Zone de ticker avec effet de profondeur */}
           <div className="relative overflow-hidden">
-            {/* Overlays latéraux avec effet de fondu amélioré */}
-            <div className={`absolute left-0 top-0 bottom-0 w-64 z-20 pointer-events-none ${
+            {/* Overlays latéraux avec effet de fondu - cachés sur mobile */}
+            <div className={`absolute left-0 top-0 bottom-0 w-64 z-20 pointer-events-none hidden lg:block ${
               isDark
                 ? 'bg-gradient-to-r from-gray-900 via-gray-900/80 to-transparent'
                 : 'bg-gradient-to-r from-white via-white/80 to-transparent'
             }`} />
             
-            <div className={`absolute right-0 top-0 bottom-0 w-64 z-20 pointer-events-none ${
+            <div className={`absolute right-0 top-0 bottom-0 w-64 z-20 pointer-events-none hidden lg:block ${
               isDark
                 ? 'bg-gradient-to-l from-gray-900 via-gray-900/80 to-transparent'
                 : 'bg-gradient-to-l from-white via-white/80 to-transparent'
@@ -225,9 +225,136 @@ const TickerSection: React.FC = () => {
               animate="animate"
             />
 
-            {/* Ticker principal */}
+            {/* Ticker principal - adapté pour mobile */}
+            <div className="block lg:hidden">
+              {/* Version mobile : grille 2 colonnes */}
+              <div className="grid grid-cols-2 gap-4 p-4">
+                {items.map((item, itemIndex) => {
+                  const config = itemConfig[itemIndex % itemConfig.length];
+                  const isHovered = hoveredIndex === itemIndex;
+                  
+                  return (
+                    <motion.div
+                      key={`mobile-${itemIndex}`}
+                      className="relative group/item w-full"
+                      onHoverStart={() => setHoveredIndex(itemIndex)}
+                      onHoverEnd={() => setHoveredIndex(null)}
+                      whileHover={{ scale: 1.02 }}
+                      transition={{ type: 'spring', stiffness: 400, damping: 15 }}
+                    >
+                      {/* Carte principale */}
+                      <motion.div
+                        animate={{
+                          scale: isHovered ? 1.05 : 1,
+                          y: isHovered ? -2 : 0,
+                        }}
+                        transition={{ type: 'spring', stiffness: 400, damping: 15 }}
+                        className="relative"
+                      >
+                        {/* Effet de glow au hover */}
+                        <motion.div
+                          className="absolute inset-0 rounded-xl"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: isHovered ? 0.5 : 0 }}
+                          style={{
+                            background: `radial-gradient(circle at 50% 50%, ${config.color}, transparent 70%)`,
+                            filter: 'blur(20px)',
+                          }}
+                        />
+
+                        {/* Contenu de la carte */}
+                        <div className={`relative flex flex-col items-center gap-2 p-4 rounded-xl backdrop-blur-sm border-2 transition-all duration-300 ${
+                          isDark
+                            ? 'bg-gray-800/50 border-gray-700'
+                            : 'bg-white/50 border-gray-200'
+                        } ${isHovered ? 'border-transparent' : ''}`}
+                        style={{
+                          borderColor: isHovered ? config.color : undefined,
+                        }}>
+                          {/* Icône avec animations multiples */}
+                          <motion.div
+                            animate={{
+                              rotate: isHovered ? [0, -5, 5, -2, 2, 0] : 0,
+                              scale: isHovered ? 1.1 : 1,
+                            }}
+                            transition={{ duration: 0.5 }}
+                            className="relative"
+                          >
+                            <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${config.gradient} flex items-center justify-center shadow-lg`}>
+                              <i className={`${config.icon} text-xl text-white`}></i>
+                            </div>
+                            
+                            {/* Particules autour de l'icône */}
+                            {isHovered && (
+                              <>
+                                {[...Array(4)].map((_, i) => (
+                                  <motion.div
+                                    key={`particle-${i}`}
+                                    className="absolute w-1 h-1 rounded-full"
+                                    style={{ background: config.color }}
+                                    variants={particleVariants}
+                                    initial="initial"
+                                    animate="animate"
+                                    custom={i}
+                                  />
+                                ))}
+                              </>
+                            )}
+                          </motion.div>
+
+                          {/* Texte */}
+                          <div className="flex flex-col items-center text-center">
+                            <motion.span
+                              animate={{
+                                color: isHovered ? config.color : undefined,
+                              }}
+                              className={`text-sm font-bold uppercase tracking-wider transition-colors duration-300 ${
+                                isDark ? 'text-white' : 'text-gray-900'
+                              }`}
+                            >
+                              {item}
+                            </motion.span>
+                            
+                            {/* Sous-titre qui apparaît au hover */}
+                            <motion.span
+                              initial={{ opacity: 0, height: 0 }}
+                              animate={{
+                                opacity: isHovered ? 1 : 0,
+                                height: isHovered ? 'auto' : 0,
+                              }}
+                              className="text-[10px] text-gray-500 dark:text-gray-400 overflow-hidden mt-1"
+                            >
+                              En savoir plus
+                            </motion.span>
+                          </div>
+
+                          {/* Badge de tendance */}
+                          {itemIndex % 3 === 0 && (
+                            <motion.div
+                              animate={{
+                                scale: [1, 1.2, 1],
+                                rotate: [0, 5, -5, 0],
+                              }}
+                              transition={{
+                                duration: 2,
+                                repeat: Infinity,
+                              }}
+                              className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white text-[8px] font-bold"
+                            >
+                              🔥
+                            </motion.div>
+                          )}
+                        </div>
+                      </motion.div>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Version desktop : ticker défilant */}
             <motion.div
-              className="flex gap-8 whitespace-nowrap py-6"
+              className="hidden lg:flex gap-8 whitespace-nowrap py-6"
               variants={tickerVariants}
               animate={isPaused || !inView ? "pause" : "animate"}
               onHoverStart={() => setIsPaused(true)}
@@ -247,6 +374,7 @@ const TickerSection: React.FC = () => {
                         onHoverStart={() => setHoveredIndex(arrayIndex * items.length + itemIndex)}
                         onHoverEnd={() => setHoveredIndex(null)}
                       >
+                        {/* ... reste du code desktop inchangé ... */}
                         {/* Carte principale */}
                         <motion.div
                           animate={{

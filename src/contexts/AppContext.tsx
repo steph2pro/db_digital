@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useReducer, useEffect } from 'react';
-import { Project, BlogPost, Training } from '../types';
+import { Project, BlogPost } from '../types';
 import { projects as projectsData } from '../data/projects/';
-import { trainingsData } from '../data/trainings';
+// import { trainingsData } from '../data/servicesData';
 
 interface AppState {
   projects: Project[];
@@ -73,7 +73,7 @@ const AppContext = createContext<{
   getProjectById: (id: string) => Project | undefined;
   getFeaturedProjects: () => Project[];
   getProjectsByCategory: (category: string) => Project[];
-  getTrainingById: (id: string) => Training | undefined;
+  // getTrainingById: (id: string) => Training | undefined;
 } | undefined>(undefined);
 
 export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -90,9 +90,9 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const getProjectsByCategory = (category: string) => {
     return state.projects.filter(project => project.category === category);
   };
-  const getTrainingById = (id: string): Training | undefined => {
-    return trainingsData.find(training => training.id === id);
-  };
+  // const getTrainingById = (id: string): Training | undefined => {
+  //   return trainingsData.find(training => training.id === id);
+  // };
 
   // Chargement des données depuis le fichier projects.ts
   useEffect(() => {
@@ -127,7 +127,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       getProjectById,
       getFeaturedProjects,
       getProjectsByCategory,
-      getTrainingById
+      // getTrainingById
     }}>
       {children}
     </AppContext.Provider>

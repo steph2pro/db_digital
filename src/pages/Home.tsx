@@ -15,17 +15,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 import { useTheme } from '../contexts/ThemeContext';
-// import { HeroSection } from '../components/sections/home/HeroSection';
-// import {
-//   TickerSection,
-//   ServicesSection,
-//   StatsSection,
-//   VisionSection,
-//   PartnersSection,
-//   WhySection,
-//   ProcessSection,
-//   CTASection,
-// } from '../components/Section';
 import HeroSection from '../components/sections/home/HeroSection';
 import TickerSection from '../components/sections/home/tiketSection';
 import { ServicesSection } from '../components/sections/home/ServicesSection';
@@ -98,14 +87,6 @@ export const Home: React.FC = () => {
 
         {/* 5. Vision + orbital animation */}
         <VisionSection />
-
-        {/* 6. Partners marquee */}
-        {/* <PartnersSection />
-
-        {/* 7. Why us + progress bars */}
-        {/* <WhySection /> */}
-
-        {/* 8. Process timeline */}
         <ProcessSection />
 
         {/* 9. CTA with gradient + animated lines */}

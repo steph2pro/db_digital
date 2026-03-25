@@ -2,16 +2,260 @@
 {
   "nav": {
     "home": "Accueil",
-    "projects": "Projets",
-    "web-projects": "Projets Web",
-    "mobile-projects": "Projets Mobile",
-    "backend-projects": "Projets Backend",
-    "fullstack-projects": "Projets Fullstack",
     "blog": "Blog",
     "about": "À Propos",
     "contact": "Contact",
-    "trainings": "Formations"
+    "trainings": "Formations",
+    "careers": "Nous rejoindre"
   },
+  
+  "whatsapp": {
+    "defaultMessage": "Bonjour, je souhaite obtenir plus d'informations sur vos services d'immigration. Merci !",
+    "chooseAgency": "Choisissez votre agence",
+    "selectNearestAgency": "Sélectionnez l'agence la plus proche de vous",
+    "contactMainAgency": "Contacter l'agence principale",
+    "nearYou": "Proche de vous",
+    "openingWhatsApp": "Ouverture WhatsApp...",
+    "title": "WhatsApp",
+    "responseTime": "Réponse sous 5min",
+    "avgTime": "Temps moyen",
+    "satisfaction": "Satisfaction",
+    "startChat": "Démarrer la discussion",
+    "messages": {
+      "help": "💬 Besoin d'aide ?",
+      "project": "🚀 Discutons de votre projet !",
+      "quote": "⭐ Devis gratuit en 24h",
+      "immigration": "🌍 Immigration & Voyages",
+      "question": "💡 Une question ? On répond !",
+      "partner": "🤝 Devenez partenaire"
+    }
+  },
+  "stats": {
+    "eyebrow": "En chiffres",
+    "title": {
+      "line1": "Des résultats qui",
+      "line2": "parlent d'eux-mêmes"
+    },
+    "subtitle": "Chaque chiffre représente la confiance de nos clients et notre engagement à dépasser leurs attentes.",
+    "award": "Meilleure agence technologique",
+    "awardLocation": "Cameroun Tech",
+    "reviewsCount": "150+",
+    "reviews": "avis",
+    "testimonial": "DB Tech Agency a transformé notre vision en produit exceptionnel, livré avant le délai prévu.",
+    "testimonialAuthor": "Jean Paul, CEO StartupCM",
+    "clients": "clients nous font déjà confiance",
+    "items": {
+      "projects": "Projets livrés",
+      "projectsDesc": "Applications web et mobile",
+      "clients": "Clients satisfaits",
+      "clientsDesc": "Entreprises de toutes tailles",
+      "experience": "Années d'expérience",
+      "experienceDesc": "À votre service",
+      "satisfaction": "Taux de satisfaction",
+      "satisfactionDesc": "Recommandation client"
+    }
+  },
+  "servicesSection": {
+    "eyebrow": "Nos Expertises",
+    "title": "Des solutions qui font la différence",
+    "subtitle": "De l'idée au lancement, nous maîtrisons chaque étape pour vous livrer un produit qui génère de la valeur réelle.",
+    "web": {
+      "title": "Applications Web",
+      "desc": "Des applications web performantes, évolutives et sécurisées pour répondre à tous vos besoins métier."
+    },
+    "mobile": {
+      "title": "Applications Mobiles",
+      "desc": "Applications natives et cross-platform qui offrent une expérience utilisateur exceptionnelle sur iOS et Android."
+    },
+    "backend": {
+      "title": "Backend & API",
+      "desc": "Architectures backend robustes et API RESTful scalables pour supporter votre croissance."
+    },
+    "design": {
+      "title": "Design UI/UX",
+      "desc": "Des interfaces intuitives et des expériences utilisateur mémorables qui fidélisent vos utilisateurs."
+    },
+    "seo": {
+      "title": "SEO & Performance",
+      "desc": "Optimisez votre visibilité et vos performances avec des stratégies SEO avancées et un code optimisé."
+    },
+    "training": {
+      "title": "Formation & Conseil",
+      "desc": "Transférez vos compétences avec nos formations sur mesure et notre accompagnement expert."
+    },
+    "tags": {
+      "react": "React",
+      "nextjs": "Next.js",
+      "typescript": "TypeScript",
+      "laravel": "Laravel",
+      "flutter": "Flutter",
+      "ios": "iOS",
+      "android": "Android",
+      "firebase": "Firebase",
+      "nodejs": "Node.js",
+      "adonisjs": "AdonisJS",
+      "postgresql": "PostgreSQL",
+      "docker": "Docker",
+      "figma": "Figma",
+      "prototyping": "Prototypage",
+      "designSystem": "Design System",
+      "seo": "SEO",
+      "analytics": "Analytics",
+      "coreWebVitals": "Core Web Vitals",
+      "workshops": "Ateliers",
+      "audit": "Audit",
+      "mentoring": "Mentorat"
+    },
+    "features": {
+      "performance": "Performance optimale",
+      "seo": "SEO optimisé",
+      "responsive": "100% Responsive",
+      "pwa": "PWA Ready",
+      "crossPlatform": "Cross-platform",
+      "uiNative": "UI Native",
+      "storeReady": "Prêt pour les stores",
+      "offline": "Mode hors-ligne",
+      "scalable": "Scalable",
+      "secure": "Sécurisé",
+      "microservices": "Microservices",
+      "cloud": "Cloud Ready",
+      "wireframes": "Wireframes",
+      "prototypes": "Prototypes",
+      "designSystem": "Design System",
+      "uxResearch": "UX Research",
+      "technicalSeo": "SEO Technique",
+      "analytics": "Analytics",
+      "strategy": "Stratégie",
+      "workshops": "Ateliers pratiques",
+      "audit": "Audit technique",
+      "mentoring": "Mentorat",
+      "bestPractices": "Bonnes pratiques"
+    },
+    "stats": {
+      "projects": "50+",
+      "satisfaction": "98%",
+      "uptime": "99.9%",
+      "improvement": "+150%",
+      "learners": "200+",
+      "labels": {
+        "projects": "Projets",
+        "satisfaction": "Satisfaction",
+        "uptime": "Disponibilité",
+        "improvement": "Amélioration",
+        "learners": "Apprenants"
+      }
+    }
+  }
+,
+
+  "vision": {
+    "eyebrow": "Notre Vision",
+    "title": {
+      "line1": "Bâtir l'Afrique",
+      "line2": "digitale de demain"
+    },
+    "desc": "Nous croyons que chaque entreprise africaine mérite des outils numériques de classe mondiale. Notre mission : démocratiser l'excellence technologique.",
+    "center": "Vision",
+    "cta": "Découvrir notre vision",
+    "orbit": {
+      "web": "Web",
+      "mobile": "Mobile",
+      "backend": "Backend",
+      "design": "Design",
+      "cloud": "Cloud",
+      "ai": "IA"
+    },
+    "values": {
+      "speed": {
+        "title": "Rapidité d'exécution",
+        "desc": "Sprints agiles, deadlines respectées. Nous livrons vite sans sacrifier la qualité."
+      },
+      "excellence": {
+        "title": "Excellence technique",
+        "desc": "Code propre, architecture solide, technologies modernes — nous ne faisons pas de compromis."
+      },
+      "partnership": {
+        "title": "Partenariat durable",
+        "desc": "Nous ne sommes pas un prestataire, nous sommes votre partenaire tech de confiance."
+      },
+      "roi": {
+        "title": "ROI mesurable",
+        "desc": "Chaque décision technique est prise en regard de son impact sur vos revenus."
+      }
+    }
+  }
+,
+
+  "process": {
+    "eyebrow": "Notre Processus",
+    "title": {
+      "line1": "5 étapes vers",
+      "line2": "votre succès digital"
+    },
+    "steps": {
+      "discovery": {
+        "title": "Découverte",
+        "desc": "Call gratuit 30 min pour comprendre vos besoins, objectifs et contraintes.",
+        "duration": "24h",
+        "details": {
+          "analysis": "Analyse des besoins",
+          "market": "Étude de marché",
+          "goals": "Définition des objectifs",
+          "constraints": "Identification des contraintes"
+        }
+      },
+      "strategy": {
+        "title": "Stratégie",
+        "desc": "Proposition technique détaillée, roadmap et budget en 48h.",
+        "duration": "48h",
+        "details": {
+          "architecture": "Architecture technique",
+          "tech": "Stack technologique",
+          "planning": "Planning détaillé",
+          "quote": "Devis précis"
+        }
+      },
+      "design": {
+        "title": "Design",
+        "desc": "Maquettes Figma interactives validées avant la moindre ligne de code.",
+        "duration": "1-2 sem",
+        "details": {
+          "wireframes": "Wireframes",
+          "uiux": "UI/UX Design",
+          "prototype": "Prototype interactif",
+          "validation": "Validation client"
+        }
+      },
+      "development": {
+        "title": "Développement",
+        "desc": "Sprints agiles de 2 semaines avec démos régulières et ajustements.",
+        "duration": "2-4 sem",
+        "details": {
+          "sprints": "Sprints agiles",
+          "tests": "Tests continus",
+          "reviews": "Revues de code",
+          "demos": "Démos régulières"
+        }
+      },
+      "launch": {
+        "title": "Lancement",
+        "desc": "Déploiement, formation équipe et support 3 mois inclus.",
+        "duration": "1 sem",
+        "details": {
+          "deployment": "Déploiement",
+          "training": "Formation",
+          "documentation": "Documentation",
+          "support": "Support 3 mois"
+        }
+      }
+    },
+    "averageDuration": {
+      "label": "Projet terminé en moyenne",
+      "value": "6-8 semaines"
+    }
+  }
+,
+
   
   "home": {
     "hero": {
@@ -78,73 +322,14 @@
         "Design UI/UX",
         "Backend & APIs",
         "SEO & Performance",
-        "Formation & Conseil",
+        "Formations & Conseils",
         "Cloud & DevOps",
         "E-commerce"
       ]
     },
    
-  "services": {
-    "eyebrow": "Nos Expertises",
-    "title": "Des solutions qui font la différence",
-    "subtitle": "De l'idée au lancement, nous maîtrisons chaque étape pour vous livrer un produit qui génère de la valeur réelle.",
-    "web": {
-      "title": "Développement Web",
-      "desc": "Sites vitrine, e-commerce, SaaS — des applications performantes, accessibles et optimisées pour convertir vos visiteurs en clients."
-    },
-    "mobile": {
-      "title": "Applications Mobiles",
-      "desc": "Apps cross-platform fluides et élégantes. Développées avec Flutter pour une expérience native sur iOS et Android, publication incluse."
-    },
-    "backend": {
-      "title": "Backend & APIs",
-      "desc": "Architecture robuste, APIs RESTful & GraphQL, systèmes scalables. Des solutions backend conçues pour durer et grandir avec votre business."
-    },
-    "design": {
-      "title": "Design UI/UX",
-      "desc": "Interfaces belles et intuitives conçues pour convertir. Maquettes interactives validées avant la moindre ligne de code."
-    },
-    "seo": {
-      "title": "SEO & Performance",
-      "desc": "Optimisation pour les moteurs de recherche, audits Lighthouse, stratégie de contenu. Soyez visible là où vos clients vous cherchent."
-    },
-    "training": {
-      "title": "Formation & Conseil",
-      "desc": "Ateliers techniques, audit de code et conseil en architecture. Montez en compétences avec notre équipe expérimentée."
-    },
-    "features": {
-      "performance": "Performance",
-      "seo": "SEO",
-      "responsive": "Responsive",
-      "pwa": "PWA",
-      "cross-platform": "Cross-platform",
-      "ui native": "UI native",
-      "store ready": "Store ready",
-      "offline": "Offline",
-      "scalable": "Scalable",
-      "sécurisé": "Sécurisé",
-      "microservices": "Microservices",
-      "cloud": "Cloud",
-      "wireframes": "Wireframes",
-      "prototypes": "Prototypes",
-      "design system": "Design System",
-      "ux research": "UX Research",
-      "seo technique": "SEO technique",
-      "analytics": "Analytics",
-      "strategy": "Strategy",
-      "workshops": "Workshops",
-      "audit": "Audit",
-      "mentoring": "Mentoring",
-      "best practices": "Best practices"
-    },
-    "stats": {
-      "projects": "projets",
-      "satisfaction": "satisfaction",
-      "uptime": "uptime",
-      "learners": "apprenants",
-      "improvement": "amélioration"
-    }
-  },
+    
+
     
     "stats": {
       "eyebrow": "En chiffres",
@@ -410,7 +595,7 @@
       },
       {
         "id": 2,
-        "name": "Mr Patrick Erick MOUAFFO",
+        "name": "Mr Talla Endre",
         "position": "Fondateur, StartUp Innov",
         "content": "Grâce à eux, notre application mobile a été développée en un temps record sans aucun compromis sur la qualité. Une collaboration agile et transparente.",
         "project": "App Mobile",
@@ -588,7 +773,7 @@
     "tutorials": "Tutoriels",
     "about": "À Propos",
     "team": "Équipe",
-    "careers": "Carrières",
+    "careers": "Nous rejoindre",
     "partners": "Partenaires",
     "get-quote": "Demander un Devis",
     "support": "Support Client",
@@ -597,230 +782,238 @@
 
   
   "services": {
-    "eyebrow": "Our Expertise",
-    "title": "We create",
-    "subtitle": "Tailored digital solutions that transform your vision into reality and propel your business toward excellence",
-    "available": "services available",
-    "seeMore": "Discover details",
-    "seeLess": "See less",
-    "features": "Key features",
-    "benefits": "Benefits",
-    "timeline": "Timeline",
-    "priceRange": {
-      "from": "From",
-      "custom": "Custom quote",
-      "monthly": "Monthly",
-      "project": "Per project"
-    },
+    "eyebrow": "Notre Expertise",
+    "title": "Nous créons",
+    "subtitle": "Des solutions digitales sur mesure qui transforment votre vision en réalité et propulsent votre entreprise vers l'excellence",
+    "available": "services disponibles",
+    "seeMore": "Découvrir les détails",
+    "seeLess": "Réduire",
+    "features": "Fonctionnalités clés",
+    "benefits": "Bénéfices",
+    "timelineDesc": "Délais",
     "timeline": {
-      "weeks": "2-4 weeks",
-      "months": "2-3 months",
-      "ongoing": "Ongoing",
-      "monthly": "Monthly",
-      "immediate": "Immediate"
+      "weeks": "2-4 semaines",
+      "months": "2-3 mois",
+      "ongoing": "Continu",
+      "monthly": "Mensuel",
+      "immediate": "Immédiat"
+    },
+    "priceRange": {
+      "from": "À partir de",
+      "custom": "Devis personnalisé",
+      "monthly": "Par mois",
+      "project": "Par projet"
+    },
+    "timelineValues": {
+      "weeks": "2-4 semaines",
+      "months": "2-3 mois",
+      "ongoing": "Continu",
+      "monthly": "Mensuel",
+      "immediate": "Immédiat"
     },
     "categories": {
       "web": {
-        "title": "Web & Mobile Development",
-        "description": "High-performance websites and mobile apps that captivate your visitors and turn them into loyal customers",
+        "title": "Développement Web & Mobile",
+        "description": "Des applications et sites web haute performance qui captivent vos visiteurs et les transforment en clients fidèles",
         "services": {
           "vitrine": {
-            "title": "Professional Business Website",
-            "description": "An elegant and powerful digital showcase that reflects your company's excellence and attracts qualified clientele",
+            "title": "Site Web Professionnel",
+            "description": "Une vitrine digitale élégante et performante qui reflète l'excellence de votre entreprise et attire une clientèle qualifiée",
             "features": {
-              "design": "Modern and custom design that leaves a lasting impression",
-              "responsive": "Perfect adaptation to all screens (mobile, tablet, desktop)",
-              "seo": "SEO optimization to dominate local search results",
-              "contact": "Smart contact form with spam protection",
-              "analytics": "Advanced analytics to track your audience",
-              "speed": "Optimized performance for a smooth experience"
+              "design": "Design moderne et personnalisé qui marque les esprits",
+              "responsive": "Adaptation parfaite à tous les écrans (mobile, tablette, desktop)",
+              "seo": "Optimisation SEO pour dominer les recherches locales",
+              "contact": "Formulaire de contact intelligent avec protection anti-spam",
+              "analytics": "Analytics avancé pour suivre votre audience",
+              "speed": "Performance optimisée pour une expérience fluide"
             },
             "benefits": {
-              "credibility": "Enhanced professional credibility",
-              "visibility": "24/7 visibility",
-              "conversion": "Qualified lead generation"
+              "credibility": "Crédibilité professionnelle renforcée",
+              "visibility": "Visibilité 24h/24 et 7j/7",
+              "conversion": "Génération de leads qualifiés"
             }
           },
           "ecommerce": {
-            "title": "E-commerce Website",
-            "description": "A complete online sales platform that revolutionizes your business experience and maximizes your revenue",
+            "title": "Boutique E-commerce",
+            "description": "Une plateforme de vente en ligne complète qui révolutionne votre expérience commerciale et maximise vos revenus",
             "features": {
-              "catalog": "Smart product catalog with real-time inventory management",
-              "payment": "Secure multi-method payment (Mobile Money, Cards, PayPal)",
-              "inventory": "Automated stock and order management",
-              "shipping": "Dynamic shipping cost calculation",
-              "reviews": "Customer reviews and ratings system",
-              "dashboard": "Intuitive admin dashboard"
+              "catalog": "Catalogue produits intelligent avec gestion de stock en temps réel",
+              "payment": "Paiement sécurisé multi-moyens (Mobile Money, Cartes, PayPal)",
+              "inventory": "Gestion automatisée des stocks et commandes",
+              "shipping": "Calcul dynamique des frais de livraison",
+              "reviews": "Système d'avis et notations clients",
+              "dashboard": "Tableau de bord administrateur intuitif"
             },
             "benefits": {
-              "reach": "Expand your market beyond borders",
-              "sales": "24/7 uninterrupted sales",
-              "automation": "Process automation for greater efficiency"
+              "reach": "Élargissez votre marché au-delà des frontières",
+              "sales": "Ventes 24h/24 sans interruption",
+              "automation": "Automatisation des processus pour gagner en efficacité"
             }
           },
           "mobile": {
-            "title": "Mobile Application",
-            "description": "Native and cross-platform apps that put your business in your customers' pockets",
+            "title": "Application Mobile",
+            "description": "Des applications natives et cross-plateform qui placent votre entreprise dans la poche de vos clients",
             "features": {
-              "ios": "Native iOS app optimized for the App Store",
-              "android": "Native Android app on Google Play Store",
-              "ui": "Intuitive and captivating user interface",
-              "push": "Push notifications to engage your users",
-              "offline": "Offline mode for permanent accessibility",
-              "store": "Store deployment and optimization"
+              "ios": "Application iOS native optimisée pour l'App Store",
+              "android": "Application Android native sur le Google Play Store",
+              "ui": "Interface utilisateur intuitive et captivante",
+              "push": "Notifications push pour engager vos utilisateurs",
+              "offline": "Mode hors ligne pour une accessibilité permanente",
+              "store": "Déploiement et référencement sur les stores"
             },
             "benefits": {
-              "engagement": "Multiplied user engagement",
-              "loyalty": "Enhanced customer loyalty",
-              "access": "Instant mobile access anytime, anywhere"
+              "engagement": "Engagement utilisateur décuplé",
+              "loyalty": "Fidélisation client renforcée",
+              "access": "Accès mobile instantané en toutes circonstances"
             }
           }
         }
       },
       "marketing": {
-        "title": "Digital Marketing & Visibility",
-        "description": "Powerful marketing strategies that propel your brand to the forefront and generate qualified leads",
+        "title": "Marketing Digital & Visibilité",
+        "description": "Des stratégies marketing percutantes qui propulsent votre marque au premier plan et génèrent des leads qualifiés",
         "services": {
           "seo": {
-            "title": "SEO Optimization",
-            "description": "Dominate search results and attract qualified traffic with our cutting-edge SEO expertise",
+            "title": "Optimisation SEO",
+            "description": "Dominez les résultats de recherche et attirez un trafic qualifié grâce à notre expertise SEO pointue",
             "features": {
-              "audit": "In-depth technical audit of your site",
-              "keywords": "High-potential keyword research",
-              "content": "Content optimization for search engines",
-              "links": "Strategic quality link building",
-              "technical": "Advanced technical optimization",
-              "local": "Local SEO to dominate your geographic area"
+              "audit": "Audit technique approfondi de votre site",
+              "keywords": "Recherche de mots-clés à fort potentiel",
+              "content": "Optimisation de contenu pour les moteurs de recherche",
+              "links": "Netlinking stratégique de qualité",
+              "technical": "Optimisation technique avancée",
+              "local": "SEO local pour dominer votre zone géographique"
             },
             "benefits": {
-              "traffic": "Qualified traffic and organic growth",
-              "ranking": "Premium positioning on strategic keywords",
-              "roi": "Sustainable ROI and long-term growth"
+              "traffic": "Trafic qualifié et croissance organique",
+              "ranking": "Positionnement privilégié sur les mots-clés stratégiques",
+              "roi": "ROI durable et croissance pérenne"
             }
           },
           "ads": {
-            "title": "Online Advertising",
-            "description": "Ultra-targeted advertising campaigns that maximize your visibility and return on investment",
+            "title": "Publicité en Ligne",
+            "description": "Des campagnes publicitaires ultra-ciblées qui maximisent votre visibilité et votre retour sur investissement",
             "features": {
-              "google": "Optimized Google Ads campaigns",
-              "social": "Social media ads across all platforms",
-              "retargeting": "Smart retargeting to convert visitors",
-              "analytics": "Real-time performance analytics",
-              "optimization": "Continuous campaign optimization",
-              "reporting": "Detailed and transparent reporting"
+              "google": "Campagnes Google Ads optimisées",
+              "social": "Publicités sociales sur toutes les plateformes",
+              "retargeting": "Retargeting intelligent pour convertir les visiteurs",
+              "analytics": "Analyse de performance en temps réel",
+              "optimization": "Optimisation continue des campagnes",
+              "reporting": "Reporting détaillé et transparent"
             },
             "benefits": {
-              "reach": "Immediate visibility with your target audience",
-              "roi": "Measurable and optimized ROI",
-              "targeting": "Precise and personalized targeting"
+              "reach": "Visibilité immédiate auprès de votre cible",
+              "roi": "ROI mesurable et optimisé",
+              "targeting": "Ciblage précis et personnalisé"
             }
           },
           "social": {
-            "title": "Social Media",
-            "description": "An impactful social presence that builds an engaged community around your brand",
+            "title": "Réseaux Sociaux",
+            "description": "Une présence sociale impactante qui crée une communauté engagée autour de votre marque",
             "features": {
-              "strategy": "Personalized content strategy",
-              "content": "Engaging and viral content creation",
-              "community": "Responsive and human community management",
-              "influencers": "Strategic influencer marketing",
-              "analytics": "In-depth performance analytics",
-              "campaigns": "High-impact viral campaigns"
+              "strategy": "Stratégie de contenu personnalisée",
+              "content": "Création de contenu engageant et viral",
+              "community": "Community management réactif et humain",
+              "influencers": "Marketing d'influence stratégique",
+              "analytics": "Analytics approfondi des performances",
+              "campaigns": "Campagnes virales à fort impact"
             },
             "benefits": {
-              "engagement": "Authentic engagement with your community",
-              "brand": "Multiplied brand awareness",
-              "community": "Loyal and involved community"
+              "engagement": "Engagement authentique avec votre communauté",
+              "brand": "Notoriété de marque décuplée",
+              "community": "Communauté fidèle et impliquée"
             }
           }
         }
       },
       "design": {
-        "title": "Design & Visual Identity",
-        "description": "A distinctive visual identity that tells your story and leaves a lasting impression in your customers' minds",
+        "title": "Design & Identité Visuelle",
+        "description": "Une identité visuelle distinctive qui raconte votre histoire et laisse une empreinte durable dans l'esprit de vos clients",
         "services": {
           "uiux": {
-            "title": "UI/UX Design",
-            "description": "Intuitive and elegant interfaces that deliver an exceptional user experience",
+            "title": "Design UI/UX",
+            "description": "Des interfaces intuitives et élégantes qui offrent une expérience utilisateur exceptionnelle",
             "features": {
-              "research": "In-depth user research",
-              "wireframes": "Tested interactive wireframes",
-              "prototype": "Navigable high-fidelity prototypes",
-              "testing": "Iterative user testing",
-              "designSystem": "Coherent and scalable design system",
-              "accessibility": "Universal accessibility (WCAG)"
+              "research": "Recherche utilisateur approfondie",
+              "wireframes": "Wireframes interactifs et testés",
+              "prototype": "Prototypes haute-fidélité navigables",
+              "testing": "Tests utilisateur itératifs",
+              "designSystem": "Système de design cohérent et évolutif",
+              "accessibility": "Accessibilité universelle (WCAG)"
             },
             "benefits": {
-              "experience": "Memorable user experience",
-              "conversion": "Optimized conversion rate",
-              "satisfaction": "Maximum customer satisfaction"
+              "experience": "Expérience utilisateur mémorable",
+              "conversion": "Taux de conversion optimisé",
+              "satisfaction": "Satisfaction client maximale"
             }
           },
           "branding": {
-            "title": "Brand Identity",
-            "description": "A strong and memorable brand that sets you apart and creates an emotional connection with your audience",
+            "title": "Identité de Marque",
+            "description": "Une marque forte et mémorable qui vous différencie et crée une connexion émotionnelle avec votre audience",
             "features": {
-              "logo": "Iconic and timeless logo",
-              "identity": "Complete and coherent visual identity",
-              "guidelines": "Detailed brand guidelines",
-              "stationery": "Stationery and print materials",
-              "packaging": "Innovative packaging design",
-              "strategy": "Distinctive brand strategy"
+              "logo": "Logo iconique et intemporel",
+              "identity": "Identité visuelle complète et cohérente",
+              "guidelines": "Charte graphique détaillée",
+              "stationery": "Papeterie et supports print",
+              "packaging": "Design packaging innovant",
+              "strategy": "Stratégie de marque distinctive"
             },
             "benefits": {
-              "recognition": "Instant brand recognition",
-              "trust": "Increased trust and credibility",
-              "differentiation": "Unique market differentiation"
+              "recognition": "Reconnaissance instantanée de votre marque",
+              "trust": "Confiance et crédibilité accrues",
+              "differentiation": "Différenciation unique sur le marché"
             }
           }
         }
       },
       "support": {
-        "title": "Technical Support & Infrastructure",
-        "description": "Robust infrastructure and responsive support for complete peace of mind and optimal performance",
+        "title": "Support Technique & Infrastructure",
+        "description": "Une infrastructure robuste et un support réactif pour une tranquillité d'esprit totale et une performance optimale",
         "services": {
           "maintenance": {
-            "title": "Technical Maintenance",
-            "description": "Preventive and corrective maintenance that ensures the longevity and performance of your digital solutions",
+            "title": "Maintenance Technique",
+            "description": "Une maintenance préventive et corrective qui garantit la pérennité et les performances de vos solutions digitales",
             "features": {
-              "updates": "Critical security updates",
-              "security": "24/7 monitoring",
-              "backup": "Secure automatic backups",
-              "monitoring": "Continuous performance monitoring",
-              "optimization": "Ongoing performance optimization",
-              "support": "Priority and personalized support"
+              "updates": "Mises à jour de sécurité critiques",
+              "security": "Surveillance 24h/24 et 7j/7",
+              "backup": "Sauvegardes automatiques sécurisées",
+              "monitoring": "Monitoring performance en continu",
+              "optimization": "Optimisation continue des performances",
+              "support": "Support prioritaire et personnalisé"
             },
             "benefits": {
-              "security": "Enhanced and proactive security",
-              "performance": "Consistent optimal performance",
-              "reliability": "Guaranteed reliability and availability"
+              "security": "Sécurité renforcée et proactive",
+              "performance": "Performance optimale constante",
+              "reliability": "Fiabilité et disponibilité garanties"
             }
           },
           "hosting": {
-            "title": "Premium Hosting",
-            "description": "High-performance hosting that ensures speed, security, and availability for your digital projects",
+            "title": "Hébergement Premium",
+            "description": "Un hébergement haute performance qui assure rapidité, sécurité et disponibilité pour vos projets digitaux",
             "features": {
-              "speed": "Optimized servers for ultra-fast loading times",
-              "uptime": "99.9% guaranteed uptime",
-              "ssl": "Included SSL certificate for security",
-              "cdn": "Integrated CDN for global speed",
-              "scaling": "Auto-scaling to handle traffic spikes",
-              "backups": "Automated daily backups"
+              "speed": "Serveurs optimisés pour des temps de charge ultra-rapides",
+              "uptime": "Disponibilité garantie à 99.9%",
+              "ssl": "Certificat SSL inclus pour la sécurité",
+              "cdn": "CDN intégré pour une vitesse globale",
+              "scaling": "Auto-scaling pour gérer les pics de trafic",
+              "backups": "Sauvegardes quotidiennes automatisées"
             },
             "benefits": {
-              "reliability": "Maximum reliability and zero downtime",
-              "speed": "Exceptional loading speed",
-              "security": "Guaranteed data security"
+              "reliability": "Fiabilité maximale et zéro downtime",
+              "speed": "Vitesse de chargement exceptionnelle",
+              "security": "Sécurité des données garantie"
             }
           }
         }
       }
     },
     "cta": {
-      "title": "Ready to bring your project to life?",
-      "description": "Contact us to discuss your ambitions and get a personalized quote tailored to your needs",
-      "button": "Get a quote"
+      "title": "Prêt à concrétiser votre projet ?",
+      "description": "Contactez-nous pour discuter de vos ambitions et obtenir un devis personnalisé adapté à vos besoins",
+      "button": "Obtenir un devis"
     }
   }
+
 ,
 
   "expertise": {
@@ -1121,51 +1314,118 @@
         }
       }
     },
+
+  
+
+    "cta": "Travailler avec nous"
+  },
+  "partners": {
+    "subtitle": "Ils nous font confiance et nous accompagnent",
+    "title": "Nos Partenaires",
+    "description": "Nous collaborons avec les leaders mondiaux et africains de la technologie pour offrir le meilleur à nos clients.",
+    "categories": {
+      "all": "Tous",
+      "technology": "Technologie",
+      "business": "Business",
+      "certification": "Certification"
+    },
+    "badges": {
+      "technology": "Technologie",
+      "business": "Business",
+      "certification": "Certification"
+    },
+    "since": "Depuis",
+    "certifications": "Nos Certifications",
     "partners": {
-      "subtitle": "Ils nous font confiance et nous accompagnent",
-      "title": "Nos Partenaires",
-      "description": "Nous collaborons avec les leaders de l'industrie pour offrir le meilleur à nos clients.",
-      "categories": {
-        "all": "Tous",
-        "technology": "Technologie",
-        "business": "Business",
-        "certification": "Certification"
+      "orange": {
+        "name": "Orange",
+        "description": "Leader des télécoms en Afrique, partenaire stratégique pour l'innovation digitale."
       },
-      "badges": {
-        "technology": "Technologie",
-        "business": "Business",
-        "certification": "Certification"
+      "mtn": {
+        "name": "MTN Group",
+        "description": "Groupe de télécommunications panafricain, partenaire pour la connectivité mobile."
       },
-      "since": "Depuis",
-      "certifications": "Nos Certifications",
-      "partners": {
-        "google": {
-          "name": "Google Cloud",
-          "description": "Partenaire officiel pour les solutions cloud et l'IA."
-        },
-        "microsoft": {
-          "name": "Microsoft",
-          "description": "Partenaire Gold pour Azure et les solutions entreprise."
-        },
-        "aws": {
-          "name": "AWS",
-          "description": "Fournisseur de services cloud certifié."
-        },
-        "meta": {
-          "name": "Meta",
-          "description": "Partenaire marketing pour les solutions publicitaires."
-        },
-        "iso": {
-          "name": "ISO",
-          "description": "Certification qualité et sécurité de l'information."
-        },
-        "bcorporation": {
-          "name": "B Corporation",
-          "description": "Certification d'impact social et environnemental."
-        }
+      "paystack": {
+        "name": "Paystack",
+        "description": "Solution de paiement en ligne, filiale de Stripe pour l'Afrique."
+      },
+      "google": {
+        "name": "Google Cloud",
+        "description": "Partenaire officiel pour les solutions cloud et l'intelligence artificielle."
+      },
+      "microsoft": {
+        "name": "Microsoft",
+        "description": "Partenaire Gold pour Azure et les solutions d'entreprise."
+      },
+      "iso": {
+        "name": "ISO",
+        "description": "Certification internationale pour la qualité et la sécurité de l'information."
+      },
+      "afrinnov": {
+        "name": "Afrinnov",
+        "description": "Accélérateur de startups tech en Afrique, accompagnement des talents innovants."
+      },
+      "flutterwave": {
+        "name": "Flutterwave",
+        "description": "Plateforme de paiement panafricaine, leader des transactions digitales."
+      },
+      "andela": {
+        "name": "Andela",
+        "description": "Formation et recrutement des meilleurs développeurs en Afrique."
+      }
+    }
+  },
+   "careers": {
+    "subtitle": "Rejoignez une équipe passionnée et innovante",
+    "title": "Nous rejoindre",
+    "description": "Vous êtes talentueux, passionné par la tech et vous souhaitez contribuer à des projets innovants ? Rejoignez notre équipe et participez à l'aventure DB Travel Agency.",
+    "values": {
+      "title": "Nos valeurs",
+      "innovation": {
+        "title": "Innovation",
+        "desc": "Nous encourageons la créativité et les idées nouvelles"
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "desc": "Le travail d'équipe est au cœur de notre succès"
+      },
+      "excellence": {
+        "title": "Excellence",
+        "desc": "Nous visons l'excellence dans tout ce que nous faisons"
+      },
+      "passion": {
+        "title": "Passion",
+        "desc": "Nous mettons notre cœur dans chaque projet"
       }
     },
-    "cta": "Travailler avec nous"
+    "form": {
+      "title": "Postuler spontanément",
+      "fullName": "Nom complet",
+      "email": "Email",
+      "phone": "Téléphone",
+      "position": "Poste souhaité",
+      "selectPosition": "Sélectionnez un poste",
+      "experience": "Expérience",
+      "experiencePlaceholder": "Décrivez votre expérience professionnelle, vos compétences et réalisations...",
+      "message": "Message / Motivation",
+      "messagePlaceholder": "Parlez-nous de vous, de votre motivation et de ce que vous pouvez apporter à notre équipe...",
+      "cv": "CV",
+      "submit": "Envoyer ma candidature",
+      "sending": "Envoi en cours...",
+      "success": "Votre candidature a bien été envoyée ! Nous vous répondrons dans les plus brefs délais."
+    },
+    "errors": {
+      "fileType": "Veuillez uploader un fichier au format PDF, DOC ou DOCX",
+      "fileSize": "Le fichier ne doit pas dépasser 5 Mo"
+    },
+    "positions": {
+      "developer": "Développeur / Développeuse",
+      "designer": "Designer UI/UX",
+      "projectManager": "Chef de projet",
+      "marketing": "Marketing Digital",
+      "sales": "Commercial / Business Development",
+      "other": "Autre"
+    }
   },
   
   "contact": {
@@ -1296,11 +1556,6 @@
     "backHome": "Retour à l'accueil",
     "goBack": "Page précédente",
     "quickLinks": "Ou essayez ces liens rapides :"
-  },
-  "nav": {
-    "projects": "Projets",
-    "blog": "Blog",
-    "about": "À propos",
-    "contact": "Contact"
   }
+ 
 }

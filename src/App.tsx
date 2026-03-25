@@ -1,11 +1,8 @@
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
 import { Home } from './pages/Home';
-import {  TechnologiesPage } from './pages/TechnologiesPage';
-import { Blog } from './pages/Blog';
-import { BlogPost } from './pages/BlogPost';
+import { TechnologiesPage } from './pages/TechnologiesPage';
 import { NotFound } from './pages/404';
 import './i18n';
 import { ThemeProvider } from './contexts/ThemeContext';
@@ -17,11 +14,17 @@ import { ServicesPage } from './pages/ServicesPage';
 import { QualityPage } from './pages/QualityPage';
 import { AboutPage } from './pages/AboutPage';
 import { PartnersPage } from './pages/PartnersPage';
-import TeamPage from './pages/TeamPage';
+import { CareersPage } from './pages/CareersPage';
 import QuotePage from './pages/QuotePage';
 import LocationPage from './pages/LocationPage';
 
 function App() {
+  const offices = [
+    { city: 'Yaoundé - Nkoabang', phone: '640 46 51 82' },
+    { city: 'Douala - Cité des Palmiers', phone: '657 12 87 12' },
+    { city: 'Bafoussam - Kamkop', phone: '640 10 19 74' },
+  ];
+  
   return (
     <ThemeProvider>
       <AppProvider>
@@ -33,25 +36,26 @@ function App() {
                 <Route path="/" element={<Home />} />
                 
                 <Route path="/about" element={<AboutPage />} />
-                <Route path="/team" element={<TeamPage />} />
+                <Route path="/careers" element={<CareersPage />} />
                 <Route path="/partners" element={<PartnersPage />} />
 
                 <Route path="/technologies" element={<TechnologiesPage />} />
                 <Route path="/methodology" element={<MethodologyPage />} />
                 <Route path="/quality" element={<QualityPage />} />
                 
-        {/* Routes Contact */}
-        <Route path="/contact" element={<QuotePage />} />
-        <Route path="/contact/quote" element={<QuotePage />} />
-        <Route path="/contact/support" element={<SupportPage />} />
-        <Route path="/contact/location" element={<LocationPage />} />
+                {/* Routes Contact */}
+                <Route path="/contact" element={<QuotePage />} />
+                <Route path="/contact/quote" element={<QuotePage />} />
+                <Route path="/contact/support" element={<SupportPage />} />
+                <Route path="/contact/location" element={<LocationPage />} />
                 
                 {/* Blog Routes */}
-                <Route path="/blog">
+                {/* <Route path="/blog">
                   <Route index element={<Blog />} />
                   <Route path=":postId" element={<BlogPost />} />
-                </Route>
-                {/* services Routes */}
+                </Route> */}
+                
+                {/* Services Routes */}
                 <Route path="/services">
                   <Route index element={<ServicesPage />} />
                 </Route>
@@ -61,7 +65,7 @@ function App() {
               </Routes>
             </main>
 
-      <WhatsAppFAB />
+            <WhatsAppFAB offices={offices} />
             <Footer />
           </div>
         </Router>

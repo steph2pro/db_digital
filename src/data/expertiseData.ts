@@ -358,7 +358,7 @@ export const qualityCommitments: QualityCommitment[] = [
 
 // Images pour les pages
 export const expertiseImages = {
-  technologies: '/images/expertise/tech-hero.jpg',
+  technologies: 'https://thumbs.dreamstime.com/b/exploring-advanced-industrial-technology-digital-design-software-cnc-machines-modern-engineering-workshop-high-tech-352045081.jpg',
   methodology: '/images/services/backend.jpg',
   quality: '/images/services/ui-ux-design.jpg'
 };

@@ -1,9 +1,9 @@
-// src/components/common/Footer.tsx
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { AnimatePresence, motion, useAnimation, useInView, Variants } from 'motion/react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBuilding, faEnvelope, faHeadset } from '@fortawesome/free-solid-svg-icons';
 
 export const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -65,12 +65,20 @@ export const Footer: React.FC = () => {
     { id: 'legal', icon: 'bx bx-gavel', path: '/services/legal' },
   ];
 
+  // Emails généraux
+  const generalEmails = [
+    { email: 'sales@dbdigitalagency.com', icon: faBuilding, type: 'Sales', description: 'For business inquiries and partnerships' },
+    { email: 'contact@dbdigitalagency.com', icon: faEnvelope, type: 'General', description: 'General questions and information' },
+    { email: 'support@dbdigitalagency.com', icon: faHeadset, type: 'Support', description: 'Technical support and assistance' }
+  ];
+
   interface City {
     id: string;
     flag: string;
     addressKey: string;
     phone1: string;
     phone2: string;
+    email: string;
   }
 
   interface Location {
@@ -84,9 +92,30 @@ export const Footer: React.FC = () => {
     {
       continent: 'africa',
       cities: [
-        { id: 'yaounde', flag: '🇨🇲', addressKey: 'footer.locations.yaounde.address', phone1: '640 46 51 82', phone2: '652 79 91 81' },
-        { id: 'douala', flag: '🇨🇲', addressKey: 'footer.locations.douala.address', phone1: '657 128 712', phone2: '673 071 017' },
-        { id: 'bafoussam', flag: '🇨🇲', addressKey: 'footer.locations.bafoussam.address', phone1: '640 101 974', phone2: '681 748 229' },
+        { 
+          id: 'yaounde', 
+          flag: '🇨🇲', 
+          addressKey: 'footer.locations.yaounde.address', 
+          phone1: '6 91 32 32 49', 
+          phone2: '',
+          email: 'yaounde@dbdigitalagency.com'
+        },
+        { 
+          id: 'douala', 
+          flag: '🇨🇲', 
+          addressKey: 'footer.locations.douala.address', 
+          phone1: '657 128 712', 
+          phone2: '',
+          email: 'douala@dbdigitalagency.com'
+        },
+        { 
+          id: 'bafoussam', 
+          flag: '🇨🇲', 
+          addressKey: 'footer.locations.bafoussam.address', 
+          phone1: '640 819 846', 
+          phone2: '678 393 910',
+          email: 'bafoussam@dbdigitalagency.com'
+        },
       ]
     },
     { continent: 'europe', flag: '🇪🇺', active: true },
@@ -94,16 +123,6 @@ export const Footer: React.FC = () => {
     { continent: 'america', flag: '🌎', active: true },
     { continent: 'oceania', flag: '🌏', active: true },
   ];
-
-  // const socialLinks = [
-  //   { icon: 'bx bxl-linkedin', name: 'LinkedIn', url: 'https://linkedin.com/company/db-digital-agency', color: 'hover:text-blue-600' },
-  //   { icon: 'bx bxl-github', name: 'GitHub', url: 'https://github.com/dbdigitalagency', color: 'hover:text-gray-700 dark:hover:text-white' },
-  //   { icon: 'bx bxl-twitter', name: 'Twitter', url: 'https://twitter.com/dbdigitalagency', color: 'hover:text-blue-400' },
-  //   { icon: 'bx bxl-facebook', name: 'Facebook', url: 'https://facebook.com/dbdigitalagency', color: 'hover:text-blue-600' },
-  //   { icon: 'bx bxl-instagram', name: 'Instagram', url: 'https://instagram.com/dbdigitalagency', color: 'hover:text-pink-600' },
-  //   { icon: 'bx bxl-youtube', name: 'YouTube', url: 'https://youtube.com/@dbdigitalagency', color: 'hover:text-red-600' },
-  //   { icon: 'bx bxl-tiktok', name: 'TikTok', url: 'https://tiktok.com/@dbdigitalagency', color: 'hover:text-black dark:hover:text-white' },
-  // ];
 
   // Récupérer les villes d'Afrique
   const africanCities = locations.find(loc => loc.continent === 'africa')?.cities || [];
@@ -209,7 +228,7 @@ export const Footer: React.FC = () => {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    // placeholder={t('footer.newsletter.placeholder')}
+                   placeholder={t('footer.newsletter.placeholder') as string}
                     className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-green-500 transition-colors"
                     required
                   />
@@ -316,7 +335,7 @@ export const Footer: React.FC = () => {
           </motion.div>
         </motion.div>
 
-        {/* Middle Section - Locations */}
+        {/* Middle Section - Locations avec Emails */}
         <motion.div variants={itemVariants} className="mb-16">
           <h3 className="text-lg font-bold font-display mb-8 text-center">{t('footer.locations.title')}</h3>
           <div className="grid md:grid-cols-3 gap-6">
@@ -342,28 +361,44 @@ export const Footer: React.FC = () => {
                   </div>
                   
                   {/* Téléphones */}
-                  <div className="space-y-2">
-                    <motion.a
-                      href={`tel:+237${city.phone1.replace(/\s/g, '')}`}
-                      animate={{
-                        x: hoveredLocation === city.id ? 5 : 0,
-                      }}
-                      className="flex items-center gap-3 text-gray-400 hover:text-green-400 transition-colors"
-                    >
-                      <i className="bx bx-phone text-sm"></i>
-                      <span className="text-sm">{city.phone1}</span>
-                    </motion.a>
-                    <motion.a
-                      href={`tel:+237${city.phone2.replace(/\s/g, '')}`}
-                      animate={{
-                        x: hoveredLocation === city.id ? 5 : 0,
-                      }}
-                      className="flex items-center gap-3 text-gray-400 hover:text-green-400 transition-colors"
-                    >
-                      <i className="bx bx-phone text-sm"></i>
-                      <span className="text-sm">{city.phone2}</span>
-                    </motion.a>
+                  <div className="space-y-2 mb-3">
+                    {city.phone1 && (
+                      <motion.a
+                        href={`tel:+237${city.phone1.replace(/\s/g, '')}`}
+                        animate={{
+                          x: hoveredLocation === city.id ? 5 : 0,
+                        }}
+                        className="flex items-center gap-3 text-gray-400 hover:text-green-400 transition-colors"
+                      >
+                        <i className="bx bx-phone text-sm"></i>
+                        <span className="text-sm">{city.phone1}</span>
+                      </motion.a>
+                    )}
+                    {city.phone2 && (
+                      <motion.a
+                        href={`tel:+237${city.phone2.replace(/\s/g, '')}`}
+                        animate={{
+                          x: hoveredLocation === city.id ? 5 : 0,
+                        }}
+                        className="flex items-center gap-3 text-gray-400 hover:text-green-400 transition-colors"
+                      >
+                        <i className="bx bx-phone text-sm"></i>
+                        <span className="text-sm">{city.phone2}</span>
+                      </motion.a>
+                    )}
                   </div>
+
+                  {/* Email de l'agence */}
+                  <motion.a
+                    href={`mailto:${city.email}`}
+                    animate={{
+                      x: hoveredLocation === city.id ? 5 : 0,
+                    }}
+                    className="flex items-center gap-3 text-gray-400 hover:text-green-400 transition-colors pt-2 border-t border-white/10"
+                  >
+                    <i className="bx bx-envelope text-sm"></i>
+                    <span className="text-sm">{city.email}</span>
+                  </motion.a>
                 </div>
 
                 {/* Effet de brillance */}
@@ -380,9 +415,34 @@ export const Footer: React.FC = () => {
           </div>
         </motion.div>
 
+        {/* Section des emails généraux */}
+        <motion.div variants={itemVariants} className="mb-16 pb-8 border-b border-white/10">
+          <h3 className="text-lg font-bold font-display mb-6 text-center">{t('footer.contact.title', 'Nous contacter')}</h3>
+          <div className="grid md:grid-cols-3 gap-4">
+            {generalEmails.map((contact, index) => (
+              <motion.a
+                key={index}
+                href={`mailto:${contact.email}`}
+                whileHover={{ scale: 1.02, y: -2 }}
+                className="flex items-center gap-4 p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-green-500/30 transition-all duration-300 group"
+              >
+                <div className="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <FontAwesomeIcon icon={contact.icon} className="text-green-400 text-lg" />
+                </div>
+                <div className="flex-1">
+                  <p className="text-sm font-bold text-green-400">{contact.type}</p>
+                  <p className="text-sm text-gray-300">{contact.email}</p>
+                  <p className="text-xs text-gray-500">{contact.description}</p>
+                </div>
+                <i className="bx bx-right-arrow-alt text-gray-500 group-hover:text-green-400 transition-colors"></i>
+              </motion.a>
+            ))}
+          </div>
+        </motion.div>
+
         {/* Bottom Section */}
         <motion.div variants={itemVariants} className="flex flex-col lg:flex-row justify-between items-center gap-8 pt-8 border-t border-white/10">
-          {/* Email de contact */}
+          {/* Email de contact général */}
           <div className="flex items-center gap-4">
             <motion.div
               whileHover={{ rotate: 360 }}
@@ -429,9 +489,6 @@ export const Footer: React.FC = () => {
           <p className="text-sm text-gray-500">
             © Copyright {currentYear} {t('footer.brand.title')}. {t('footer.copyright.rights')}
           </p>
-          <p className="text-xs text-gray-600 mt-2">
-            {t('footer.copyright.design')}
-          </p>
         </motion.div>
       </div>
 
@@ -444,7 +501,6 @@ export const Footer: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1 }}
-        // aria-label={t('footer.backToTop')}
       >
         <i className="bx bx-chevron-up text-xl group-hover:animate-bounce"></i>
         

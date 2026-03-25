@@ -1,10 +1,9 @@
-// src/components/sections/home/TestimonialsSection.tsx
 import React, { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, useInView, AnimatePresence, Variants } from "motion/react";
 import { useTheme } from '../../../contexts/ThemeContext';
 
-// Données des témoignages avec avatars en ligne
+// Données des témoignages avec avatars réels (Unsplash - photos de personnes réelles)
 const TESTIMONIALS = [
   {
     id: 1,
@@ -13,7 +12,7 @@ const TESTIMONIALS = [
     contentKey: 'testimonials.items.0.content',
     projectKey: 'testimonials.items.0.project',
     dateKey: 'testimonials.items.0.date',
-    avatar: 'https://randomuser.me/api/portraits/women/44.jpg',
+    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=faces',
     rating: 5,
     gradient: 'from-blue-500 to-cyan-500',
     color: '#3B82F6',
@@ -25,7 +24,7 @@ const TESTIMONIALS = [
     contentKey: 'testimonials.items.1.content',
     projectKey: 'testimonials.items.1.project',
     dateKey: 'testimonials.items.1.date',
-    avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
+    avatar: 'https://tse1.mm.bing.net/th/id/OIP.SR6u7VNyDXaweQW0oqhtPAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3',
     rating: 5,
     gradient: 'from-green-500 to-emerald-500',
     color: '#10B981',
@@ -37,7 +36,7 @@ const TESTIMONIALS = [
     contentKey: 'testimonials.items.2.content',
     projectKey: 'testimonials.items.2.project',
     dateKey: 'testimonials.items.2.date',
-    avatar: 'https://randomuser.me/api/portraits/women/68.jpg',
+    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop&crop=faces',
     rating: 5,
     gradient: 'from-purple-500 to-pink-500',
     color: '#8B5CF6',
@@ -49,7 +48,7 @@ const TESTIMONIALS = [
     contentKey: 'testimonials.items.3.content',
     projectKey: 'testimonials.items.3.project',
     dateKey: 'testimonials.items.3.date',
-    avatar: 'https://randomuser.me/api/portraits/men/75.jpg',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=faces',
     rating: 5,
     gradient: 'from-orange-500 to-red-500',
     color: '#F59E0B',
@@ -61,7 +60,7 @@ const TESTIMONIALS = [
     contentKey: 'testimonials.items.4.content',
     projectKey: 'testimonials.items.4.project',
     dateKey: 'testimonials.items.4.date',
-    avatar: 'https://randomuser.me/api/portraits/women/90.jpg',
+    avatar: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=200&h=200&fit=crop&crop=faces',
     rating: 5,
     gradient: 'from-yellow-500 to-amber-500',
     color: '#EAB308',
@@ -73,41 +72,21 @@ const TESTIMONIALS = [
     contentKey: 'testimonials.items.5.content',
     projectKey: 'testimonials.items.5.project',
     dateKey: 'testimonials.items.5.date',
-    avatar: 'https://randomuser.me/api/portraits/men/46.jpg',
+    avatar: 'https://tse2.mm.bing.net/th/id/OIP.m-sqAhm-tw_bZoVkAa9EJwHaJl?rs=1&pid=ImgDetMain&o=7&rm=3',
     rating: 5,
     gradient: 'from-indigo-500 to-purple-500',
     color: '#6366F1',
   },
 ];
 
-// Fallback avatars en cas d'erreur de chargement
+// Avatars alternatifs pour fallback (aussi des photos réelles)
 const FALLBACK_AVATARS = [
-  'https://ui-avatars.com/api/?name=Sophie+Martin&background=3B82F6&color=fff&size=200&bold=true',
-  'https://ui-avatars.com/api/?name=Thomas+Dubois&background=10B981&color=fff&size=200&bold=true',
-  'https://ui-avatars.com/api/?name=Marie+Laurent&background=8B5CF6&color=fff&size=200&bold=true',
-  'https://ui-avatars.com/api/?name=Pierre+Moreau&background=F59E0B&color=fff&size=200&bold=true',
-  'https://ui-avatars.com/api/?name=Claire+Bernard&background=EAB308&color=fff&size=200&bold=true',
-  'https://ui-avatars.com/api/?name=Alexandre+Petit&background=6366F1&color=fff&size=200&bold=true',
-];
-
-// Alternative avec DiceBear (plus stylisé)
-const DICEBEAR_AVATARS = [
-  'https://avatars.dicebear.com/api/avataaars/sophie-martin.svg?backgroundColor=3B82F6&radius=50',
-  'https://avatars.dicebear.com/api/avataaars/thomas-dubois.svg?backgroundColor=10B981&radius=50',
-  'https://avatars.dicebear.com/api/avataaars/marie-laurent.svg?backgroundColor=8B5CF6&radius=50',
-  'https://avatars.dicebear.com/api/avataaars/pierre-moreau.svg?backgroundColor=F59E0B&radius=50',
-  'https://avatars.dicebear.com/api/avataaars/claire-bernard.svg?backgroundColor=EAB308&radius=50',
-  'https://avatars.dicebear.com/api/avataaars/alexandre-petit.svg?backgroundColor=6366F1&radius=50',
-];
-
-// Alternative avec des avatars plus diversifiés (autres APIs)
-const MORE_AVATARS = [
-  'https://images.unsplash.com/photo-1494790108777-296fd5c5f5b1?w=200&h=200&fit=crop&crop=faces',
-  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=faces',
-  'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=faces',
-  'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=faces',
-  'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop&crop=faces',
-  'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&h=200&fit=crop&crop=faces',
+  'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop&crop=faces',
+  'https://tse1.mm.bing.net/th/id/OIP.SR6u7VNyDXaweQW0oqhtPAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3',
+  'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200&h=200&fit=crop&crop=faces',
+  'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=200&h=200&fit=crop&crop=faces',
+  'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?w=200&h=200&fit=crop&crop=faces',
+  'https://tse2.mm.bing.net/th/id/OIP.m-sqAhm-tw_bZoVkAa9EJwHaJl?rs=1&pid=ImgDetMain&o=7&rm=3',
 ];
 
 const Eyebrow: React.FC<{ children: React.ReactNode; center?: boolean }> = ({ children, center }) => (
@@ -132,54 +111,20 @@ export const TestimonialsSection: React.FC = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [direction, setDirection] = useState(0);
   const [imageErrors, setImageErrors] = useState<Record<number, boolean>>({});
-  const [avatarStyle, setAvatarStyle] = useState<'real' | 'initials' | 'illustration' | 'art'>('real');
   const sectionRef = useRef<HTMLDivElement>(null);
   const inView = useInView(sectionRef, { once: true, amount: 0.2 });
 
   // Gestionnaire d'erreur d'image
-  const handleImageError = (testimonialId: number) => {
-    setImageErrors(prev => ({ ...prev, [testimonialId]: true }));
+  const handleImageError = (index: number) => {
+    setImageErrors(prev => ({ ...prev, [index]: true }));
   };
 
   // Obtenir l'URL de l'avatar avec fallback
-  const getAvatarUrl = (testimonial: typeof TESTIMONIALS[0], index: number) => {
-    if (imageErrors[testimonial.id]) {
-      switch(avatarStyle) {
-        case 'initials':
-          return FALLBACK_AVATARS[index];
-        case 'illustration':
-          return DICEBEAR_AVATARS[index];
-        case 'art':
-          return MORE_AVATARS[index % MORE_AVATARS.length];
-        default:
-          return FALLBACK_AVATARS[index];
-      }
+  const getAvatarUrl = (index: number) => {
+    if (imageErrors[index]) {
+      return FALLBACK_AVATARS[index % FALLBACK_AVATARS.length];
     }
-    
-    switch(avatarStyle) {
-      case 'initials':
-        return FALLBACK_AVATARS[index];
-      case 'illustration':
-        return DICEBEAR_AVATARS[index];
-      case 'art':
-        return MORE_AVATARS[index % MORE_AVATARS.length];
-      default:
-        return testimonial.avatar;
-    }
-  };
-
-  // Changer le style d'avatar
-  const cycleAvatarStyle = () => {
-    const styles: ('real' | 'initials' | 'illustration' | 'art')[] = ['real', 'initials', 'illustration', 'art'];
-    const currentIndex = styles.indexOf(avatarStyle);
-    const nextIndex = (currentIndex + 1) % styles.length;
-    setAvatarStyle(styles[nextIndex]);
-    setImageErrors({}); // Réinitialiser les erreurs
-  };
-
-  // Obtenir le libellé du style actuel
-  const getAvatarStyleLabel = () => {
-    return t(`testimonials.avatarStyle.${avatarStyle}`) as string;
+    return TESTIMONIALS[index].avatar;
   };
 
   // Variants d'animation
@@ -329,7 +274,7 @@ export const TestimonialsSection: React.FC = () => {
       </div>
 
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
-        {/* En-tête avec sélecteur de style d'avatar */}
+        {/* En-tête */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -342,20 +287,9 @@ export const TestimonialsSection: React.FC = () => {
           <SectionTitle center>
             {t('testimonials.title')}
           </SectionTitle>
-          <p className="text-base leading-relaxed text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-4">
+          <p className="text-base leading-relaxed text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             {t('testimonials.subtitle')}
           </p>
-          
-          {/* Bouton pour changer le style d'avatar */}
-          <motion.button
-            onClick={cycleAvatarStyle}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium bg-gradient-to-r from-green-500 to-blue-600 text-white hover:shadow-lg transition-all duration-300"
-          >
-            <i className="bx bx-refresh" />
-            {t('testimonials.avatarStyle.switch')} : {getAvatarStyleLabel()}
-          </motion.button>
         </motion.div>
 
         {/* Carrousel principal */}
@@ -430,10 +364,10 @@ export const TestimonialsSection: React.FC = () => {
                         <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${TESTIMONIALS[activeIndex].gradient} p-1`}>
                           <div className="w-full h-full rounded-xl bg-gray-200 dark:bg-gray-700 overflow-hidden">
                             <img
-                              src={getAvatarUrl(TESTIMONIALS[activeIndex], activeIndex)}
+                              src={getAvatarUrl(activeIndex)}
                               alt={t(TESTIMONIALS[activeIndex].nameKey) as string}
                               className="w-full h-full object-cover"
-                              onError={() => handleImageError(TESTIMONIALS[activeIndex].id)}
+                              onError={() => handleImageError(activeIndex)}
                             />
                           </div>
                         </div>
@@ -623,10 +557,10 @@ export const TestimonialsSection: React.FC = () => {
                   className="relative aspect-square"
                 >
                   <img
-                    src={getAvatarUrl(testimonial, index)}
+                    src={getAvatarUrl(index)}
                     alt={t(testimonial.nameKey) as string}
                     className="w-full h-full object-cover"
-                    onError={() => handleImageError(testimonial.id)}
+                    onError={() => handleImageError(index)}
                   />
                   
                   {/* Overlay avec gradient */}
@@ -660,21 +594,6 @@ export const TestimonialsSection: React.FC = () => {
                 </motion.div>
               </motion.div>
             ))}
-          </motion.div>
-
-          {/* Légende du style d'avatar actuel */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
-            className="text-center mt-4"
-          >
-            <span className={`text-xs px-3 py-1 rounded-full ${
-              isDark ? 'bg-gray-800 text-gray-400' : 'bg-gray-100 text-gray-500'
-            }`}>
-              <i className="bx bx-info-circle mr-1" />
-              {t(`testimonials.avatarStyle.info.${avatarStyle}`)}
-            </span>
           </motion.div>
         </div>
       </div>

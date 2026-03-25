@@ -23,7 +23,7 @@ export interface ServiceCategory {
   services: ServiceDetail[];
 }
 
-// Données des catégories de services
+// Données des catégories de services avec images en ligne
 export const serviceCategories: ServiceCategory[] = [
   {
     id: 'web-dev',
@@ -53,7 +53,7 @@ export const serviceCategories: ServiceCategory[] = [
         technologies: ['React', 'Vue.js', 'Next.js', 'Tailwind CSS'],
         priceRange: 'services.priceRange.from',
         timeline: 'services.timeline.weeks',
-        image: '/images/services/web-development.jpg',
+        image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=500&fit=crop',
         gradient: 'from-blue-500 to-cyan-400',
         color: '#3B82F6'
       },
@@ -78,7 +78,7 @@ export const serviceCategories: ServiceCategory[] = [
         technologies: ['Shopify', 'WooCommerce', 'Magento', 'Stripe'],
         priceRange: 'services.priceRange.custom',
         timeline: 'services.timeline.months',
-        image: '/images/services/mobile-apps.jpg',
+        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop',
         gradient: 'from-green-500 to-emerald-400',
         color: '#10B981'
       },
@@ -103,7 +103,7 @@ export const serviceCategories: ServiceCategory[] = [
         technologies: ['React Native', 'Flutter', 'Swift', 'Kotlin'],
         priceRange: 'services.priceRange.from',
         timeline: 'services.timeline.months',
-        image: '/images/services/backend.jpg',
+        image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=500&fit=crop',
         gradient: 'from-purple-500 to-pink-500',
         color: '#8B5CF6'
       }
@@ -137,7 +137,7 @@ export const serviceCategories: ServiceCategory[] = [
         technologies: ['Google Analytics', 'SEMrush', 'Ahrefs', 'Search Console'],
         priceRange: 'services.priceRange.monthly',
         timeline: 'services.timeline.ongoing',
-        image: '/images/services/ui-ux-design.jpg',
+        image: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?w=800&h=500&fit=crop',
         gradient: 'from-orange-500 to-yellow-500',
         color: '#F59E0B'
       },
@@ -162,7 +162,7 @@ export const serviceCategories: ServiceCategory[] = [
         technologies: ['Google Ads', 'Facebook Ads', 'LinkedIn Ads', 'TikTok Ads'],
         priceRange: 'services.priceRange.custom',
         timeline: 'services.timeline.monthly',
-        image: '/images/services/seo.jpg',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop',
         gradient: 'from-red-500 to-pink-500',
         color: '#EF4444'
       },
@@ -187,7 +187,7 @@ export const serviceCategories: ServiceCategory[] = [
         technologies: ['Meta Business', 'Buffer', 'Hootsuite', 'Canva'],
         priceRange: 'services.priceRange.monthly',
         timeline: 'services.timeline.ongoing',
-        image: '/images/services/training.jpg',
+        image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&h=500&fit=crop',
         gradient: 'from-blue-500 to-indigo-500',
         color: '#3B82F6'
       }
@@ -221,7 +221,7 @@ export const serviceCategories: ServiceCategory[] = [
         technologies: ['Figma', 'Adobe XD', 'Sketch', 'InVision'],
         priceRange: 'services.priceRange.project',
         timeline: 'services.timeline.weeks',
-        image: '/images/services/training.jpg',
+        image: 'https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&h=500&fit=crop',
         gradient: 'from-indigo-500 to-purple-500',
         color: '#6366F1'
       },
@@ -246,7 +246,7 @@ export const serviceCategories: ServiceCategory[] = [
         technologies: ['Illustrator', 'Photoshop', 'After Effects', 'Blender'],
         priceRange: 'services.priceRange.custom',
         timeline: 'services.timeline.weeks',
-        image: '/images/services/training.jpg',
+        image: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?w=800&h=500&fit=crop',
         gradient: 'from-pink-500 to-rose-500',
         color: '#EC4899'
       }
@@ -280,7 +280,7 @@ export const serviceCategories: ServiceCategory[] = [
         technologies: ['AWS', 'Cloudflare', 'Git', 'Docker'],
         priceRange: 'services.priceRange.monthly',
         timeline: 'services.timeline.ongoing',
-        image: '/images/services/training.jpg',
+        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=500&fit=crop',
         gradient: 'from-gray-500 to-gray-700',
         color: '#6B7280'
       },
@@ -305,7 +305,7 @@ export const serviceCategories: ServiceCategory[] = [
         technologies: ['AWS', 'Google Cloud', 'Azure', 'Vercel'],
         priceRange: 'services.priceRange.monthly',
         timeline: 'services.timeline.immediate',
-        image: '/images/services/training.jpg',
+        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=500&fit=crop',
         gradient: 'from-blue-500 to-cyan-500',
         color: '#0EA5E9'
       }

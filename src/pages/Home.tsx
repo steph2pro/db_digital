@@ -21,7 +21,6 @@ import { ServicesSection } from '../components/sections/home/ServicesSection';
 import { StatsSection } from '../components/sections/home/StatsSection';
 import { VisionSection } from '../components/sections/home/VisionSection';
 import { ProcessSection } from '../components/sections/home/ProcessSection';
-import TeamSection from '../components/sections/home/TeamSection';
 import TestimonialsSection from '../components/sections/home/TestimonialsSection';
 
 
@@ -90,7 +89,7 @@ export const Home: React.FC = () => {
         <ProcessSection />
 
         {/* 9. CTA with gradient + animated lines */}
-        <TeamSection />
+        {/* <TeamSection /> */}
         <TestimonialsSection />
       </main>
 

@@ -1,4 +1,3 @@
-// src/components/sections/home/ProcessSection.tsx
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, useInView } from "motion/react";
@@ -8,72 +7,77 @@ const STEPS = [
   { 
     num: '01', 
     icon: 'bx bx-chat',
-    title: 'Découverte', 
-    desc: 'Call gratuit 30 min pour comprendre vos besoins, objectifs et contraintes.',
+    titleKey: 'process.steps.discovery.title',
+    descKey: 'process.steps.discovery.desc',
     color: '#3B82F6',
     gradient: 'from-blue-500 to-cyan-500',
-    details: [
-      'Analyse des besoins',
-      'Étude de marché',
-      'Définition des objectifs',
-      'Identification des contraintes'
-    ]
+    detailsKeys: [
+      'process.steps.discovery.details.analysis',
+      'process.steps.discovery.details.market',
+      'process.steps.discovery.details.goals',
+      'process.steps.discovery.details.constraints'
+    ],
+    durationKey: 'process.steps.discovery.duration'
   },
   { 
     num: '02', 
     icon: 'bx bx-strategy',
-    title: 'Stratégie', 
-    desc: 'Proposition technique détaillée, roadmap et budget en 48h.',
+    titleKey: 'process.steps.strategy.title',
+    descKey: 'process.steps.strategy.desc',
     color: '#10B981',
     gradient: 'from-green-500 to-emerald-500',
-    details: [
-      'Architecture technique',
-      'Stack technologique',
-      'Planning détaillé',
-      'Devis précis'
-    ]
+    detailsKeys: [
+      'process.steps.strategy.details.architecture',
+      'process.steps.strategy.details.tech',
+      'process.steps.strategy.details.planning',
+      'process.steps.strategy.details.quote'
+    ],
+    durationKey: 'process.steps.strategy.duration'
   },
   { 
     num: '03', 
     icon: 'bx bx-palette',
-    title: 'Design', 
-    desc: 'Maquettes Figma interactives validées avant la moindre ligne de code.',
+    titleKey: 'process.steps.design.title',
+    descKey: 'process.steps.design.desc',
     color: '#8B5CF6',
     gradient: 'from-purple-500 to-pink-500',
-    details: [
-      'Wireframes',
-      'UI/UX Design',
-      'Prototype interactif',
-      'Validation client'
-    ]
+    detailsKeys: [
+      'process.steps.design.details.wireframes',
+      'process.steps.design.details.uiux',
+      'process.steps.design.details.prototype',
+      'process.steps.design.details.validation'
+    ],
+    durationKey: 'process.steps.design.duration'
   },
   { 
     num: '04', 
     icon: 'bx bx-code-alt',
-    title: 'Développement', 
-    desc: 'Sprints agiles de 2 semaines avec démos régulières et ajustements.',
+    titleKey: 'process.steps.development.title',
+    descKey: 'process.steps.development.desc',
     color: '#F59E0B',
     gradient: 'from-orange-500 to-yellow-500',
-    details: [
-      'Sprints agiles',
-      'Tests continus',
-      'Revues de code',
-      'Démos régulières'
-    ]
+    detailsKeys: [
+      'process.steps.development.details.sprints',
+      'process.steps.development.details.tests',
+      'process.steps.development.details.reviews',
+      'process.steps.development.details.demos'
+    ],
+    durationKey: 'process.steps.development.duration'
   },
   { 
     num: '05', 
     icon: 'bx bx-rocket',
-    title: 'Lancement', 
-    desc: 'Déploiement, formation équipe et support 3 mois inclus.',
+    titleKey: 'process.steps.launch.title',
+    descKey: 'process.steps.launch.desc',
     color: '#EC4899',
     gradient: 'from-pink-500 to-rose-500',
-    details: [
-      'Déploiement',
-      'Formation',
-      'Documentation',
-      'Support 3 mois'
-    ]
+    detailsKeys: [
+      'process.steps.launch.details.deployment',
+      'process.steps.launch.details.training',
+      'process.steps.launch.details.documentation',
+      'process.steps.launch.details.support'
+    ],
+    durationKey: 'process.steps.launch.duration'
   },
 ];
 
@@ -83,6 +87,12 @@ export const ProcessSection: React.FC = () => {
   const [activeStep, setActiveStep] = useState<number | null>(null);
   const ref = React.useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: '-100px' });
+
+  // Helper function pour obtenir les traductions
+  const getTranslation = (key: string): string => {
+    const translated = t(key);
+    return typeof translated === 'string' ? translated : key;
+  };
 
   return (
     <div ref={ref} className="relative py-24 overflow-hidden">
@@ -130,13 +140,13 @@ export const ProcessSection: React.FC = () => {
           <div className="flex items-center justify-center gap-2.5 mb-4">
             <span className="w-7 h-0.5 rounded-full bg-green-500" />
             <span className="text-xs font-bold tracking-wider uppercase text-green-500">
-              {t('process.eyebrow', 'Notre Processus')}
+              {getTranslation('process.eyebrow')}
             </span>
           </div>
           <h2 className="font-display font-extrabold text-[clamp(28px,4vw,50px)] leading-tight tracking-tight text-gray-900 dark:text-white mb-4">
-            5 étapes vers<br />
+            {getTranslation('process.title.line1')}<br />
             <span className="bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
-              votre succès digital
+              {getTranslation('process.title.line2')}
             </span>
           </h2>
         </motion.div>
@@ -191,10 +201,10 @@ export const ProcessSection: React.FC = () => {
                   } ${activeStep === index ? 'shadow-2xl scale-105' : 'shadow-lg'}`}
                 >
                   <h3 className="text-lg font-bold font-display text-gray-900 dark:text-white mb-2">
-                    {step.title}
+                    {getTranslation(step.titleKey)}
                   </h3>
                   <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-                    {step.desc}
+                    {getTranslation(step.descKey)}
                   </p>
 
                   {/* Détails supplémentaires (apparaissent au hover) */}
@@ -208,9 +218,9 @@ export const ProcessSection: React.FC = () => {
                     className="overflow-hidden"
                   >
                     <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
-                      {step.details.map((detail, i) => (
+                      {step.detailsKeys.map((detailKey, i) => (
                         <motion.div
-                          key={detail}
+                          key={detailKey}
                           initial={{ x: -10, opacity: 0 }}
                           animate={{
                             x: activeStep === index ? 0 : -10,
@@ -220,7 +230,7 @@ export const ProcessSection: React.FC = () => {
                           className="flex items-center gap-2 text-xs text-gray-600 dark:text-gray-300 mb-2"
                         >
                           <i className="bx bx-check text-green-500"></i>
-                          <span>{detail}</span>
+                          <span>{getTranslation(detailKey)}</span>
                         </motion.div>
                       ))}
                     </div>
@@ -229,7 +239,7 @@ export const ProcessSection: React.FC = () => {
                   {/* Durée estimée */}
                   <div className="flex items-center gap-2 mt-4 text-xs text-gray-500 dark:text-gray-400">
                     <i className="bx bx-time"></i>
-                    <span>{index === 0 ? '24h' : index === 1 ? '48h' : index === 2 ? '1-2 sem' : index === 3 ? '2-4 sem' : '1 sem'}</span>
+                    <span>{getTranslation(step.durationKey)}</span>
                   </div>
                 </motion.div>
 
@@ -263,9 +273,9 @@ export const ProcessSection: React.FC = () => {
           <div className={`inline-flex items-center gap-4 px-6 py-3 rounded-full backdrop-blur-sm border ${
             isDark ? 'bg-gray-800/50 border-gray-700' : 'bg-white/50 border-gray-200'
           }`}>
-            <span className="text-sm text-gray-600 dark:text-gray-300">Projet terminé en moyenne</span>
+            <span className="text-sm text-gray-600 dark:text-gray-300">{getTranslation('process.averageDuration.label')}</span>
             <span className="text-lg font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
-              6-8 semaines
+              {getTranslation('process.averageDuration.value')}
             </span>
           </div>
         </motion.div>

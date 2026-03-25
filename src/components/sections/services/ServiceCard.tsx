@@ -294,7 +294,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service, index, inView
                     className="flex items-center justify-between text-[10px]"
                   >
                     <span className={isDark ? 'text-gray-400' : 'text-gray-500'}>
-                      {t('services.timeline', 'Délai')}:
+                      {t('services.timelineDesc', 'Délai')}:
                     </span>
                     <span className={`font-bold ${
                       isDark ? 'text-green-400' : 'text-green-600'

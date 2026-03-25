@@ -3,7 +3,71 @@ import { motion, useInView } from "motion/react";
 import { useTranslation } from 'react-i18next';
 import { useTheme } from '../contexts/ThemeContext';
 import { AboutLayout } from '../components/sections/about/AboutLayout';
-import { aboutImages, partners} from '../data/aboutData';
+import { aboutImages } from '../data/aboutData';
+
+// Données des partenaires - Tech mondiale et africaine
+const partners = [
+  {
+    id: 1,
+    nameKey: 'partners.partners.orange.name',
+    descriptionKey: 'partners.partners.orange.description',
+    category: 'technology',
+    logo: 'https://tse4.mm.bing.net/th/id/OIP._1kfZCAlDYaMCV2FiOTmbAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3',
+    website: 'https://www.orange.com',
+    partnershipSince: 2023,
+    color: '#FF7900'
+  },
+  {
+    id: 2,
+    nameKey: 'partners.partners.mtn.name',
+    descriptionKey: 'partners.partners.mtn.description',
+    category: 'technology',
+    logo: 'https://tse3.mm.bing.net/th/id/OIP.KVoZ02uFEEashC8ZJE1JgQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3',
+    website: 'https://www.mtn.com',
+    partnershipSince: 2023,
+    color: '#FFD700'
+  },
+  {
+    id: 3,
+    nameKey: 'partners.partners.paystack.name',
+    descriptionKey: 'partners.partners.paystack.description',
+    category: 'technology',
+    logo: 'https://tse3.mm.bing.net/th/id/OIP._Td9yc67mNxsBBMrW-eAZAHaDt?rs=1&pid=ImgDetMain&o=7&rm=3',
+    website: 'https://paystack.com',
+    partnershipSince: 2023,
+    color: '#10B981'
+  },
+  {
+    id: 4,
+    nameKey: 'partners.partners.google.name',
+    descriptionKey: 'partners.partners.google.description',
+    category: 'technology',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png',
+    website: 'https://cloud.google.com',
+    partnershipSince: 2022,
+    color: '#4285F4'
+  },
+  {
+    id: 5,
+    nameKey: 'partners.partners.microsoft.name',
+    descriptionKey: 'partners.partners.microsoft.description',
+    category: 'technology',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/200px-Microsoft_logo.svg.png',
+    website: 'https://www.microsoft.com',
+    partnershipSince: 2022,
+    color: '#00A4EF'
+  },
+  {
+    id: 6,
+    nameKey: 'partners.partners.iso.name',
+    descriptionKey: 'partners.partners.iso.description',
+    category: 'certification',
+    logo: 'https://tse4.mm.bing.net/th/id/OIP.HYElr5L1m9v0JHsfn901ywHaHI?rs=1&pid=ImgDetMain&o=7&rm=3',
+    website: 'https://www.iso.org',
+    partnershipSince: 2024,
+    color: '#0066B3'
+  },
+];
 
 export const PartnersPage: React.FC = () => {
   const { t } = useTranslation();
@@ -13,10 +77,10 @@ export const PartnersPage: React.FC = () => {
   const inView = useInView(sectionRef, { once: true, amount: 0.2 });
 
   const categories = [
-    { id: 'all', label: t('partners.categories.all', 'Tous'), icon: 'bx bx-grid-alt' },
-    { id: 'technology', label: t('partners.categories.technology', 'Technologie'), icon: 'bx bx-chip' },
-    { id: 'business', label: t('partners.categories.business', 'Business'), icon: 'bx bx-briefcase' },
-    { id: 'certification', label: t('partners.categories.certification', 'Certification'), icon: 'bx bx-certification' }
+    { id: 'all', label: t('partners.categories.all'), icon: 'bx bx-grid-alt' },
+    { id: 'technology', label: t('partners.categories.technology'), icon: 'bx bx-chip' },
+    { id: 'business', label: t('partners.categories.business'), icon: 'bx bx-briefcase' },
+    { id: 'certification', label: t('partners.categories.certification'), icon: 'bx bx-certification' }
   ];
 
   const filteredPartners = selectedCategory === 'all'
@@ -26,7 +90,7 @@ export const PartnersPage: React.FC = () => {
   return (
     <AboutLayout
       title="partners"
-      subtitle={t('partners.subtitle', "Ils nous font confiance et nous accompagnent")}
+      subtitle={t('partners.subtitle')}
       image={aboutImages.partners}
     >
       <div ref={sectionRef} className="space-y-12">
@@ -39,12 +103,12 @@ export const PartnersPage: React.FC = () => {
           <h2 className={`text-2xl md:text-3xl font-display font-bold mb-4 ${
             isDark ? 'text-white' : 'text-gray-900'
           }`}>
-            {t('partners.title', 'Nos Partenaires')}
+            {t('partners.title')}
           </h2>
           <p className={`text-base ${
             isDark ? 'text-gray-300' : 'text-gray-600'
           }`}>
-            {t('partners.description', "Nous collaborons avec les leaders de l'industrie pour offrir le meilleur à nos clients.")}
+            {t('partners.description')}
           </p>
         </motion.div>
 
@@ -104,10 +168,14 @@ export const PartnersPage: React.FC = () => {
               <div className="relative z-10">
                 {/* Logo */}
                 <div className="flex justify-center mb-4">
-                  <div className="w-24 h-24 rounded-xl overflow-hidden bg-white p-2">
+                  <div className="w-24 h-24 rounded-xl overflow-hidden bg-white p-2 flex items-center justify-center">
                     <img
                       src={partner.logo}
+                     alt={t(partner.nameKey) as string}
                       className="w-full h-full object-contain"
+                      onError={(e) => {
+                       (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(t(partner.nameKey) as string)}&background=${partner.color.replace('#', '')}&color=fff&size=200&bold=true`;
+                      }}
                     />
                   </div>
                 </div>
@@ -128,12 +196,12 @@ export const PartnersPage: React.FC = () => {
                 {/* Badges */}
                 <div className="flex flex-wrap justify-center gap-2">
                   <span className="px-2 py-1 text-[10px] rounded-full bg-green-500/10 text-green-500 border border-green-500/20">
-                    {partner.category === 'technology' && t('partners.badges.technology', 'Technologie')}
-                    {partner.category === 'business' && t('partners.badges.business', 'Business')}
-                    {partner.category === 'certification' && t('partners.badges.certification', 'Certification')}
+                    {partner.category === 'technology' && t('partners.badges.technology')}
+                    {partner.category === 'business' && t('partners.badges.business')}
+                    {partner.category === 'certification' && t('partners.badges.certification')}
                   </span>
                   <span className="px-2 py-1 text-[10px] rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20">
-                    {t('partners.since', 'Depuis')} {partner.partnershipSince}
+                    {t('partners.since')} {partner.partnershipSince}
                   </span>
                 </div>
               </div>
@@ -160,7 +228,7 @@ export const PartnersPage: React.FC = () => {
           <h3 className={`text-xl font-bold text-center mb-6 ${
             isDark ? 'text-white' : 'text-gray-900'
           }`}>
-            {t('partners.certifications', 'Nos Certifications')}
+            {t('partners.certifications')}
           </h3>
 
           <div className="flex flex-wrap justify-center gap-6">

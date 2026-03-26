@@ -10,7 +10,7 @@
   },
   
   "whatsapp": {
-    "defaultMessage": "Bonjour, je souhaite obtenir plus d'informations sur vos services d'immigration. Merci !",
+    "defaultMessage": "Bonjour, je souhaite obtenir plus d'informations sur vos services digitaux (développement web, applications mobiles, etc.). Merci !",
     "chooseAgency": "Choisissez votre agence",
     "selectNearestAgency": "Sélectionnez l'agence la plus proche de vous",
     "contactMainAgency": "Contacter l'agence principale",

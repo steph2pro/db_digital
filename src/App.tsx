@@ -19,11 +19,7 @@ import QuotePage from './pages/QuotePage';
 import LocationPage from './pages/LocationPage';
 
 function App() {
-  const offices = [
-    { city: 'Yaoundé - Nkoabang', phone: '640 46 51 82' },
-    { city: 'Douala - Cité des Palmiers', phone: '657 12 87 12' },
-    { city: 'Bafoussam - Kamkop', phone: '640 10 19 74' },
-  ];
+ 
   
   return (
     <ThemeProvider>
@@ -65,7 +61,7 @@ function App() {
               </Routes>
             </main>
 
-            <WhatsAppFAB offices={offices} />
+            <WhatsAppFAB  />
             <Footer />
           </div>
         </Router>

@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { AnimatePresence, motion, useAnimation, useInView, Variants } from 'motion/react';
+import { motion, AnimatePresence } from 'motion/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBuilding, faEnvelope, faHeadset } from '@fortawesome/free-solid-svg-icons';
 
@@ -11,41 +11,6 @@ export const Footer: React.FC = () => {
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [hoveredLocation, setHoveredLocation] = useState<string | null>(null);
   const [currentYear] = useState(new Date().getFullYear());
-
-  const controls = useAnimation();
-  const ref = React.useRef<HTMLDivElement>(null);
-  const inView = useInView(ref, { once: true, amount: 0.3 });
-
-  // Animation d'entrée
-  useEffect(() => {
-    if (inView) {
-      controls.start('visible');
-    }
-  }, [controls, inView]);
-
-  const containerVariants: Variants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants: Variants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 12,
-      },
-    },
-  };
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
@@ -128,14 +93,8 @@ export const Footer: React.FC = () => {
   const africanCities = locations.find(loc => loc.continent === 'africa')?.cities || [];
 
   return (
-    <motion.footer
-      ref={ref}
-      variants={containerVariants}
-      initial="hidden"
-      animate={controls}
-      className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden"
-    >
-      {/* Éléments d'arrière-plan animés */}
+    <footer className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
+      {/* Éléments d'arrière-plan */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Grille de points */}
         <div className="absolute inset-0 opacity-10">
@@ -191,13 +150,10 @@ export const Footer: React.FC = () => {
 
       <div className="container relative z-10 mx-auto px-6 py-16">
         {/* Top Section avec Newsletter */}
-        <motion.div variants={itemVariants} className="grid lg:grid-cols-2 gap-12 mb-16 pb-12 border-b border-white/10">
+        <div className="grid lg:grid-cols-2 gap-12 mb-16 pb-12 border-b border-white/10">
           {/* Brand et Newsletter */}
           <div>
-            <motion.div 
-              variants={itemVariants}
-              className="flex items-center gap-4 mb-6"
-            >
+            <div className="flex items-center gap-4 mb-6">
               <motion.div
                 whileHover={{ rotate: 360, scale: 1.1 }}
                 transition={{ duration: 0.5 }}
@@ -211,9 +167,9 @@ export const Footer: React.FC = () => {
                 </h2>
                 <p className="text-sm text-gray-400">{t('footer.brand.slogan')}</p>
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div variants={itemVariants} className="mb-6">
+            <div className="mb-6">
               <h3 className="text-sm font-bold uppercase tracking-wider text-green-400 mb-3 flex items-center gap-2">
                 <i className="bx bx-envelope"></i>
                 {t('footer.newsletter.title')}
@@ -228,12 +184,12 @@ export const Footer: React.FC = () => {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                   placeholder={t('footer.newsletter.placeholder') as string}
+                    placeholder={t('footer.newsletter.placeholder') as string}
                     className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-green-500 transition-colors"
                     required
                   />
                   <motion.div
-                    className="absolute inset-0 rounded-xl"
+                    className="absolute inset-0 rounded-xl pointer-events-none"
                     animate={{
                       boxShadow: email ? ['0 0 0px rgba(0,230,118,0)', '0 0 10px rgba(0,230,118,0.3)', '0 0 0px rgba(0,230,118,0)'] : 'none',
                     }}
@@ -264,10 +220,10 @@ export const Footer: React.FC = () => {
                   </motion.div>
                 )}
               </AnimatePresence>
-            </motion.div>
+            </div>
 
             {/* Présence mondiale */}
-            <motion.div variants={itemVariants}>
+            <div>
               <h3 className="text-sm font-bold uppercase tracking-wider text-green-400 mb-3">
                 {t('footer.globalPresence.title')}
               </h3>
@@ -287,11 +243,11 @@ export const Footer: React.FC = () => {
                   </motion.div>
                 ))}
               </div>
-            </motion.div>
+            </div>
           </div>
 
           {/* Nos Services */}
-          <motion.div variants={itemVariants}>
+          <div>
             <h3 className="text-lg font-bold font-display mb-6 flex items-center gap-2">
               <span className="w-1 h-6 bg-green-500 rounded-full"></span>
               {t('footer.services.title')}
@@ -300,7 +256,6 @@ export const Footer: React.FC = () => {
               {services.map((service) => (
                 <motion.div
                   key={service.id}
-                  variants={itemVariants}
                   whileHover={{ x: 5 }}
                   className="group"
                 >
@@ -332,11 +287,11 @@ export const Footer: React.FC = () => {
                 </Link>
               </div>
             </div>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
 
         {/* Middle Section - Locations avec Emails */}
-        <motion.div variants={itemVariants} className="mb-16">
+        <div className="mb-16">
           <h3 className="text-lg font-bold font-display mb-8 text-center">{t('footer.locations.title')}</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {africanCities.map((city) => (
@@ -344,7 +299,6 @@ export const Footer: React.FC = () => {
                 key={city.id}
                 onHoverStart={() => setHoveredLocation(city.id)}
                 onHoverEnd={() => setHoveredLocation(null)}
-                variants={itemVariants}
                 whileHover={{ y: -5 }}
                 className="relative p-6 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 hover:border-green-500/30 transition-all duration-300"
               >
@@ -403,7 +357,7 @@ export const Footer: React.FC = () => {
 
                 {/* Effet de brillance */}
                 <motion.div
-                  className="absolute inset-0 rounded-2xl"
+                  className="absolute inset-0 rounded-2xl pointer-events-none"
                   animate={{
                     background: hoveredLocation === city.id 
                       ? 'radial-gradient(circle at 50% 50%, rgba(0,230,118,0.1), transparent 70%)'
@@ -413,10 +367,10 @@ export const Footer: React.FC = () => {
               </motion.div>
             ))}
           </div>
-        </motion.div>
+        </div>
 
         {/* Section des emails généraux */}
-        <motion.div variants={itemVariants} className="mb-16 pb-8 border-b border-white/10">
+        <div className="mb-16 pb-8 border-b border-white/10">
           <h3 className="text-lg font-bold font-display mb-6 text-center">{t('footer.contact.title', 'Nous contacter')}</h3>
           <div className="grid md:grid-cols-3 gap-4">
             {generalEmails.map((contact, index) => (
@@ -438,10 +392,10 @@ export const Footer: React.FC = () => {
               </motion.a>
             ))}
           </div>
-        </motion.div>
+        </div>
 
         {/* Bottom Section */}
-        <motion.div variants={itemVariants} className="flex flex-col lg:flex-row justify-between items-center gap-8 pt-8 border-t border-white/10">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-8 pt-8 border-t border-white/10">
           {/* Email de contact général */}
           <div className="flex items-center gap-4">
             <motion.div
@@ -482,14 +436,14 @@ export const Footer: React.FC = () => {
               <i className="bx bx-right-arrow-alt"></i>
             </Link>
           </motion.div>
-        </motion.div>
+        </div>
 
         {/* Copyright */}
-        <motion.div variants={itemVariants} className="mt-12 pt-6 text-center border-t border-white/10">
+        <div className="mt-12 pt-6 text-center border-t border-white/10">
           <p className="text-sm text-gray-500">
             © Copyright {currentYear} {t('footer.brand.title')}. {t('footer.copyright.rights')}
           </p>
-        </motion.div>
+        </div>
       </div>
 
       {/* Back to Top Button avec animation */}
@@ -525,7 +479,7 @@ export const Footer: React.FC = () => {
       {[...Array(10)].map((_, i) => (
         <motion.div
           key={i}
-          className="absolute w-1 h-1 bg-green-500/30 rounded-full"
+          className="absolute w-1 h-1 bg-green-500/30 rounded-full pointer-events-none"
           style={{
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
@@ -541,7 +495,7 @@ export const Footer: React.FC = () => {
           }}
         />
       ))}
-    </motion.footer>
+    </footer>
   );
 };
 

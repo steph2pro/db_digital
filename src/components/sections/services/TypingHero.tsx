@@ -164,7 +164,7 @@ export const TypingHero: React.FC<TypingHeroProps> = ({ inView }) => {
               <div className={`text-[clamp(24px,6vw,48px)] sm:text-[clamp(32px,8vw,64px)] ${
                 isDark ? 'text-white' : 'text-gray-900'
               }`}>
-                {i18n.language === 'fr' ? 'Nous créons des' : 'We create'}
+                {i18n.language === 'fr' ? 'Nous créons' : 'We create'}
               </div>
               
               {/* Conteneur avec hauteur dynamique */}

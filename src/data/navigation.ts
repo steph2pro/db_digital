@@ -104,5 +104,13 @@ export const navigation: NavigationItem[] = [
         type: 'internal'
       }
     ]
-  }
+  },
+  
+  {
+    id: 'blog',
+    path: '/blog',
+    label: 'blog',
+    icon: 'bx bx-briefcase',
+    type: 'internal',
+  },
 ];

@@ -2,19 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXmark, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faXmark, faChevronRight, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 interface Office {
   city: string;
   phone: string;
+  phoneSecondary?: string;
 }
 
-interface WhatsAppFABProps {
-  offices: Office[];
-}
-
-const WhatsAppFAB: React.FC<WhatsAppFABProps> = ({ offices }) => {
+const WhatsAppFAB: React.FC = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -26,13 +23,34 @@ const WhatsAppFAB: React.FC<WhatsAppFABProps> = ({ offices }) => {
   const [showNotification, setShowNotification] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [currentMessage, setCurrentMessage] = useState(0);
+  const [activeTab, setActiveTab] = useState<'whatsapp' | 'email'>('whatsapp');
+
+  // Nouveaux numéros pour l'agence digitale
+  const offices: Office[] = [
+    { 
+      city: 'Yaoundé', 
+      phone: '+237 6 91 32 32 49',
+    },
+    { 
+      city: 'Douala', 
+      phone: '+237 6 57 12 87 12',
+    },
+    { 
+      city: 'Bafoussam', 
+      phone: '+237 640819846',
+      phoneSecondary: '+237 678393910'
+    },
+  ];
+
+  // Email pour l'agence digitale
+  const contactEmail = 'contact@dbdigitalagency.com';
 
   // Messages de bienvenue dynamiques avec traductions
   const welcomeMessages = [
     t('whatsapp.messages.help'),
     t('whatsapp.messages.project'),
     t('whatsapp.messages.quote'),
-    t('whatsapp.messages.immigration'),
+    t('whatsapp.messages.digital'),
     t('whatsapp.messages.question'),
     t('whatsapp.messages.partner')
   ];
@@ -74,6 +92,10 @@ const WhatsAppFAB: React.FC<WhatsAppFABProps> = ({ offices }) => {
     return () => clearInterval(interval);
   }, []);
 
+  const formatPhoneNumber = (phone: string): string => {
+    return phone.replace(/\s/g, '').replace('+', '');
+  };
+
   const getPhoneNumber = (city: string): string => {
     const office = offices.find(o => o.city === city);
     return office?.phone || offices[0]?.phone || '';
@@ -81,9 +103,19 @@ const WhatsAppFAB: React.FC<WhatsAppFABProps> = ({ offices }) => {
 
   const handleCitySelect = (city: string) => {
     const phone = getPhoneNumber(city);
- const message = encodeURIComponent(t('whatsapp.defaultMessage') as string);
-    const whatsappUrl = `https://wa.me/${237}${phone.replace(/\s/g, '')}?text=${message}`;
+    const message = encodeURIComponent(t('whatsapp.defaultMessage') as string);
+    const whatsappUrl = `https://wa.me/${formatPhoneNumber(phone)}?text=${message}`;
     window.open(whatsappUrl, '_blank');
+    setIsOpen(false);
+    
+    setShowNotification(true);
+    setTimeout(() => setShowNotification(false), 3000);
+  };
+
+  const handleEmailContact = () => {
+    const subject = encodeURIComponent(t('email.subject') as string || 'Demande de contact - DB Digital Agency');
+    const body = encodeURIComponent(t('email.body') as string || 'Bonjour, je souhaiterais obtenir plus d\'informations sur vos services digitaux.');
+    window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
     setIsOpen(false);
     
     setShowNotification(true);
@@ -478,7 +510,7 @@ const WhatsAppFAB: React.FC<WhatsAppFABProps> = ({ offices }) => {
         </motion.div>
       </motion.button>
 
-      {/* Menu de sélection d'agence */}
+      {/* Menu de sélection d'agence avec onglets WhatsApp/Email */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -491,8 +523,8 @@ const WhatsAppFAB: React.FC<WhatsAppFABProps> = ({ offices }) => {
             <div className="p-4 border-b border-gray-200 dark:border-gray-700 bg-gradient-to-r from-green-500 to-green-600">
               <div className="flex justify-between items-center">
                 <div>
-                  <h3 className="font-bold text-white">{t('whatsapp.chooseAgency')}</h3>
-                  <p className="text-xs text-white/80 mt-1">{t('whatsapp.selectNearestAgency')}</p>
+                  <h3 className="font-bold text-white">{t('whatsapp.chooseContact') || 'Nous contacter'}</h3>
+                  <p className="text-xs text-white/80 mt-1">{t('whatsapp.selectMethod') || 'Choisissez votre méthode de contact'}</p>
                 </div>
                 <button
                   onClick={() => setIsOpen(false)}
@@ -502,32 +534,99 @@ const WhatsAppFAB: React.FC<WhatsAppFABProps> = ({ offices }) => {
                 </button>
               </div>
             </div>
-            
-            <div className="max-h-80 overflow-y-auto">
-              {offices.map((office, index) => (
-                <button
-                  key={index}
-                  onClick={() => handleCitySelect(office.city)}
-                  className="w-full px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center gap-3 border-b border-gray-100 dark:border-gray-700 last:border-0"
-                >
-                  <div className="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
-                    <FontAwesomeIcon icon={faWhatsapp} className="text-green-500" />
-                  </div>
-                  <div className="flex-1">
-                    <p className="font-medium text-gray-800 dark:text-white">{office.city}</p>
-                    <p className="text-xs text-gray-500 dark:text-gray-400">📞 {office.phone}</p>
-                  </div>
-                  <FontAwesomeIcon icon={faChevronRight} className="text-gray-400 text-xs" />
-                </button>
-              ))}
+
+            {/* Onglets WhatsApp / Email */}
+            <div className="flex border-b border-gray-200 dark:border-gray-700">
+              <button
+                onClick={() => setActiveTab('whatsapp')}
+                className={`flex-1 py-3 text-center font-medium transition-all duration-300 ${
+                  activeTab === 'whatsapp'
+                    ? 'text-green-500 border-b-2 border-green-500'
+                    : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+                }`}
+              >
+                <FontAwesomeIcon icon={faWhatsapp} className="mr-2" />
+                WhatsApp
+              </button>
+              <button
+                onClick={() => setActiveTab('email')}
+                className={`flex-1 py-3 text-center font-medium transition-all duration-300 ${
+                  activeTab === 'email'
+                    ? 'text-green-500 border-b-2 border-green-500'
+                    : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+                }`}
+              >
+                <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
+                Email
+              </button>
             </div>
+
+            {/* Contenu WhatsApp */}
+            {activeTab === 'whatsapp' && (
+              <div className="max-h-80 overflow-y-auto">
+                {offices.map((office, index) => (
+                  <div key={index}>
+                    <button
+                      onClick={() => handleCitySelect(office.city)}
+                      className="w-full px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center gap-3 border-b border-gray-100 dark:border-gray-700"
+                    >
+                      <div className="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
+                        <FontAwesomeIcon icon={faWhatsapp} className="text-green-500" />
+                      </div>
+                      <div className="flex-1">
+                        <p className="font-medium text-gray-800 dark:text-white">{office.city}</p>
+                        <p className="text-xs text-gray-500 dark:text-gray-400">📞 {office.phone}</p>
+                        {office.phoneSecondary && (
+                          <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5">📞 {office.phoneSecondary}</p>
+                        )}
+                      </div>
+                      <FontAwesomeIcon icon={faChevronRight} className="text-gray-400 text-xs" />
+                    </button>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* Contenu Email */}
+            {activeTab === 'email' && (
+              <div className="p-4">
+                <button
+                  onClick={handleEmailContact}
+                  className="w-full py-4 px-4 rounded-xl text-center font-bold transition-all duration-300 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white shadow-lg"
+                >
+                  <span className="flex items-center justify-center gap-2">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                    <span>Envoyer un email</span>
+                  </span>
+                </button>
+                
+                <div className="mt-4 p-3 bg-gray-50 dark:bg-gray-700/30 rounded-lg">
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">📧 Email professionnel :</p>
+                  <p className="text-sm font-mono text-gray-800 dark:text-gray-200 font-medium">{contactEmail}</p>
+                  <p className="text-xs text-gray-400 dark:text-gray-500 mt-2">
+                    Réponse sous 24h ouvrées
+                  </p>
+                </div>
+
+                <div className="mt-3 flex justify-center gap-2">
+                  <div className="flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span>Support technique</span>
+                  </div>
+                  <div className="flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                    <span>Devis commercial</span>
+                  </div>
+                </div>
+              </div>
+            )}
             
             <div className="p-3 bg-gray-50 dark:bg-gray-700/50 border-t border-gray-200 dark:border-gray-700">
               <button
                 onClick={handleDefaultContact}
                 className="w-full text-center text-sm text-green-600 dark:text-green-400 hover:text-green-700 font-medium"
               >
-                {t('whatsapp.contactMainAgency')}
+                {t('whatsapp.contactMainAgency') || 'Contacter l\'agence principale'}
               </button>
             </div>
           </motion.div>
@@ -537,7 +636,7 @@ const WhatsAppFAB: React.FC<WhatsAppFABProps> = ({ offices }) => {
       {/* Indicateur de proximité */}
       <div className="absolute bottom-0 right-20 mb-3 hidden md:block">
         <div className="bg-white dark:bg-gray-800 rounded-full px-3 py-1 text-xs shadow-md border border-gray-200 dark:border-gray-700">
-          <span className="text-gray-500 dark:text-gray-400">📍 {t('whatsapp.nearYou')}</span>
+          <span className="text-gray-500 dark:text-gray-400">📍 {t('whatsapp.nearYou') || 'Disponible 24/7'}</span>
         </div>
       </div>
 
@@ -550,8 +649,12 @@ const WhatsAppFAB: React.FC<WhatsAppFABProps> = ({ offices }) => {
             exit={{ opacity: 0, y: 50 }}
             className="fixed bottom-24 right-6 z-50 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg flex items-center gap-2"
           >
-            <FontAwesomeIcon icon={faWhatsapp} className="w-4 h-4" />
-            <span className="text-sm">{t('whatsapp.openingWhatsApp')}</span>
+            <FontAwesomeIcon icon={activeTab === 'whatsapp' ? faWhatsapp : faEnvelope} className="w-4 h-4" />
+            <span className="text-sm">
+              {activeTab === 'whatsapp' 
+                ? t('whatsapp.openingWhatsApp') || 'Ouverture de WhatsApp...'
+                : t('email.openingEmail') || 'Ouverture de votre client email...'}
+            </span>
           </motion.div>
         )}
       </AnimatePresence>

@@ -101,7 +101,7 @@ export const serviceCategories: ServiceCategory[] = [
           'services.categories.web.services.mobile.benefits.access'
         ],
         technologies: ['React Native', 'Flutter', 'Swift', 'Kotlin'],
-        priceRange: 'services.priceRange.from',
+        priceRange: 'services.priceRange.project',
         timeline: 'services.timeline.months',
         image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=500&fit=crop',
         gradient: 'from-purple-500 to-pink-500',

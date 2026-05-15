@@ -22,6 +22,7 @@ import { StatsSection } from '../components/sections/home/StatsSection';
 import { VisionSection } from '../components/sections/home/VisionSection';
 import { ProcessSection } from '../components/sections/home/ProcessSection';
 import TestimonialsSection from '../components/sections/home/TestimonialsSection';
+import WelcomeModal from '../components/sections/home/WelcomeModal';
 
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -69,7 +70,7 @@ export const Home: React.FC = () => {
 
       {/* ── Navigation ── */}
       {/* <Navbar /> */}
-
+        <WelcomeModal displayMode='always'/>
       {/* ── Page content ── */}
       <main>
         {/* 1. Hero slider with particles + animated lines */}

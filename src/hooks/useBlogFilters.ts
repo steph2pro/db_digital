@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { blogPosts, BlogPost } from '../data/blogData';
+import { blogPosts } from '../data/blogData';
 
 export const useBlogFilters = () => {
   const [searchTerm, setSearchTerm] = useState('');

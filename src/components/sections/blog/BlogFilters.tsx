@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion,  } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { useTheme } from '../../../contexts/ThemeContext';
 import { blogCategories } from '../../../data/blogData';

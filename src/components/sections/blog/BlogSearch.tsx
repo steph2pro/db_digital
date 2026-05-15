@@ -27,7 +27,7 @@ export const BlogSearch: React.FC<BlogSearchProps> = ({ searchTerm, onSearchChan
           type="text"
           value={searchTerm}
           onChange={(e) => onSearchChange(e.target.value)}
-          placeholder={t('blog.search.placeholder', 'Rechercher un article, un sujet, une techno...')}
+          placeholder={t('blog.search.placeholder', 'Rechercher un article, un sujet, une techno...') || ''}
           className={`w-full pl-12 pr-4 py-3 rounded-xl border focus:outline-none focus:ring-2 focus:ring-green-500 transition-all ${
             isDark
               ? 'bg-gray-800 border-gray-700 text-white placeholder-gray-500'

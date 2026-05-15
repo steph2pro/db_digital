@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, useScroll, useTransform, AnimatePresence, Variants } from "motion/react";
 import { useTheme } from '../../../contexts/ThemeContext';
-import { Button } from '../../ui/Button';
 
 const sliderContent = [
   {

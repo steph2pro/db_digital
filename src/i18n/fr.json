@@ -30,6 +30,27 @@
       "partner": "🤝 Devenez partenaire"
     }
   },
+  
+  "welcome": {
+    "badge": "Bienvenue chez nous",
+    "title1": "Transformons",
+    "title2": "vos idées",
+    "title3": "en succès digital",
+    "body": "DB Digital Agency conçoit et développe des produits numériques performants — sites web, applications mobiles, APIs — pour les entreprises qui veulent dominer leur marché en Afrique et au-delà.",
+    "cta": "Découvrir l'agence",
+    "skip": "Continuer la visite",
+    "tag1": "Développement Web",
+    "tag2": "Mobile & Flutter",
+    "tag3": "Design UI/UX",
+    "tag4": "Stratégie Digitale",
+    "stat1value": "200+",
+    "stat1label": "Projets livrés",
+    "stat2value": "98%",
+    "stat2label": "Satisfaction client",
+    "stat3value": "7 ans",
+    "stat3label": "D'expertise"
+  },
+
   "stats": {
     "eyebrow": "En chiffres",
     "title": {
@@ -1556,6 +1577,70 @@
     "backHome": "Retour à l'accueil",
     "goBack": "Page précédente",
     "quickLinks": "Ou essayez ces liens rapides :"
+  },
+
+  "blog": {
+    "hero": {
+      "badge": "Blog & Actualités",
+      "title": "Blog & Actualités",
+      "subtitle": "Découvrez nos derniers articles, tutoriels et actualités tech"
+    },
+    "search": {
+      "placeholder": "Rechercher un article, un sujet, une techno..."
+    },
+    "sort": {
+      "label": "Trier par :",
+      "date": "Plus récents",
+      "views": "Plus vus",
+      "likes": "Plus aimés"
+    },
+    "categories": {
+      "all": "Tous les articles",
+      "pricing": "Tarifs & Devis",
+      "webDev": "Développement Web",
+      "aiTech": "IA & Technologies",
+      "career": "Carrière IT",
+      "trends": "Tendances"
+    },
+    "featured": "À la une",
+    "readMore": "Lire la suite",
+    "articles": "articles",
+    "related": "Articles similaires",
+    "noResults": {
+      "title": "Aucun article trouvé",
+      "message": "Essayez de modifier vos critères de recherche"
+    },
+    "posts": {
+      "pricing": {
+        "title": "💰 Combien coûte un site web en 2024 ? Guide complet des tarifs",
+        "excerpt": "Découvrez tous les facteurs qui influencent le prix d'un site web : type de site, fonctionnalités, technologies et prestataires. De 500€ à 50 000€, on vous dit tout !",
+        "content": "Le prix d'un site web varie considérablement selon de nombreux facteurs. Un site vitrine simple peut coûter entre 500€ et 3000€, tandis qu'une boutique e-commerce complexe peut atteindre 50 000€ ou plus.\n\n**Facteurs influençant le prix :**\n\n1. **Type de site** : Vitrine, e-commerce, application web, plateforme sur-mesure\n2. **Nombre de pages** : Plus il y a de pages, plus le travail est important\n3. **Fonctionnalités** : Formulaire de contact, paiement en ligne, espace membre, API\n4. **Design** : Template prêt à l'emploi vs design sur-mesure\n5. **SEO** : Optimisation pour les moteurs de recherche\n6. **Maintenance** : Mises à jour, sécurité, hébergement\n\n**Fourchettes de prix :**\n\n- Site vitrine simple : 500€ - 3000€\n- Site vitrine avec CMS : 1500€ - 5000€\n- E-commerce basique : 3000€ - 8000€\n- E-commerce avancé : 8000€ - 25000€\n- Application sur-mesure : 15000€ - 50000€+\n- Maintenance mensuelle : 50€ - 500€/mois\n\n**Options pour réduire les coûts :**\n\n- Utiliser des templates existants\n- Commencer avec un MVP (Minimum Viable Product)\n- Opter pour des solutions SaaS comme Shopify ou Wix\n- Faire un devis précis avant de commencer"
+      },
+      "estimate": {
+        "title": "📊 Comment estimer le prix de votre site web ? Méthode professionnelle",
+        "excerpt": "Apprenez à estimer vous-même le coût de votre futur site web grâce à notre méthode en 5 étapes. Évitez les mauvaises surprises !",
+        "content": "Estimer le prix d'un site web peut sembler complexe. Voici une méthode professionnelle pour y voir plus clair.\n\n**Étape 1 : Définissez vos objectifs**\n\n- Quel est le but de votre site ? (Vendre, informer, générer des leads)\n- Qui sont vos clients cibles ?\n- Quelles actions voulez-vous qu'ils réalisent ?\n\n**Étape 2 : Listez les fonctionnalités nécessaires**\n\n- Pages statiques (À propos, Contact, Services...)\n- Blog ou actualités\n- Boutique en ligne\n- Espace membre\n- Formulaire de contact\n- Chat en direct\n- API / intégrations\n\n**Étape 3 : Évaluez la complexité technique**\n\nNiveau 1 - Simple : Site vitrine basique, 5-10 pages\nNiveau 2 - Moyen : CMS, blog, responsive design\nNiveau 3 - Complexe : E-commerce, paiement, comptes utilisateurs\nNiveau 4 - Très complexe : Application web, API, temps réel\n\n**Étape 4 : Choisissez votre prestataire**\n\n- Freelance : 300€ - 800€/jour\n- Agence : 500€ - 1500€/jour\n- Plateformes (Malt, Codeur.com) : 400€ - 1000€/jour\n\n**Étape 5 : Calculez le budget total**\n\nTemps estimé (jours) × TJM = Budget approximatif\n\n**Exemple concret :**\n- Site vitrine avec 10 pages + blog\n- Design sur-mesure\n- 15 jours de travail\n- Freelance à 500€/jour\n- Total : 7500€\n\n**À ne pas oublier :**\n- Hébergement (5-50€/mois)\n- Nom de domaine (10-15€/an)\n- Maintenance (50-200€/mois)\n- SEO (200-1000€/mois)\n- Formation (optionnelle)"
+      },
+      "career": {
+        "title": "🔄 Reconversion dans l'IT : Guide complet pour réussir en 2024",
+        "excerpt": "Vous voulez vous reconvertir dans le numérique ? Découvrez les formations, les métiers qui recrutent et les salaires dans l'IT.",
+        "content": "La reconversion dans l'informatique est plus accessible que jamais. Voici tout ce qu'il faut savoir.\n\n**Pourquoi se reconvertir dans l'IT ?**\n\n- 70 000 postes à pourvoir chaque année\n- Salaire moyen : 35k€ - 60k€\n- Possibilité de télétravail\n- Évolution rapide\n- Formation accélérée possible\n\n**Les métiers qui recrutent :**\n\n1. **Développeur Web** (35k€ - 55k€)\n   - Formation : 3-12 mois\n   - Technologies : JavaScript, React, Node.js\n\n2. **Développeur Mobile** (40k€ - 60k€)\n   - Formation : 6-12 mois\n   - Technologies : Flutter, React Native, Swift\n\n3. **Data Analyst** (38k€ - 60k€)\n   - Formation : 6-12 mois\n   - Outils : SQL, Python, Tableau\n\n4. **DevOps** (45k€ - 70k€)\n   - Formation : 12-18 mois\n   - Technologies : Docker, Kubernetes, AWS\n\n5. **Chef de Projet Digital** (40k€ - 65k€)\n   - Formation : 6-12 mois\n   - Méthodes : Agile, Scrum\n\n**Les formations recommandées :**\n\n- **OpenClassrooms** : 3 à 12 mois, 300-400€/mois\n- **Le Wagon** : 9 semaines, 8000€\n- **42** : Gratuit, 3-5 ans\n- **AFPA** : 6-12 mois, financé possible\n- **Licence/Master Pro** : 1-2 ans, université\n\n**Les soft skills importantes :**\n\n- Autonomie et curiosité\n- Résolution de problèmes\n- Travail en équipe\n- Anglais technique\n- Veille technologique\n\n**Conseils pour réussir :**\n\n1. Commencez par des tutos gratuits (FreeCodeCamp, The Odin Project)\n2. Construisez un portfolio de projets personnels\n3. Contribuez à l'open source\n4. Réseautez sur LinkedIn et lors de meetups\n5. Passez des certifications"
+      },
+      "tech": {
+        "title": "⚡ Top 10 des technologies de pointe à maîtriser en 2024",
+        "excerpt": "IA, Blockchain, Web3, Cloud... Découvrez les technologies qui vont révolutionner le développement web et les salaires associés.",
+        "content": "Le monde de la tech évolue rapidement. Voici les technologies à surveiller et à apprendre.\n\n**1. Intelligence Artificielle Générative**\n- Modèles : GPT-4, Claude, Gemini\n- Frameworks : LangChain, LlamaIndex\n- Applications : Chatbots, génération de contenu, code\n- Salaire : 60k€ - 120k€\n\n**2. WebAssembly (Wasm)**\n- Langages : Rust, Go, C++\n- Utilisations : Applications web haute performance\n- Salaire : 55k€ - 90k€\n\n**3. Blockchain & Web3**\n- Technologies : Solidity, Ethereum, Smart Contracts\n- Applications : dApps, DeFi, NFTs\n- Salaire : 65k€ - 130k€\n\n**4. Edge Computing**\n- Plateformes : Cloudflare Workers, AWS Lambda@Edge\n- Avantages : Latence réduite, sécurité\n- Salaire : 60k€ - 100k€\n\n**5. Progressive Web Apps (PWAs)**\n- Technologies : Service Workers, IndexedDB\n- Avantages : Installation, offline, notifications\n- Salaire : 45k€ - 75k€\n\n**6. Serverless Architecture**\n- Providers : AWS Lambda, Vercel, Netlify\n- Avantages : Scalabilité automatique, coûts optimisés\n- Salaire : 60k€ - 95k€\n\n**7. Low-Code/No-Code**\n- Platforms : Bubble, Retool, FlutterFlow\n- Avantages : Développement 10x plus rapide\n- Salaire : 50k€ - 80k€\n\n**8. Cybersecurity**\n- Domaines : DevSecOps, Cloud Security\n- Certifications : CEH, CISSP\n- Salaire : 55k€ - 110k€\n\n**9. Green IT & Eco-conception**\n- Enjeux : Réduction de l'empreinte carbone\n- Techniques : Code efficace, hébergement vert\n- Salaire : 50k€ - 85k€\n\n**10. Web3 & Décentralisation**\n- Protocoles : IPFS, Filecoin\n- Applications : Stockage décentralisé, identité numérique\n- Salaire : 60k€ - 120k€\n\n**Comment apprendre ces technologies ?**\n\n- Cours en ligne (Udemy, Coursera)\n- Documentation officielle\n- Projets personnels\n- Contributions open source\n- Hackathons"
+      },
+      "aiTrends": {
+        "title": "🤖 Tendances IA 2024 : Ce qui va changer votre façon de travailler",
+        "excerpt": "Découvrez les tendances majeures de l'IA en 2024 : IA générative, agents autonomes, éthique, et comment vous préparer.",
+        "content": "L'intelligence artificielle transforme notre façon de travailler. Voici les tendances à suivre.\n\n**1. IA Générative en entreprise**\n\nLes entreprises intègrent massivement l'IA générative :\n- Rédaction de documents, emails, rapports\n- Génération de code et tests automatiques\n- Création de contenus marketing\n- Support client automatisé\n\n**2. Agents IA autonomes**\n\nNouvelle génération d'agents capables de :\n- Planifier des tâches complexes\n- Utiliser des outils (API, navigateur)\n- Apprendre de leurs erreurs\n- Collaborer entre eux\n\nExemples : AutoGPT, BabyAGI, GPT-Engineer\n\n**3. IA multimodale**\n\nModèles capables de comprendre :\n- Texte, image, audio, vidéo\n- Traduction automatique améliorée\n- Génération de vidéos (Sora, Runway)\n- Reconnaissance d'images avancée\n\n**4. Éthique et IA responsable**\n\n- Régulation (AI Act européen)\n- Transparence des algorithmes\n- Réduction des biais\n- Protection des données\n\n**5. IA pour les développeurs**\n\nOutils qui changent le métier :\n- GitHub Copilot : Auto-complétion de code\n- Cursor : Éditeur IA-native\n- Tabnine : Prédiction de code\n- Amazon CodeWhisperer : Suggestions AWS\n\n**Impact sur les métiers :**\n\nLes développeurs deviennent des \"IA orchestrators\" :\n- 50% de productivité en plus\n- Focus sur l'architecture et la review\n- Besoin de compétences en prompt engineering\n- Veille technologique accrue\n\n**Comment se préparer ?**\n\n1. Apprenez le prompt engineering\n2. Maîtrisez les API d'IA (OpenAI, Anthropic)\n3. Comprenez les enjeux éthiques\n4. Expérimentez avec les outils IA\n5. Suivez les évolutions (newsletters, conférences)"
+      },
+      "aiDev": {
+        "title": "👨‍💻 L'IA au service des développeurs : Boostez votre productivité",
+        "excerpt": "Comment utiliser l'IA pour coder plus vite, mieux debugger, et apprendre de nouvelles technologies. Guide pratique avec exemples.",
+        "content": "L'IA change radicalement la façon dont nous développons. Voici comment l'utiliser efficacement.\n\n**Les outils IA indispensables :**\n\n**1. GitHub Copilot**\n- Autocomplétion intelligente\n- Génération de fonctions complètes\n- Adaptation au contexte\n- Prix : 10$/mois (gratuit pour étudiants)\n\n**2. Cursor**\n- Éditeur basé sur VS Code\n- Chat intégré avec l'IA\n- Génération de composants React\n- Refactoring automatique\n\n**3. ChatGPT / Claude pour le code**\n- Génération de snippets\n- Explication de code complexe\n- Conversion entre langages\n- Documentation automatique\n\n**4. Amazon CodeWhisperer**\n- Suggestions spécifiques AWS\n- Gratuit pour usage personnel\n- Sécurité intégrée\n\n**Bonnes pratiques :**\n\n✅ **À faire :**\n- Générer du code boilerplate\n- Écrire des tests unitaires\n- Documenter votre code\n- Debugger des erreurs\n- Refactoriser du code legacy\n\n❌ **Éviter :**\n- Copier/coller sans comprendre\n- Ignorer les problèmes de sécurité\n- Négliger la revue de code\n- Oublier la maintenance\n\n**Exemples concrets :**\n\n**Débogage :**\n\"Explique-moi cette erreur : TypeError: Cannot read property 'map' of undefined\"\n\n**Génération de composant :**\n\"Crée un composant React de carte produit avec image, titre, prix et bouton d'achat\"\n\n**Optimisation :**\n\"Optimise cette fonction qui est trop lente pour 10 000 éléments\"\n\n**Tests :**\n\"Génère des tests unitaires Jest pour cette fonction de validation d'email\"\n\n**Conversion :**\n\"Convertit cette fonction JavaScript en TypeScript avec les types appropriés\"\n\n**Impact sur les salaires :**\n\nLes développeurs qui maîtrisent ces outils peuvent :\n- Gagner 20-30% de plus\n- Travailler sur des projets plus complexes\n- Apprendre plus rapidement\n- Se spécialiser en \"AI Engineering\"\n\n**Ressources pour apprendre :**\n\n- Cours \"Prompt Engineering for Developers\" (DeepLearning.AI)\n- Documentation OpenAI\n- Communauté LangChain\n- Projets open source avec Copilot"
+      }
+    }
   }
- 
 }

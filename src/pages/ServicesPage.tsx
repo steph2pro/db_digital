@@ -25,7 +25,7 @@ export const ServicesPage: React.FC = () => {
           }`} />
 
           {/* Vagues animées */}
-          {[...Array(3)].map((_, i) => (
+          {/* {[...Array(3)].map((_, i) => (
             <motion.div
               key={`wave-${i}`}
               className="absolute inset-0"
@@ -45,7 +45,7 @@ export const ServicesPage: React.FC = () => {
                 ease: 'linear',
               }}
             />
-          ))}
+          ))} */}
         </div>
 
         <TypingHero inView={heroInView} />

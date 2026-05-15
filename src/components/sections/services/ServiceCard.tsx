@@ -73,7 +73,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service, index, inView
   const getPriceDisplay = () => {
     const priceKey = service.priceRange;
     if (priceKey === 'services.priceRange.from') {
-      return t('services.priceRange.from', 'À partir de') + ' ' + t('services.priceRange.fromValue', '100 000 FCFA');
+      return t('services.priceRange.customDisplay', 'Sur devis');
     } else if (priceKey === 'services.priceRange.custom') {
       return t('services.priceRange.customDisplay', 'Sur devis');
     } else if (priceKey === 'services.priceRange.monthly') {
@@ -250,7 +250,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service, index, inView
               className="absolute top-3 left-3 z-10"
             >
               <div className="px-2 py-1 bg-gradient-to-r from-orange-500 to-red-500 rounded-full text-white text-[10px] font-bold shadow-lg">
-                🔥 {t('services.popular', 'Populaire')}
+                 {t('services.popular', 'Populaire')}
               </div>
             </motion.div>
           )}

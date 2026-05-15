@@ -30,6 +30,26 @@
       "partner": "🤝 Become a partner"
     }
   },
+   "welcome": {
+    "badge": "Welcome to our agency",
+    "title1": "Let's Transform",
+    "title2": "your ideas",
+    "title3": "into digital success",
+    "body": "DB Digital Agency designs and builds high-performance digital products — websites, mobile apps, APIs — for businesses ready to lead their market across Africa and beyond.",
+    "cta": "Explore the agency",
+    "skip": "Continue browsing",
+    "tag1": "Web Development",
+    "tag2": "Mobile & Flutter",
+    "tag3": "UI/UX Design",
+    "tag4": "Digital Strategy",
+    "stat1value": "200+",
+    "stat1label": "Projects delivered",
+    "stat2value": "98%",
+    "stat2label": "Client satisfaction",
+    "stat3value": "7 years",
+    "stat3label": "of expertise"
+  },
+
   "stats": {
     "eyebrow": "By the numbers",
     "title": {
@@ -1576,5 +1596,71 @@
     "backHome": "Back to Home",
     "goBack": "Go Back",
     "quickLinks": "Or try these quick links:"
+  },
+  
+  
+  "blog": {
+    "hero": {
+      "badge": "Blog & News",
+      "title": "Blog & News",
+      "subtitle": "Discover our latest articles, tutorials and tech news"
+    },
+    "search": {
+      "placeholder": "Search for an article, topic, technology..."
+    },
+    "sort": {
+      "label": "Sort by:",
+      "date": "Latest",
+      "views": "Most viewed",
+      "likes": "Most liked"
+    },
+    "categories": {
+      "all": "All articles",
+      "pricing": "Pricing & Quotes",
+      "webDev": "Web Development",
+      "aiTech": "AI & Technologies",
+      "career": "IT Career",
+      "trends": "Trends"
+    },
+    "featured": "Featured",
+    "readMore": "Read more",
+    "articles": "articles",
+    "related": "Related articles",
+    "noResults": {
+      "title": "No articles found",
+      "message": "Try changing your search criteria"
+    },
+    "posts": {
+      "pricing": {
+        "title": "💰 How much does a website cost in 2024? Complete pricing guide",
+        "excerpt": "Discover all the factors that influence the price of a website: type of site, features, technologies and providers. From €500 to €50,000, we tell you everything!",
+        "content": "The price of a website varies considerably depending on many factors. A simple showcase site can cost between €500 and €3000, while a complex e-commerce store can reach €50,000 or more.\n\n**Factors influencing price:**\n\n1. **Site type**: Showcase, e-commerce, web application, custom platform\n2. **Number of pages**: More pages means more work\n3. **Features**: Contact form, online payment, member area, API\n4. **Design**: Ready-made template vs custom design\n5. **SEO**: Search engine optimization\n6. **Maintenance**: Updates, security, hosting\n\n**Price ranges:**\n\n- Simple showcase site: €500 - €3000\n- CMS showcase site: €1500 - €5000\n- Basic e-commerce: €3000 - €8000\n- Advanced e-commerce: €8000 - €25000\n- Custom application: €15000 - €50000+\n- Monthly maintenance: €50 - €500/month\n\n**Options to reduce costs:**\n\n- Use existing templates\n- Start with an MVP (Minimum Viable Product)\n- Opt for SaaS solutions like Shopify or Wix\n- Get a detailed quote before starting"
+      },
+      "estimate": {
+        "title": "📊 How to estimate the price of your website? Professional method",
+        "excerpt": "Learn how to estimate the cost of your future website with our 5-step method. Avoid unpleasant surprises!",
+        "content": "Estimating the price of a website can seem complex. Here's a professional method to see more clearly.\n\n**Step 1: Define your objectives**\n\n- What is the purpose of your site? (Sell, inform, generate leads)\n- Who are your target customers?\n- What actions do you want them to take?\n\n**Step 2: List necessary features**\n\n- Static pages (About, Contact, Services...)\n- Blog or news\n- Online store\n- Member area\n- Contact form\n- Live chat\n- API / integrations\n\n**Step 3: Assess technical complexity**\n\nLevel 1 - Simple: Basic showcase site, 5-10 pages\nLevel 2 - Medium: CMS, blog, responsive design\nLevel 3 - Complex: E-commerce, payment, user accounts\nLevel 4 - Very complex: Web application, API, real-time\n\n**Step 4: Choose your provider**\n\n- Freelance: €300 - €800/day\n- Agency: €500 - €1500/day\n- Platforms (Malt, Codeur.com): €400 - €1000/day\n\n**Step 5: Calculate total budget**\n\nEstimated time (days) × Daily rate = Approximate budget\n\n**Concrete example:**\n- Showcase site with 10 pages + blog\n- Custom design\n- 15 working days\n- Freelance at €500/day\n- Total: €7500\n\n**Don't forget:**\n- Hosting (€5-50/month)\n- Domain name (€10-15/year)\n- Maintenance (€50-200/month)\n- SEO (€200-1000/month)\n- Training (optional)"
+      },
+      "career": {
+        "title": "🔄 Career change to IT: Complete guide to succeed in 2024",
+        "excerpt": "Want to switch to digital careers? Discover training programs, in-demand jobs and salaries in IT.",
+        "content": "Career change to IT is more accessible than ever. Here's everything you need to know.\n\n**Why switch to IT?**\n\n- 70,000 job openings each year\n- Average salary: €35k - €60k\n- Remote work possible\n- Fast career growth\n- Accelerated training available\n\n**Jobs in demand:**\n\n1. **Web Developer** (€35k - €55k)\n   - Training: 3-12 months\n   - Technologies: JavaScript, React, Node.js\n\n2. **Mobile Developer** (€40k - €60k)\n   - Training: 6-12 months\n   - Technologies: Flutter, React Native, Swift\n\n3. **Data Analyst** (€38k - €60k)\n   - Training: 6-12 months\n   - Tools: SQL, Python, Tableau\n\n4. **DevOps** (€45k - €70k)\n   - Training: 12-18 months\n   - Technologies: Docker, Kubernetes, AWS\n\n5. **Digital Project Manager** (€40k - €65k)\n   - Training: 6-12 months\n   - Methods: Agile, Scrum\n\n**Recommended training:**\n\n- **OpenClassrooms**: 3-12 months, €300-400/month\n- **Le Wagon**: 9 weeks, €8000\n- **42**: Free, 3-5 years\n- **AFPA**: 6-12 months, possible funding\n- **Bachelor/Master's**: 1-2 years, university\n\n**Important soft skills:**\n\n- Autonomy and curiosity\n- Problem-solving\n- Teamwork\n- Technical English\n- Technology watch\n\n**Tips for success:**\n\n1. Start with free tutorials (FreeCodeCamp, The Odin Project)\n2. Build a portfolio of personal projects\n3. Contribute to open source\n4. Network on LinkedIn and at meetups\n5. Get certifications"
+      },
+      "tech": {
+        "title": "⚡ Top 10 cutting-edge technologies to master in 2024",
+        "excerpt": "AI, Blockchain, Web3, Cloud... Discover the technologies that will revolutionize web development and associated salaries.",
+        "content": "The tech world is evolving rapidly. Here are the technologies to watch and learn.\n\n**1. Generative AI**\n- Models: GPT-4, Claude, Gemini\n- Frameworks: LangChain, LlamaIndex\n- Applications: Chatbots, content generation, code\n- Salary: €60k - €120k\n\n**2. WebAssembly (Wasm)**\n- Languages: Rust, Go, C++\n- Uses: High-performance web applications\n- Salary: €55k - €90k\n\n**3. Blockchain & Web3**\n- Technologies: Solidity, Ethereum, Smart Contracts\n- Applications: dApps, DeFi, NFTs\n- Salary: €65k - €130k\n\n**4. Edge Computing**\n- Platforms: Cloudflare Workers, AWS Lambda@Edge\n- Benefits: Reduced latency, security\n- Salary: €60k - €100k\n\n**5. Progressive Web Apps (PWAs)**\n- Technologies: Service Workers, IndexedDB\n- Benefits: Installation, offline, notifications\n- Salary: €45k - €75k\n\n**6. Serverless Architecture**\n- Providers: AWS Lambda, Vercel, Netlify\n- Benefits: Auto-scaling, optimized costs\n- Salary: €60k - €95k\n\n**7. Low-Code/No-Code**\n- Platforms: Bubble, Retool, FlutterFlow\n- Benefits: 10x faster development\n- Salary: €50k - €80k\n\n**8. Cybersecurity**\n- Areas: DevSecOps, Cloud Security\n- Certifications: CEH, CISSP\n- Salary: €55k - €110k\n\n**9. Green IT & Eco-design**\n- Challenges: Reducing carbon footprint\n- Techniques: Efficient code, green hosting\n- Salary: €50k - €85k\n\n**10. Web3 & Decentralization**\n- Protocols: IPFS, Filecoin\n- Applications: Decentralized storage, digital identity\n- Salary: €60k - €120k\n\n**How to learn these technologies?**\n\n- Online courses (Udemy, Coursera)\n- Official documentation\n- Personal projects\n- Open source contributions\n- Hackathons"
+      },
+      "aiTrends": {
+        "title": "🤖 AI Trends 2024: What will change the way you work",
+        "excerpt": "Discover major AI trends in 2024: generative AI, autonomous agents, ethics, and how to prepare yourself.",
+        "content": "Artificial intelligence is transforming the way we work. Here are the trends to follow.\n\n**1. Generative AI in business**\n\nCompanies are massively integrating generative AI:\n- Writing documents, emails, reports\n- Code generation and automated tests\n- Marketing content creation\n- Automated customer support\n\n**2. Autonomous AI Agents**\n\nNew generation of agents capable of:\n- Planning complex tasks\n- Using tools (API, browser)\n- Learning from their mistakes\n- Collaborating with each other\n\nExamples: AutoGPT, BabyAGI, GPT-Engineer\n\n**3. Multimodal AI**\n\nModels capable of understanding:\n- Text, image, audio, video\n- Improved machine translation\n- Video generation (Sora, Runway)\n- Advanced image recognition\n\n**4. Ethics and Responsible AI**\n\n- Regulation (EU AI Act)\n- Algorithm transparency\n- Bias reduction\n- Data protection\n\n**5. AI for developers**\n\nTools changing the profession:\n- GitHub Copilot: Code autocompletion\n- Cursor: AI-native editor\n- Tabnine: Code prediction\n- Amazon CodeWhisperer: AWS suggestions\n\n**Impact on careers:**\n\nDevelopers become \"AI orchestrators\":\n- 50% more productivity\n- Focus on architecture and review\n- Need for prompt engineering skills\n- Increased technology watch\n\n**How to prepare?**\n\n1. Learn prompt engineering\n2. Master AI APIs (OpenAI, Anthropic)\n3. Understand ethical issues\n4. Experiment with AI tools\n5. Follow developments (newsletters, conferences)"
+      },
+      "aiDev": {
+        "title": "👨‍💻 AI for developers: Boost your productivity",
+        "excerpt": "How to use AI to code faster, debug better, and learn new technologies. Practical guide with examples.",
+        "content": "AI is radically changing the way we develop. Here's how to use it effectively.\n\n**Essential AI tools:**\n\n**1. GitHub Copilot**\n- Intelligent autocompletion\n- Full function generation\n- Context adaptation\n- Price: $10/month (free for students)\n\n**2. Cursor**\n- VS Code-based editor\n- Integrated AI chat\n- React component generation\n- Automatic refactoring\n\n**3. ChatGPT / Claude for code**\n- Snippet generation\n- Complex code explanation\n- Language conversion\n- Automatic documentation\n\n**4. Amazon CodeWhisperer**\n- AWS-specific suggestions\n- Free for personal use\n- Integrated security\n\n**Best practices:**\n\n✅ **Do:**\n- Generate boilerplate code\n- Write unit tests\n- Document your code\n- Debug errors\n- Refactor legacy code\n\n❌ **Avoid:**\n- Copy/pasting without understanding\n- Ignoring security issues\n- Neglecting code review\n- Forgetting maintenance\n\n**Concrete examples:**\n\n**Debugging:**\n\"Explain this error: TypeError: Cannot read property 'map' of undefined\"\n\n**Component generation:**\n\"Create a React product card component with image, title, price, and buy button\"\n\n**Optimization:**\n\"Optimize this function that is too slow for 10,000 elements\"\n\n**Testing:**\n\"Generate Jest unit tests for this email validation function\"\n\n**Conversion:**\n\"Convert this JavaScript function to TypeScript with proper types\"\n\n**Salary impact:**\n\nDevelopers who master these tools can:\n- Earn 20-30% more\n- Work on more complex projects\n- Learn faster\n- Specialize in \"AI Engineering\"\n\n**Learning resources:**\n\n- \"Prompt Engineering for Developers\" course (DeepLearning.AI)\n- OpenAI documentation\n- LangChain community\n- Open source projects with Copilot"
+      }
+    }
   }
 }

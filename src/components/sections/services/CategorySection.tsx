@@ -1,3 +1,95 @@
+// import React, { useRef } from 'react';
+// import { motion, useInView } from "motion/react";
+// import { useTranslation } from 'react-i18next';
+// import { ServiceCard } from './ServiceCard';
+// import { ServiceCategory } from '../../../data/servicesData';
+// import { useTheme } from '../../../contexts/ThemeContext';
+
+// interface CategorySectionProps {
+//   category: ServiceCategory;
+//   index: number;
+// }
+
+// export const CategorySection: React.FC<CategorySectionProps> = ({ category, index }) => {
+//   const { t } = useTranslation();
+//   const { isDark } = useTheme();
+//   const ref = useRef<HTMLDivElement>(null);
+//   const inView = useInView(ref, { once: true, amount: 0.1 });
+
+//   return (
+//     <section ref={ref} aria-labelledby={`cat-${category.id}`}>
+
+//       {/* En-tête de catégorie */}
+//       <motion.div
+//         initial={{ opacity: 0, y: 20 }}
+//         animate={inView ? { opacity: 1, y: 0 } : {}}
+//         transition={{ duration: 0.5 }}
+//         className="flex items-start gap-4 mb-6"
+//       >
+//         {/* Icône */}
+//         <div className={`flex-shrink-0 w-11 h-11 rounded-xl flex items-center justify-center text-lg mt-0.5 ${
+//           isDark ? 'bg-gray-800' : 'bg-white border border-stone-200'
+//         }`}>
+//           <i className={category.icon} aria-hidden="true" />
+//         </div>
+
+//         <div>
+//           <h2
+//             id={`cat-${category.id}`}
+//             className={`text-lg sm:text-xl font-semibold tracking-tight leading-snug ${
+//               isDark ? 'text-white' : 'text-gray-900'
+//             }`}
+//           >
+//             {t(category.titleKey)}
+//           </h2>
+//           <p className={`mt-0.5 text-sm font-light leading-relaxed ${
+//             isDark ? 'text-gray-400' : 'text-gray-500'
+//           }`}>
+//             {t(category.descriptionKey)}
+//           </p>
+//           <span className={`inline-block mt-2 text-xs font-medium px-2.5 py-0.5 rounded-full ${
+//             isDark
+//               ? 'bg-gray-800 text-gray-400'
+//               : 'bg-stone-100 text-stone-500'
+//           }`}>
+//             {category.services.length} {t('services.available', 'services')}
+//           </span>
+//         </div>
+//       </motion.div>
+
+//       {/* Grille des services */}
+//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+//         {category.services.map((service, idx) => (
+//           <motion.div
+//             key={service.id}
+//             initial={{ opacity: 0, y: 16 }}
+//             animate={inView ? { opacity: 1, y: 0 } : {}}
+//             transition={{ duration: 0.4, delay: idx * 0.07 }}
+//           >
+//             <ServiceCard service={service} index={idx} inView={inView} />
+//           </motion.div>
+//         ))}
+//       </div>
+
+//       {/* Ligne séparatrice douce */}
+//       <motion.div
+//         initial={{ scaleX: 0 }}
+//         animate={inView ? { scaleX: 1 } : {}}
+//         transition={{ duration: 0.6, delay: 0.2 }}
+//         className={`mt-12 h-px origin-left ${
+//           isDark ? 'bg-gray-800' : 'bg-stone-100'
+//         }`}
+//       />
+
+//     </section>
+//   );
+// };
+
+
+
+
+
+
 import React, { useRef } from 'react';
 import { motion, useInView } from "motion/react";
 import { useTranslation } from 'react-i18next';

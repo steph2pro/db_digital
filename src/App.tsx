@@ -17,6 +17,8 @@ import { PartnersPage } from './pages/PartnersPage';
 import { CareersPage } from './pages/CareersPage';
 import QuotePage from './pages/QuotePage';
 import LocationPage from './pages/LocationPage';
+import { BlogPage } from './pages/BlogPage';
+import { BlogPostDetail } from './components/sections/blog/BlogPostDetail';
 
 function App() {
  
@@ -44,7 +46,10 @@ function App() {
                 <Route path="/contact/quote" element={<QuotePage />} />
                 <Route path="/contact/support" element={<SupportPage />} />
                 <Route path="/contact/location" element={<LocationPage />} />
-                
+                // Ajoutez ces routes
+                <Route path="/blog" element={<BlogPage />} />
+                <Route path="/blog/:id" element={<BlogPostDetail />} />
+                                
                 {/* Blog Routes */}
                 {/* <Route path="/blog">
                   <Route index element={<Blog />} />

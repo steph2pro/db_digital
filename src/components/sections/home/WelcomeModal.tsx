@@ -89,19 +89,6 @@ const WelcomeModal: React.FC<WelcomeModalProps> = ({ displayMode = 'session' }) 
     { value: t('welcome.stat3value'), label: t('welcome.stat3label') },
   ];
 
-  // ─── Variants ──────────────────────────────────────────────────────────────
-  // const mobileVariants = {
-  //   initial: { y: '100%', opacity: 0 },
-  //   animate: { y: 0, opacity: 1, transition: { type: 'spring' as const, damping: 26, stiffness: 280 } },
-  //   exit:    { y: '100%', opacity: 0, transition: { duration: 0.26, ease: [0.4, 0, 1, 1] as number[] } },
-  // };
-
-  // const desktopVariants = {
-  //   initial: { scale: 0.88, opacity: 0, y: 36 },
-  //   animate: { scale: 1, opacity: 1, y: 0, transition: { duration: 0.44, ease: [0.22, 1, 0.36, 1] as number[] } },
-  //   exit:    { scale: 0.93, opacity: 0, y: 20, transition: { duration: 0.26, ease: [0.4, 0, 1, 1] as number[] } },
-  // };
-
   // ─── Render ─────────────────────────────────────────────────────────────────
   return (
     <>

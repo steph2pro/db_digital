@@ -19,6 +19,7 @@ import QuotePage from './pages/QuotePage';
 import LocationPage from './pages/LocationPage';
 import { BlogPage } from './pages/BlogPage';
 import { BlogPostDetail } from './components/sections/blog/BlogPostDetail';
+import RealisationsPage from './pages/RealisationsPage';
 
 function App() {
  
@@ -37,6 +38,7 @@ function App() {
                 <Route path="/careers" element={<CareersPage />} />
                 <Route path="/partners" element={<PartnersPage />} />
 
+                <Route path="/projects" element={<RealisationsPage />} />
                 <Route path="/technologies" element={<TechnologiesPage />} />
                 <Route path="/methodology" element={<MethodologyPage />} />
                 <Route path="/quality" element={<QualityPage />} />

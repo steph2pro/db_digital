@@ -455,7 +455,7 @@ export const SupportPage: React.FC = () => {
         >
           {[
             { icon: 'bx bx-phone', label: t('contact.support.hotline', 'Hotline'), value: '+237 657 128 712' },
-            { icon: 'bx bx-envelope', label: 'Email', value: 'support@dbdigital.agency' },
+            { icon: 'bx bx-envelope', label: 'Email', value: 'support@dbdigitalagency.com' },
             { icon: 'bx bx-chat', label: t('contact.support.livechat', 'Live Chat'), value: t('contact.support.available', 'Disponible 24h/24') }
           ].map((item, index) => (
             <motion.div

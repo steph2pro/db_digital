@@ -23,6 +23,13 @@ export const navigation: NavigationItem[] = [
     type: 'internal',
     submenu: [
       {
+        id: 'projects',
+        path: '/projects',
+        label: 'projects',
+        icon: 'bx bx-briefcase',
+        type: 'internal'
+      },
+      {
         id: 'technologies',
         path: '/technologies',
         label: 'technologies',

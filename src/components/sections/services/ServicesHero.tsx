@@ -40,7 +40,7 @@ export const ServicesHero: React.FC<ServicesHeroProps> = ({
       ref={heroRef}
       style={{
         position: 'relative',
-        minHeight: isMobile ? '60svh' : '92vh',
+        minHeight: isMobile ? '100svh' : '100vh',
         display: 'flex',
         alignItems: 'center',
         overflow: 'hidden',
@@ -167,7 +167,7 @@ export const ServicesHero: React.FC<ServicesHeroProps> = ({
               transition={{ duration: 0.38, delay: 0.09 }}
               style={{
                 margin: '0 0 28px', color: 'rgba(255,255,255,0.5)',
-                fontSize: isMobile ? '0.85rem' : '1.05rem',
+                fontSize: isMobile ? '0.99rem' : '1.25rem',
                 lineHeight: 1.72, maxWidth: 480,
               }}
             >
@@ -189,7 +189,7 @@ export const ServicesHero: React.FC<ServicesHeroProps> = ({
                 <span
                   key={svc.id}
                   style={{
-                    fontSize: 11, fontWeight: 600, padding: '5px 12px', borderRadius: 8,
+                    fontSize: 14, fontWeight: 600, padding: '5px 12px', borderRadius: 8,
                     backgroundColor: 'rgba(255,255,255,0.07)',
                     border: '1px solid rgba(255,255,255,0.1)',
                     color: 'rgba(255,255,255,0.65)', letterSpacing: '0.02em',
@@ -202,7 +202,7 @@ export const ServicesHero: React.FC<ServicesHeroProps> = ({
               {currentCategory.services.length > 3 && (
                 <span
                   style={{
-                    fontSize: 11, fontWeight: 700, padding: '5px 12px', borderRadius: 8,
+                    fontSize: 14, fontWeight: 700, padding: '5px 12px', borderRadius: 8,
                     backgroundColor: `${accentColor}20`, border: `1px solid ${accentColor}40`,
                     color: accentColor,
                   }}
@@ -268,7 +268,7 @@ export const ServicesHero: React.FC<ServicesHeroProps> = ({
       {/* Compteur de slides */}
       <div
         style={{
-          position: 'absolute', bottom: isMobile ? 16 : 30,
+          position: 'absolute', bottom: isMobile ? 16 : 80,
           left: isMobile ? 24 : 68, zIndex: 20,
           display: 'flex', alignItems: 'center', gap: 10,
         }}

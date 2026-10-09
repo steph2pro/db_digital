@@ -69,7 +69,7 @@ export const ExpertiseLayout: React.FC<ExpertiseLayoutProps> = ({
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            <motion.div
+            {/* <motion.div
               initial={{ scale: 0 }}
               animate={inView ? { scale: 1 } : {}}
               transition={{ delay: 0.2, type: "spring" }}
@@ -80,7 +80,7 @@ export const ExpertiseLayout: React.FC<ExpertiseLayoutProps> = ({
                 {title === 'methodology' && '🔄'}
                 {title === 'quality' && '🛡️'}
               </span>
-            </motion.div>
+            </motion.div> */}
 
             <h1 className="font-display font-extrabold text-4xl md:text-5xl lg:text-6xl mb-4">
               <span className={isDark ? 'text-white' : 'text-gray-900'}>

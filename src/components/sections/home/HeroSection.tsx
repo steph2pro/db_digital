@@ -42,7 +42,7 @@ const SLIDES: SlideContent[] = [
       part2: "home.hero.slide1.title.part2",
     },
     description: "home.hero.slide1.description",
-    backgroundImage: "/images/slider/innovation.jpg",
+    backgroundImage: "/images/slider/innovation.jpeg",
     accentColor: "#10b981",
   },
   {
@@ -54,7 +54,7 @@ const SLIDES: SlideContent[] = [
       part2: "home.hero.slide2.title.part2",
     },
     description: "home.hero.slide2.description",
-    backgroundImage: "/images/slider/performance.jpg",
+    backgroundImage: "/images/slider/performance.jpeg",
     accentColor: "#6366f1",
   },
   {
@@ -66,7 +66,7 @@ const SLIDES: SlideContent[] = [
       part2: "home.hero.slide3.title.part2",
     },
     description: "home.hero.slide3.description",
-    backgroundImage: "/images/slider/expertise.jpg",
+    backgroundImage: "/images/slider/expertise.jpeg",
     accentColor: "#f59e0b",
   },
   {
@@ -78,7 +78,7 @@ const SLIDES: SlideContent[] = [
       part2: "home.hero.slide4.title.part2",
     },
     description: "home.hero.slide4.description",
-    backgroundImage: "/images/slider/design.jpg",
+    backgroundImage: "/images/slider/design.jpeg",
     accentColor: "#ec4899",
   },
   {
@@ -90,7 +90,7 @@ const SLIDES: SlideContent[] = [
       part2: "home.hero.slide5.title.part2",
     },
     description: "home.hero.slide5.description",
-    backgroundImage: "/images/slider/strategy.jpg",
+    backgroundImage: "/images/slider/strategy.jpeg",
     accentColor: "#0ea5e9",
   },
 ];
@@ -706,7 +706,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ t: tProp }) => {
       <div
         style={{
           position:   "absolute",
-          bottom:     isMobile ? 52 : 32,
+          bottom:     isMobile ? 12 : 32,
           left:       isMobile ? 24 : 68,
           zIndex:     20,
           display:    "flex",
